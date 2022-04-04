@@ -1,0 +1,61 @@
+/* damion and nunito sans */
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* eagle sight */
+@font-face {
+  font-family: "Eagle Sight";
+  src: url("./fonts/eagleSight/EagleSightRegular.ttf") format("truetype"),
+    url("./fonts/eagleSight/eaglesightregular-webfont.woff") format("woff"),
+    url("./fonts/eagleSight/eaglesightregular-webfont.woff2") format("woff2");
+}
+
+/* redwood alternative */
+@font-face {
+  font-family: "Redwood Alternative";
+  src: url("./fonts/redwood/RedwoodAlternative.ttf") format("truetype"),
+    url("./fonts/redwood/redwoodalternative-webfont.woff") format("woff"),
+    url("./fonts/redwood/redwoodalternative-webfont.woff2") format("woff2");
+}
+
+/* redwood */
+@font-face {
+  font-family: "Redwood Regular";
+  src: url("./fonts/redwood/RedwoodRegular.ttf") format("truetype"),
+    url("./fonts/redwood/redwoodregular-webfont.woff") format("woff"),
+    url("./fonts/redwood/redwoodregular-webfont.woff2") format("woff2");
+}
+
+/**
+ * START --- SETUP TAILWINDCSS EDIT
+ *
+ * `yarn rw setup ui tailwindcss` placed these imports here
+ * to inject Tailwind's styles into your CSS.
+ * For more information, see: https://tailwindcss.com/docs/installation#include-tailwind-in-your-css
+ */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/**
+ * END --- SETUP TAILWINDCSS EDIT
+ */
+
+@layer base {
+  body {
+    @apply min-h-screen;
+    background: #ebdac9 url("./images/bg__paper-texture.jpg");
+    background-blend-mode: multiply;
+  }
+
+  .page-border {
+    @apply mt-6 mx-8 border-0 outline-none min-h-screen;
+    background: url('./images/dash--horizontal.svg') center top repeat-x,
+      url('./images/dash--vertical.svg') left top repeat-y,
+      url('./images/dash--vertical.svg') right top repeat-y;
+  }
+
+  .trees {
+    background: url('./images/trees--foreground--left.png') 10% top no-repeat,
+      url('./images/trees--foreground--right.png') 90% top no-repeat,
+      url('./images/trees--background.png') center top repeat-x;
+  }
+}

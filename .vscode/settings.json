@@ -1,0 +1,24 @@
+{
+  "editor.tabSize": 2,
+  "files.trimTrailingWhitespace": true,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "[prisma]": {
+    "editor.formatOnSave": true
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#4E1C2C",
+    "titleBar.activeBackground": "#6D283E",
+    "titleBar.activeForeground": "#FEFCFC"
+  },
+  "cSpell.words": [
+    "eaglesightregular",
+    "redwoodalternative",
+    "redwoodjs",
+    "redwoodregular",
+    "truetype",
+    "webfont"
+  ]
+}
