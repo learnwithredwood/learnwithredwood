@@ -1,3 +1,5 @@
+import { Footer } from 'src/components/Footer/Footer'
+
 type LandingPageLayoutProps = {
   children?: React.ReactNode
 }
@@ -5,7 +7,10 @@ type LandingPageLayoutProps = {
 const LandingPageLayout = ({ children }: LandingPageLayoutProps) => {
   return (
     <div className="trees">
-      <div className="page-border">{children}</div>
+      <div className="page-border">
+        {children}
+        <Footer />
+      </div>
     </div>
   )
 }

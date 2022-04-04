@@ -46,6 +46,17 @@
     background-blend-mode: multiply;
   }
 
+  p {
+    @apply font-body;
+  }
+
+  a {
+    @apply border-b-2;
+    border-color: currentColor;
+  }
+}
+
+@layer components {
   .page-border {
     @apply mt-6 mx-8 border-0 outline-none min-h-screen;
     background: url('./images/dash--horizontal.svg') center top repeat-x,
@@ -57,5 +68,9 @@
     background: url('./images/trees--foreground--left.png') 10% top no-repeat,
       url('./images/trees--foreground--right.png') 90% top no-repeat,
       url('./images/trees--background.png') center top repeat-x;
+  }
+
+  .footer-link:hover {
+    @apply text-gossamer;
   }
 }

@@ -13,7 +13,7 @@ const Hero = () => {
         Learn Full Stack without the Pain of Full Stack
       </p>
       <a
-        className="uppercase font-wide text-xl text-white bg-sinopia px-24 py-5 rounded-md mx-auto"
+        className="border-b-0 uppercase font-wide hover:bg-gossamer text-xl text-white bg-sinopia px-24 py-5 rounded-md mx-auto"
         href="#newsletter"
       >
         Get Started
