@@ -9,10 +9,19 @@
 
 import { Router, Route, Set } from '@redwoodjs/router'
 import { LandingPageLayout } from './layouts/LandingPageLayout'
+import { LegalLayout } from './layouts/LegalLayout/LegalLayout'
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage/PrivacyPolicyPage'
+import TermsAndConditionsPage from './pages/TermsAndConditionsPage/TermsAndConditionsPage'
 
 const Routes = () => {
   return (
     <Router>
+      {/* legal pages */}
+      <Set wrap={LegalLayout}>
+        <Route path="/terms-and-conditions" page={TermsAndConditionsPage} name="termsAndConditions" />
+        <Route path="/privacy-policy" page={PrivacyPolicyPage} name="privacyPolicy" />
+      </Set>
+      {/* landing page */}
       <Set wrap={LandingPageLayout}>
         <Route path="/" page={LandingPage} name="landing" />
       </Set>

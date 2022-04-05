@@ -1,4 +1,4 @@
-import Hero from './Hero'
+import { Hero } from './Hero'
 
 export const generated = () => {
   return <Hero />

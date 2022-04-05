@@ -1,14 +1,14 @@
 import { render } from '@redwoodjs/testing/web'
 
-import { Hero } from './Hero'
+import { LegalLayout } from './LegalLayout'
 
 //   Improve this test with help from the Redwood Testing Doc:
-//    https://redwoodjs.com/docs/testing#testing-components
+//   https://redwoodjs.com/docs/testing#testing-pages-layouts
 
-describe('Hero', () => {
+describe('LegalLayout', () => {
   it('renders successfully', () => {
     expect(() => {
-      render(<Hero />)
+      render(<LegalLayout />)
     }).not.toThrow()
   })
 })

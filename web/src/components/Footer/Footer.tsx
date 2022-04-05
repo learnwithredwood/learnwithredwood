@@ -1,22 +1,23 @@
-const Footer = () => {
-  const currentYear = () => {
-    return new Date().getFullYear()
-  }
+import { getYear } from 'date-fns'
+import { Link, routes } from '@redwoodjs/router'
 
+const getCurrentYear = () => {
+  return getYear(new Date(Date.now())).toString()
+}
+
+const Footer = () => {
   return (
-    <div className="mb-20 uppercase font-body font-bold text-cafeRoyale text-lg tracking-wider text-center">
-      privacy policy . terms &amp; conditions . Copyright &copy; {currentYear}.{' '}
-      <a
-        href="http://ahhacreative.com"
-        target="_blank"
-        rel="noreferrer"
-        className="footer-link"
-      >
+    <footer className="pb-20 uppercase font-body font-bold text-cafeRoyale text-lg tracking-wider text-center">
+      <Link to={routes.privacyPolicy()}>privacy policy</Link>
+      &nbsp;&nbsp;.&nbsp;&nbsp;
+      <Link to={routes.termsAndConditions()}>terms &amp; conditions</Link>
+      &nbsp;&nbsp;.&nbsp;&nbsp; Copyright &copy; {getCurrentYear()}.{' '}
+      <a href="http://ahhacreative.com" target="_blank" rel="noreferrer">
         Ah Ha Creative, LLC
       </a>
       . All Rights Reserved.
-    </div>
+    </footer>
   )
 }
 
-export { Footer }
+export { Footer, getCurrentYear }

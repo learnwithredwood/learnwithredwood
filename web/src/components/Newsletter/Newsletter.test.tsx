@@ -1,14 +1,14 @@
 import { render } from '@redwoodjs/testing/web'
 
-import { Hero } from './Hero'
+import { Newsletter } from './Newsletter'
 
 //   Improve this test with help from the Redwood Testing Doc:
 //    https://redwoodjs.com/docs/testing#testing-components
 
-describe('Hero', () => {
+describe('Newsletter', () => {
   it('renders successfully', () => {
     expect(() => {
-      render(<Hero />)
+      render(<Newsletter />)
     }).not.toThrow()
   })
 })

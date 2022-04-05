@@ -12,14 +12,11 @@ const Hero = () => {
       <p className="font-body font-bold text-xl text-center mb-14">
         Learn Full Stack without the Pain of Full Stack
       </p>
-      <a
-        className="border-b-0 uppercase font-wide hover:bg-gossamer text-xl text-white bg-sinopia px-24 py-5 rounded-md mx-auto"
-        href="#newsletter"
-      >
+      <a className="button" href="#newsletter">
         Get Started
       </a>
     </div>
   )
 }
 
-export default Hero
+export { Hero }

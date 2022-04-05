@@ -46,13 +46,23 @@
     background-blend-mode: multiply;
   }
 
-  p {
-    @apply font-body;
+  label {
+    @apply block text-xl font-wide uppercase text-cafeRoyale mb-2;
   }
 
-  a {
-    @apply border-b-2;
-    border-color: currentColor;
+  input[type=text],
+  input[type=email] {
+    @apply w-full font-body outline-none px-4 h-16 rounded-md;
+  }
+
+  .button,
+  button,
+  input[type=submit] {
+    @apply border-b-0 uppercase font-wide hover:bg-gossamer text-xl text-white bg-sinopia px-24 h-16 rounded-md mx-auto inline-flex items-center justify-center
+  }
+
+  p {
+    @apply font-body;
   }
 }
 
@@ -65,12 +75,13 @@
   }
 
   .trees {
-    background: url('./images/trees--foreground--left.png') 10% top no-repeat,
-      url('./images/trees--foreground--right.png') 90% top no-repeat,
+    background: url('./images/trees--foreground--left.png') 13% top no-repeat,
+      url('./images/trees--foreground--right.png') 87% top no-repeat,
       url('./images/trees--background.png') center top repeat-x;
   }
 
-  .footer-link:hover {
-    @apply text-gossamer;
+  footer a:hover {
+    @apply text-gossamer border-b-2;
+    border-bottom: currentColor;
   }
 }

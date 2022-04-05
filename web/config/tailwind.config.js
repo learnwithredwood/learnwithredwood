@@ -4,6 +4,11 @@ module.exports = {
     extend: {
       backgroundImage: {
         paperTexture: 'url("./images/bg__paper-texture.jpg")',
+        bgNewsletter: 'url("./images/bg__newsletter.jpg")',
+        treeStump: 'url("./images/treestump.svg")',
+      },
+      backgroundSize: {
+        '100%': '100%',
       },
       colors: {
         sinopia: '#cf3b08',
@@ -12,6 +17,8 @@ module.exports = {
         cafeRoyale: '#664c22',
         romance: '#88672f',
         rangoonGreen: '#1d1916',
+        starkWhite: '#e7d4bd',
+        vanilla: '#d0b99a',
       },
       fontSize: {
         '5-375rem': '5.375rem',
