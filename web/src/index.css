@@ -58,7 +58,7 @@
   .button,
   button,
   input[type=submit] {
-    @apply border-b-0 uppercase font-wide hover:bg-gossamer text-xl text-white bg-sinopia px-24 h-16 rounded-md mx-auto inline-flex items-center justify-center
+    @apply border-b-0 uppercase font-wide hover:bg-gossamer text-xl text-white bg-sinopia px-24 h-16 rounded-md mx-auto inline-flex items-center justify-center cursor-pointer
   }
 
   p {
@@ -76,6 +76,10 @@
 
   hr {
     @apply border-t-2 h-0 bg-none w-full border-dashed border-twine;
+  }
+
+  svg {
+    fill: currentColor;
   }
 }
 
@@ -105,5 +109,11 @@
   footer a:hover {
     @apply text-gossamer border-b-2;
     border-bottom: currentColor;
+  }
+
+  /* removes spacing above the social media icons */
+  ul.social > :not([hidden]) ~ :not([hidden]),
+  .social > li ~ li  {
+    @apply m-0 p-0
   }
 }
