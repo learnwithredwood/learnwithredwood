@@ -5366,7 +5366,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^14.0.10":
+"@types/node@npm:>=8.0.0 <15, @types/node@npm:^14.0.10":
   version: 14.18.12
   resolution: "@types/node@npm:14.18.12"
   checksum: 8735b9ac76024eeb568eba1d8a685472de4b4ebab3f217c4fe43aff4b8eaef431a2cf3e7da61f120af56c939bfcb8de49c188e2df44ed794180bcb3f8416a01e
@@ -6219,6 +6219,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"abortcontroller-polyfill@npm:^1.4.0":
+  version: 1.7.3
+  resolution: "abortcontroller-polyfill@npm:1.7.3"
+  checksum: 590b87668c95e060124fd0375ba1a6ed32b7a13baf4febca07374547297898d2de2b64c2b89af4785a3c42f16ca62ab70c2e138d2bbaecc8e4741611574eb10a
+  languageName: node
+  linkType: hard
+
 "abstract-logging@npm:^2.0.0":
   version: 2.0.1
   resolution: "abstract-logging@npm:2.0.1"
@@ -6375,6 +6382,19 @@ __metadata:
     string.prototype.padstart: ^3.0.0
     symbol.prototype.description: ^1.0.0
   checksum: 55fdeb2673da440772d278816664b8e8da946b57adfd95b6635bc980ad235e388266c1488fdff3a055e95dc1c789e389821598b2711b59ce76ab4500f528216c
+  languageName: node
+  linkType: hard
+
+"airtable@npm:^0.11.3":
+  version: 0.11.3
+  resolution: "airtable@npm:0.11.3"
+  dependencies:
+    "@types/node": ">=8.0.0 <15"
+    abort-controller: ^3.0.0
+    abortcontroller-polyfill: ^1.4.0
+    lodash: ^4.17.21
+    node-fetch: ^2.6.7
+  checksum: d9a50db79dd02e6ac0f842811ab95c748185a57ba42be56acdbd217097c85a078d67dd103ccd28fabaf522c785e03e7e75880983a5bedcf30673d9901083729c
   languageName: node
   linkType: hard
 
@@ -19357,6 +19377,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-is@npm:^16.12.0 || ^17.0.0 || ^18.0.0":
+  version: 18.0.0
+  resolution: "react-is@npm:18.0.0"
+  checksum: 1cffa48e45768fc49c6cfa67fdb6ccd2432bb1a5074575c1c48b425104e5ba03538a2d4496dfc6c844f34d1ab2b9304c97aab6c8a3b060d4f5587b2f128db8d4
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.13.1, react-is@npm:^16.7.0":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
@@ -19429,6 +19456,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-shallow-renderer@npm:^16.13.1":
+  version: 16.15.0
+  resolution: "react-shallow-renderer@npm:16.15.0"
+  dependencies:
+    object-assign: ^4.1.1
+    react-is: ^16.12.0 || ^17.0.0 || ^18.0.0
+  peerDependencies:
+    react: ^16.0.0 || ^17.0.0 || ^18.0.0
+  checksum: c194d741792e86043a4ae272f7353c1cb9412bc649945c4220c6a101a6ea5410cceb3d65d5a4d750f11a24f7426e8eec7977e8a4e3ad5d3ee235ca2b18166fa8
+  languageName: node
+  linkType: hard
+
 "react-sizeme@npm:^3.0.1":
   version: 3.0.2
   resolution: "react-sizeme@npm:3.0.2"
@@ -19453,6 +19492,20 @@ __metadata:
   peerDependencies:
     react: ">= 0.14.0"
   checksum: d045ede02cff40d5a80ca7788995844ab52a6ca1e440317364738983e9c295f63db5c5e8a04059315a7ba847575d00e58440eb2c8f6a000bb2deff518c9294a1
+  languageName: node
+  linkType: hard
+
+"react-test-renderer@npm:17.0.2":
+  version: 17.0.2
+  resolution: "react-test-renderer@npm:17.0.2"
+  dependencies:
+    object-assign: ^4.1.1
+    react-is: ^17.0.2
+    react-shallow-renderer: ^16.13.1
+    scheduler: ^0.20.2
+  peerDependencies:
+    react: 17.0.2
+  checksum: a4ea1e745a87bb9015540d96a3077b614bf88e306a0edd639f8fb849a393fa5104e84eca4349bc4b026f2f0b115a4172d58950d7076316115795266557659276
   languageName: node
   linkType: hard
 
@@ -23122,6 +23175,7 @@ __metadata:
     "@redwoodjs/forms": 0.50.0
     "@redwoodjs/router": 0.50.0
     "@redwoodjs/web": 0.50.0
+    airtable: ^0.11.3
     autoprefixer: ^10.4.4
     date-fns: ^2.28.0
     framer-motion: ^6.2.8
@@ -23130,6 +23184,7 @@ __metadata:
     prop-types: 15.8.1
     react: 17.0.2
     react-dom: 17.0.2
+    react-test-renderer: 17.0.2
     tailwindcss: ^3.0.23
   languageName: unknown
   linkType: soft
