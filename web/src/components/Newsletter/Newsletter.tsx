@@ -4,7 +4,7 @@ const Newsletter = () => {
       <h3 className="text-center lowercase font-script text-gossamer text-4xl mb-7">
         launching fall of 2022
       </h3>
-      <h2 className="font-wide uppercase text-5xl tracking-wider text-cafeRoyale text-center mb-5">
+      <h2 className="section-heading tracking-wider text-center mb-5">
         Are you interested?
       </h2>
       <p className="font-body text-center mb-20">

@@ -19,6 +19,10 @@ module.exports = {
         rangoonGreen: '#1d1916',
         starkWhite: '#e7d4bd',
         vanilla: '#d0b99a',
+        marigold: '#b6893e',
+        rustyNail: '#87672f',
+        bone: '#e0c9af',
+        twine: '#c09a5c',
       },
       fontSize: {
         '5-375rem': '5.375rem',

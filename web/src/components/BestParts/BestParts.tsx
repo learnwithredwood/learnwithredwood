@@ -16,39 +16,42 @@ const BestParts = () => {
   return (
     <div className="grid mx-24 grid-cols-12 mb-20 gap-5">
       <div className="col-start-2 col-span-10">
-        <h2 className="font-wide uppercase text-5xl text-cafeRoyale text-center mb-6">
+        <h2 className="section-heading text-center mb-6">
           Built with the Best Parts
         </h2>
       </div>
-      <div className="col-start-3 col-span-8 text-center mb-16">
+      <div className="col-start-2 col-span-10 text-center mb-16">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          <strong>RedwoodJS</strong> is built on top of the best libraries and
+          frameworks that make the developer experience exceptional and your
+          application stable.
         </p>
       </div>
       {/* react */}
       <div className="col-span-4">
         <BestPartTech icon={reactIcon} icon2x={reactIcon2x} tech="React">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut.
+          React is the most popular JavaScript framework. It handles the "view"
+          layer, or the part that people see and interact with. React makes it
+          easy to create reusable components that can be used throughout your
+          entire application.
         </BestPartTech>
       </div>
 
       {/* graphql */}
       <div className="col-span-4">
         <BestPartTech icon={graphqlIcon} icon2x={graphqlIcon2x} tech="GraphQL">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut.
+          GraphQL allows you to work with your data, giving exactly what you
+          need, and nothing more. -- This makes it easier to evolve your APIs
+          over time and enables powerful developer tools.
         </BestPartTech>
       </div>
 
       {/* prisma */}
       <div className="col-span-4">
         <BestPartTech icon={prismaIcon} icon2x={prismaIcon2x} tech="Prisma">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut.
+          Prisma is the easiest way to interact with your database. You can
+          create your database structure in a way that's human-readable. Then,
+          read and write to the database safely and intuitively.
         </BestPartTech>
       </div>
 
@@ -59,16 +62,18 @@ const BestParts = () => {
           icon2x={storybookIcon2x}
           tech="Storybook"
         >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut.
+          Storybook allows you to build UI components and pages in isolation and
+          provides a single interface for development, testing, and
+          documentation. This becomes essential as your app grows.
         </BestPartTech>
       </div>
 
       {/* jest */}
       <div className="col-span-4">
         <BestPartTech icon={jestIcon} icon2x={jestIcon2x} tech="Jest">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut.
+          Jest is a JavaScript testing framework. It gives you the confidence
+          that your application is working correctly, and as it scales, changes
+          won't break existing features.
         </BestPartTech>
       </div>
 
@@ -79,8 +84,9 @@ const BestParts = () => {
           icon2x={typescriptIcon2x}
           tech="TypeScript"
         >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut.
+          A lot of people will complain that JavaScript is a "loosey goosey"
+          language. Anything goes. TypeScript solves this in the best way. It
+          improves your tooling and catches errors.
         </BestPartTech>
       </div>
     </div>

@@ -10,7 +10,7 @@
   },
   "workbench.colorCustomizations": {
     "activityBar.background": "#4E1C2C",
-    "titleBar.activeBackground": "#6D283E",
+    "titleBar.activeBackground": "#ce3a06",
     "titleBar.activeForeground": "#FEFCFC"
   },
   "cSpell.words": [
@@ -19,6 +19,7 @@
     "redwoodjs",
     "redwoodregular",
     "Royale",
+    "sinopia",
     "treestump",
     "truetype",
     "webfont"

@@ -1,4 +1,4 @@
-import WhatWeBuild from './WhatWeBuild'
+import { WhatWeBuild } from './WhatWeBuild'
 
 export const generated = () => {
   return <WhatWeBuild />

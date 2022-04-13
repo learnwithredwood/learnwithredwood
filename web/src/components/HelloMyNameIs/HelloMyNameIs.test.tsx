@@ -1,14 +1,14 @@
 import { render } from '@redwoodjs/testing/web'
 
-import { WhatWeBuild } from './WhatWeBuild'
+import { HelloMyNameIs } from './HelloMyNameIs'
 
 //   Improve this test with help from the Redwood Testing Doc:
 //    https://redwoodjs.com/docs/testing#testing-components
 
-describe('WhatWeBuild', () => {
+describe('HelloMyNameIs', () => {
   it('renders successfully', () => {
     expect(() => {
-      render(<WhatWeBuild />)
+      render(<HelloMyNameIs />)
     }).not.toThrow()
   })
 })

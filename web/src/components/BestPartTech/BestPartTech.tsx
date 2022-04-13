@@ -25,7 +25,7 @@ const BestPartTech = ({
           {tech}
         </h3>
 
-        <p className="font-body mb-10">{children}</p>
+        <p className="text-left font-body mb-10">{children}</p>
 
         {label ? (
           <a href={link} className="button">

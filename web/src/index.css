@@ -62,19 +62,41 @@
   }
 
   p {
-    @apply font-body;
+    @apply font-body mb-6 leading-7;
+  }
+
+  li a,
+  p a {
+    @apply font-bold underline text-sinopia hover:text-gossamer;
+  }
+
+  ul {
+    @apply marker:text-gossamer list-disc pl-5 space-y-3 font-body mb-7
+  }
+
+  hr {
+    @apply border-t-2 h-0 bg-none w-full border-dashed border-twine;
   }
 }
 
 @layer components {
+  .section-heading {
+    @apply font-wide text-cafeRoyale uppercase text-5xl;
+  }
+
+  p.large-body {
+    @apply font-bold text-2xl mb-6;
+  }
+
   .page-border {
-    @apply mt-6 mx-8 border-0 outline-none min-h-screen;
+    @apply mx-8 border-0 outline-none min-h-screen;
     background: url('./images/dash--horizontal.svg') center top repeat-x,
       url('./images/dash--vertical.svg') left top repeat-y,
       url('./images/dash--vertical.svg') right top repeat-y;
   }
 
   .trees {
+    @apply pt-6;
     background: url('./images/trees--foreground--left.png') 13% top no-repeat,
       url('./images/trees--foreground--right.png') 87% top no-repeat,
       url('./images/trees--background.png') center top repeat-x;
