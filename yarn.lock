@@ -6398,6 +6398,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"airtable@npm:^0.11.4":
+  version: 0.11.4
+  resolution: "airtable@npm:0.11.4"
+  dependencies:
+    "@types/node": ">=8.0.0 <15"
+    abort-controller: ^3.0.0
+    abortcontroller-polyfill: ^1.4.0
+    lodash: ^4.17.21
+    node-fetch: ^2.6.7
+  checksum: 36035c64e9d4d697fe8db8ca5a4340fc9c1ffc784d166a9034792a258136299cdb60514b5ef167f4cb595c28e0be12e8cb9f8ef9af803d2471c4543314d7ea75
+  languageName: node
+  linkType: hard
+
 "ajv-errors@npm:^1.0.0":
   version: 1.0.1
   resolution: "ajv-errors@npm:1.0.1"
@@ -6630,6 +6643,8 @@ __metadata:
   dependencies:
     "@redwoodjs/api": 0.50.0
     "@redwoodjs/graphql-server": 0.50.0
+    airtable: ^0.11.4
+    nodemailer: ^6.7.4
   languageName: unknown
   linkType: soft
 
@@ -17101,6 +17116,13 @@ __metadata:
     shell-escape: ^0.2.0
     ssh2: ^1.5.0
   checksum: 077ffcdca7613b9192e59b2e9246065b7b84b5c29d7ed67f4c3985d224e8aa242cc8b95f1197171383ac415a2a55e500e5328495373b88e010abb50f8e77e516
+  languageName: node
+  linkType: hard
+
+"nodemailer@npm:^6.7.4":
+  version: 6.7.4
+  resolution: "nodemailer@npm:6.7.4"
+  checksum: 6cf20b6487f4cc583f4d60a8125d7236c0b2e2f6ae7cc3f2ecf626450472389781e1649d243d4167b5453fb1748d7b7b0c637dc26e9b33c8bd110cfb2529be5d
   languageName: node
   linkType: hard
 
