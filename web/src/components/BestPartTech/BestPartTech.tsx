@@ -26,16 +26,6 @@ const BestPartTech = ({
         </h3>
 
         <p className="text-left font-body mb-10">{children}</p>
-
-        {label ? (
-          <a href={link} className="button">
-            {label}
-          </a>
-        ) : (
-          <div className="font-wide uppercase text-halfSpanishWhite bg-vanilla px-4 h-16 rounded-md flex items-center justify-center w-full">
-            Coming Soon
-          </div>
-        )}
       </div>
     </div>
   )
