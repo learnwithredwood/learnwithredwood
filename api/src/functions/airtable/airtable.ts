@@ -24,13 +24,21 @@ export const handler = async (event: APIGatewayEvent, context: Context) => {
   let statusCode = 200
   let message = ''
 
+  const formContent = JSON.parse(event.body)
+
   try {
-    const { email } = event.queryStringParameters
+    const { email, fullName } = formContent
 
     // make sure the email address is provided
     if (email === undefined) {
       statusCode = 400
       message = `Please specify an email address`
+      throw Error(message)
+    }
+
+    if (fullName === undefined) {
+      statusCode = 400
+      message = `Please specify a name`
       throw Error(message)
     }
 
@@ -40,7 +48,7 @@ export const handler = async (event: APIGatewayEvent, context: Context) => {
     )
 
     base('Emails').create(
-      { Email: email },
+      { Email: email, Name: fullName },
       { typecast: true },
       function (err, record) {
         if (err) {
