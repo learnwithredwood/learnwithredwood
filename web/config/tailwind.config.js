@@ -23,6 +23,11 @@ module.exports = {
         rustyNail: '#87672f',
         bone: '#e0c9af',
         twine: '#c09a5c',
+        sulu: '#c3eb77', // light green
+        sheenGreen: '#98cd00', // green yellow
+        blueDiane: '#1b5253', // dark green
+        melon: '#ffb5b0', // light pink
+        cabSav: '#4d0c20', // maroon
       },
       fontSize: {
         '5-375rem': '5.375rem',
