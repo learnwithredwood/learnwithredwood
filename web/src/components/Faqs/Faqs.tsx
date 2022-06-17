@@ -2,7 +2,7 @@ import { Faq } from '../Faq/Faq'
 
 const Faqs = () => {
   return (
-    <div className="mx-24 grid grid-cols-12 mb-16">
+    <div className="mx-6 lg:mx-24 grid grid-cols-12 mb-16">
       <h2 className="section-heading text-center col-span-12 mb-16">
         Frequently Asked Questions
       </h2>

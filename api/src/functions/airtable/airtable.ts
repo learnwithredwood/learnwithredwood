@@ -47,7 +47,7 @@ export const handler = async (event: APIGatewayEvent, context: Context) => {
       process.env.AIRTABLE_RW_BASE
     )
 
-    base('Emails').create(
+    base('Newsletter').create(
       { Email: email, Name: fullName },
       { typecast: true },
       function (err, record) {

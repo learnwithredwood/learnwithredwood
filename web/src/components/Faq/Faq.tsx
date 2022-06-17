@@ -22,16 +22,16 @@ const Faq = ({ children, question }) => {
 
   return (
     <div className="grid grid-cols-12 pt-12 col-span-12 gap-5">
-      <div className="col-span-1 text-right font-condensedAlt uppercase text-8xl text-marigold leading-none -mt-3 pr-4">
+      <div className="col-span-2 md:col-span-1 text-right font-condensedAlt uppercase text-8xl text-marigold leading-none -mt-3 pr-4">
         Q
       </div>
 
       {/* question */}
-      <div className="col-span-8 items-end flex">
+      <div className="col-span-10 md:col-span-8 items-end flex">
         <p className="large-body mt-auto">{question}</p>
       </div>
 
-      <div className="col-span-2 text-right flex items-center">
+      <div className="col-span-9 col-start-3 md:col-span-2 md-start-10 text-right flex items-center">
         <button
           onClick={ToggleFaq}
           className="font-wide uppercase text-base text-rustyNail bg-bone h-7 px-3 hover:bg-marigold hover:text-white rounded-sm"

@@ -3,9 +3,9 @@ import avatar2x from './images/avatar@2x.png'
 
 const HelloMyNameIs = () => {
   return (
-    <div className="grid grid-cols-12 gap-5 mx-24 mb-36">
+    <div className="grid grid-cols-12 gap-5 mx-10 lg:mx-24 mb-16 lg:mb-36">
       {/* hello, my name is */}
-      <div className="col-span-6">
+      <div className="col-span-12 lg:col-span-6">
         <div className="flex mb-6 gap-5">
           <div>
             <img
@@ -15,7 +15,7 @@ const HelloMyNameIs = () => {
             />
           </div>
           <h2>
-            <div className="font-script text-gossamer text-6xl lowercase font-normal mb-4 mt-4">
+            <div className="font-script text-gossamer text-3xl lg:text-6xl lowercase font-normal mb-4 mt-4">
               hello my name is
             </div>
             <div className="section-heading font-normal">Amy Dutton</div>
@@ -41,15 +41,15 @@ const HelloMyNameIs = () => {
       </div>
 
       {/* divider */}
-      <div className="col-span-2 text-center">
+      <div className="lg:col-span-2 text-center hidden lg:block">
         <div className="h-full opacity-40 bg-white w-2 mx-auto" />
       </div>
 
       {/* who is this for? */}
-      <div className="col-span-4">
-        <h2 className="section-heading mb-8">
-          Who is
-          <br /> this for
+      <div className="col-span-12 lg:col-span-4">
+        <h2 className="section-heading mb-8 text-center">
+          <div className="block md:inline lg:block">Who is </div>
+          <div className="block md:inline lg:block">this for</div>
         </h2>
         <p>
           These lessons are perfect for beginner to intermediate developers who

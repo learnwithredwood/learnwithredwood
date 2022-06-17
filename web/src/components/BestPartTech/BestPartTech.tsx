@@ -1,11 +1,4 @@
-const BestPartTech = ({
-  children,
-  icon,
-  icon2x,
-  tech,
-  label = '',
-  link = '',
-}) => {
+const BestPartTech = ({ children, icon, icon2x, tech }) => {
   return (
     <div>
       {/* icon */}
@@ -25,7 +18,7 @@ const BestPartTech = ({
           {tech}
         </h3>
 
-        <p className="text-left font-body mb-10">{children}</p>
+        <p className="text-left font-body mb-0 lg:mb-10">{children}</p>
       </div>
     </div>
   )

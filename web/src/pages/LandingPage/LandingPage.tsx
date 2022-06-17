@@ -12,7 +12,9 @@ const LandingPage = () => {
       <MetaTags title="Learn with Redwood" description="Landing page" />
       <Hero />
       <BestParts />
-      <Newsletter />
+      <div id="newsletter">
+        <Newsletter />
+      </div>
       {/* <WhatWeBuild /> */}
       <HelloMyNameIs />
       <Faqs />

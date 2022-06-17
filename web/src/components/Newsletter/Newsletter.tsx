@@ -59,7 +59,7 @@ const Newsletter = () => {
           onSubmit={onSubmit}
           method="POST"
           action="/.redwood/functions/airtable"
-          className="flex gap-10"
+          className="flex gap-10 flex-col lg:flex-row"
         >
           <div className="flex-1">
             <Label
@@ -74,7 +74,7 @@ const Newsletter = () => {
 
           <div className="flex-1">
             <Label name="email" className="input" errorClassName="input error">
-              Email Address
+              Email
             </Label>
             <TextField name="email" />
           </div>
