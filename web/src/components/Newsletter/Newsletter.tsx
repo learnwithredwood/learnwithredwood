@@ -6,7 +6,7 @@ const Newsletter = () => {
   const [success, setSuccess] = useState('')
   const formMethods = useForm()
 
-  const onSubmit = (data) => {
+  const onSubmit = (data: { email: string; fullName: string }) => {
     // Reference: https://www.smashingmagazine.com/2018/05/building-serverless-contact-form-static-website/
     const form = document.querySelector('form')
 
@@ -20,14 +20,18 @@ const Newsletter = () => {
 
     // Callback function
     xhr.onloadend = (response) => {
+      const target = response.target as XMLHttpRequest
+
       // The form submission was successful
-      if (response.target.status === 200) {
+      if (target.status === 200) {
         formMethods.reset() // reset the form fields
-        setSuccess('Thanks for the message. I’ll be in touch shortly.')
+        setSuccess(
+          'Thanks for expressing your interest! Please check your email. We need to confirm your address.'
+        )
       } // The form submission failed
       else {
-        setError('Something went wrong')
-        console.error(JSON.parse(response.target.response).message)
+        setError('Whoops! Something went wrong')
+        console.error(JSON.parse(target.response).message)
       }
     }
   }
