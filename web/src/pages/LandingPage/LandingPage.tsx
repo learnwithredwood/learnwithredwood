@@ -9,7 +9,10 @@ import { HelloMyNameIs } from 'src/components/HelloMyNameIs/HelloMyNameIs'
 const LandingPage = () => {
   return (
     <>
-      <MetaTags title="Learn with Redwood" description="Landing page" />
+      <MetaTags
+        title="Learn with Redwood: Learn Full-Stack without the Pain of Full-Stack"
+        description="Redwood.js is a full-stack framework designed to help you scale from side hustle to start-up and makes it easy to get up and running with the latest and greatest technologies."
+      />
       <Hero />
       <BestParts />
       <div id="newsletter">
