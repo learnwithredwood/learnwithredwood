@@ -26,7 +26,7 @@ const HelloMyNameIs = () => {
           I love️ teaching people. I love seeing that “ah-ha” moment when the
           light bulb goes off and it finally clicks.
         </p>
-        <p>
+        <p className="font-medium">
           I'm the Director of Design at{' '}
           <a href="http://codingzeal.com" target="_blank" rel="noreferrer">
             ZEAL
@@ -51,17 +51,17 @@ const HelloMyNameIs = () => {
           <div className="block md:inline lg:block">Who is </div>
           <div className="block md:inline lg:block">this for</div>
         </h2>
-        <p>
+        <p className="font-medium">
           These lessons are perfect for beginner to intermediate developers who
           want to become more comfortable with full stack.
         </p>
-        <p>
+        <p className="font-medium">
           Before starting, you should have a basic understanding of HTML and
           CSS. You don't need to be a JavaScript expert, but you do need to be
           comfortable with the language: writing variables, arrow functions, and
           promises.
         </p>
-        <p>
+        <p className="font-medium">
           This course doesn't require any prior knowledge of backend
           development, Node, or database management. We've got your covered.
         </p>

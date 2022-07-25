@@ -40,7 +40,7 @@ const Newsletter = () => {
       <h2 className="section-heading tracking-wider text-center mb-5 font-sans">
         Are you interested?
       </h2>
-      <p className="font-body text-center mb-20">
+      <p className="font-body text-center mb-20 font-semibold">
         We’ll keep you updated and send you *bonus content* along the way.
       </p>
 

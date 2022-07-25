@@ -18,7 +18,9 @@ const BestPartTech = ({ children, icon, icon2x, tech }) => {
           {tech}
         </h3>
 
-        <p className="text-left font-body mb-0 lg:mb-10">{children}</p>
+        <p className="text-left font-body font-medium mb-0 lg:mb-10">
+          {children}
+        </p>
       </div>
     </div>
   )

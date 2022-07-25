@@ -47,7 +47,7 @@ const Faq = ({ children, question }) => {
         transition={transition}
         variants={AnswerVariants}
       >
-        <div className="pb-4">{children}</div>
+        <div className="pb-4 text-xl font-medium">{children}</div>
       </motion.div>
 
       <hr className="col-span-10 col-start-2" />

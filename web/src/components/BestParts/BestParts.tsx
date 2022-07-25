@@ -20,8 +20,8 @@ const BestParts = () => {
           Built with the Best Parts
         </h2>
       </div>
-      <div className="col-start-2 col-span-10 text-center m-6 lg:mb-16">
-        <p>
+      <div className="col-start-3 col-span-8 text-center m-6 lg:mb-16">
+        <p className="leading-relaxed text-xl">
           <strong>RedwoodJS</strong> is built on top of the best libraries and
           frameworks that make the developer experience exceptional and your
           application stable.
