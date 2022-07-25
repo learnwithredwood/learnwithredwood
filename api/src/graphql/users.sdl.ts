@@ -5,7 +5,6 @@ export const schema = gql`
     updatedAt: DateTime!
     email: String!
     name: String
-    audits: [Audit]!
   }
 
   type Query {
