@@ -28,7 +28,12 @@ const Faq = ({ children, question }) => {
 
       {/* question */}
       <div className="col-span-10 md:col-span-8 items-end flex">
-        <p className="large-body mt-auto">{question}</p>
+        <p
+          className="large-body mt-auto cursor-pointer hover:text-sinopia"
+          onClick={ToggleFaq}
+        >
+          {question}
+        </p>
       </div>
 
       <div className="col-span-9 col-start-3 md:col-span-2 md-start-10 text-right flex items-center">
