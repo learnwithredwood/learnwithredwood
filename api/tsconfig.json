@@ -17,8 +17,10 @@
         "../.redwood/types/mirror/api/src/*"
       ],
       "types/*": ["./types/*", "../types/*"],
-      "@redwoodjs/testing": ["../node_modules/@redwoodjs/testing/api"]
+      "@redwoodjs/testing": ["../node_modules/@redwoodjs/testing/api"],
+      "contentlayer/generated": ["./.contentlayer/generated"]
     },
+    "resolveJsonModule": true,
     "typeRoots": [
       "../node_modules/@types",
       "./node_modules/@types"
@@ -29,6 +31,7 @@
     "src",
     "../.redwood/types/includes/all-*",
     "../.redwood/types/includes/api-*",
-    "../types"
+    "../types",
+    "./contentlayer/generated"
   ]
 }

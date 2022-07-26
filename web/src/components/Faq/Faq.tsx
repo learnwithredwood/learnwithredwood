@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { useMDXComponent } from '../../hooks/useMDXComponent'
 
-const Faq = ({ children, question }) => {
+const Faq = ({ answer, question }) => {
   const [isExpanded, setIsExpanded] = useState(false)
 
   const ToggleFaq = () => {
@@ -19,6 +20,8 @@ const Faq = ({ children, question }) => {
     open: { opacity: 1, height: 'auto', pointerEvents: 'auto' },
     closed: { opacity: 0, height: 0, pointerEvents: 'none' },
   }
+
+  const Component = useMDXComponent(answer)
 
   return (
     <div className="grid grid-cols-12 pt-12 col-span-12 gap-5">
@@ -49,10 +52,13 @@ const Faq = ({ children, question }) => {
       <motion.div
         className="col-span-10 col-start-2"
         animate={isExpanded ? 'open' : 'closed'}
+        initial="closed"
         transition={transition}
         variants={AnswerVariants}
       >
-        <div className="pb-4 text-xl font-medium">{children}</div>
+        <div className="pb-4 text-xl font-medium">
+          <Component />
+        </div>
       </motion.div>
 
       <hr className="col-span-10 col-start-2" />
