@@ -1,6 +1,11 @@
 import { Faq } from '../Faq/Faq'
+import Content, { question, order } from '../../content/faqs/01__question.mdx'
 
 const Faqs = () => {
+  console.log(Content)
+  console.log(question)
+  console.log(order)
+
   return (
     <div className="mx-6 lg:mx-24 grid grid-cols-12 mb-16">
       <h2 className="section-heading text-center col-span-12 mb-16">
@@ -8,9 +13,9 @@ const Faqs = () => {
       </h2>
       <hr className="col-span-10 col-start-2" />
       <Faq question="What’s the difference between Redwood and some of the other libraries and frameworks that are out there?">
-        <p>Redwood is awesome</p>
+        <Content />
       </Faq>
-
+      {/*
       <Faq question="Do these lessons expire? Is there a monthly cost?">
         <div>
           <p>
@@ -343,7 +348,7 @@ const Faqs = () => {
             invoice.
           </a>
         </p>
-      </Faq>
+      </Faq> */}
     </div>
   )
 }
