@@ -16,6 +16,7 @@ import TermsAndConditionsPage from './pages/TermsAndConditionsPage/TermsAndCondi
 const Routes = () => {
   return (
     <Router>
+      <Route path="/article/{slug}" page={IndividualArticlePage} name="article" />
       <Route path="/articles" page={ArticlesPage} name="articles" />
       <Route path="/login" page={LoginPage} name="login" />
       <Route path="/signup" page={SignupPage} name="signup" />
