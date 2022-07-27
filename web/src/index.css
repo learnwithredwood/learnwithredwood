@@ -82,6 +82,10 @@
     @apply border-t-2 h-0 bg-none w-full border-dashed border-twine;
   }
 
+  code {
+    @apply bg-[#272822] text-white py-1 px-2 rounded;
+  }
+
   svg {
     fill: currentColor;
   }

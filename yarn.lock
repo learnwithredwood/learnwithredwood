@@ -7224,8 +7224,8 @@ __metadata:
     "@redwoodjs/graphql-server": 0.50.0
     airtable: ^0.11.4
     contentlayer: ^0.2.6
+    copyfiles: ^2.4.1
     nodemailer: ^6.7.4
-    remark-mdx: ^2.1.2
   languageName: unknown
   linkType: soft
 
@@ -8013,6 +8013,15 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0-0
   checksum: 88f7b488bbb29636370954c048f08bdf61c5f1ffbee0b627817bf80e99a46b06660f54266cff93affb8ab5831d8edcaab271f9a80b8a090d4fd409a13023a61d
+  languageName: node
+  linkType: hard
+
+"babel-plugin-prismjs@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "babel-plugin-prismjs@npm:2.1.0"
+  peerDependencies:
+    prismjs: ^1.18.0
+  checksum: 826c89fad2f372da668712cbffef762e4bc4427e41789fa18d579d43e1eb5767af7efbe3e71bb99f07c612140f4425426d4bb63b0a0a731f9c909317896355cc
   languageName: node
   linkType: hard
 
@@ -9768,6 +9777,24 @@ __metadata:
   peerDependencies:
     webpack: ^5.1.0
   checksum: d4501aa2d813eadc906318ed301707240fc7bfeb250813e2e4d93e95bc9896822c136e49de01dfe612ea5334a1f04cb8fbed4412b91117666a92607c0deba624
+  languageName: node
+  linkType: hard
+
+"copyfiles@npm:^2.4.1":
+  version: 2.4.1
+  resolution: "copyfiles@npm:2.4.1"
+  dependencies:
+    glob: ^7.0.5
+    minimatch: ^3.0.3
+    mkdirp: ^1.0.4
+    noms: 0.0.0
+    through2: ^2.0.1
+    untildify: ^4.0.0
+    yargs: ^16.1.0
+  bin:
+    copyfiles: copyfiles
+    copyup: copyfiles
+  checksum: e65cd055ec9acc14997b0ace83973d73f8d9c68167cbf4293c40b52d100af09a8c8da329042d52dc33422c0a8cbf74c6efb25e9ae088667721653659bd67bf57
   languageName: node
   linkType: hard
 
@@ -13827,6 +13854,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"glob@npm:^7.0.5":
+  version: 7.2.3
+  resolution: "glob@npm:7.2.3"
+  dependencies:
+    fs.realpath: ^1.0.0
+    inflight: ^1.0.4
+    inherits: 2
+    minimatch: ^3.1.1
+    once: ^1.3.0
+    path-is-absolute: ^1.0.0
+  checksum: 65676153e2b0c9095100fe7f25a778bf45608eeb32c6048cf307f579649bcc30353277b3b898a3792602c65764e5baa4f643714dfbdfd64ea271d210c7a425fe
+  languageName: node
+  linkType: hard
+
 "global-dirs@npm:3.0.0, global-dirs@npm:^3.0.0":
   version: 3.0.0
   resolution: "global-dirs@npm:3.0.0"
@@ -15731,6 +15772,13 @@ __metadata:
   version: 0.3.0
   resolution: "is-yarn-global@npm:0.3.0"
   checksum: 9f1ab6f28e6e7961c4b97e564791d1decf2886a0dbe9b92b2176d76156adbb42b4c06c0f33d7107b270c207cbcfe0b2293b7cc4a0ec6774ac6d37af9503d51e1
+  languageName: node
+  linkType: hard
+
+"isarray@npm:0.0.1":
+  version: 0.0.1
+  resolution: "isarray@npm:0.0.1"
+  checksum: ed1e62da617f71fe348907c71743b5ed550448b455f8d269f89a7c7ddb8ae6e962de3dab6a74a237b06f5eb7f6ece7a45ada8ce96d87fe972926530f91ae3311
   languageName: node
   linkType: hard
 
@@ -18367,7 +18415,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:^3.0.2, minimatch@npm:^3.0.4, minimatch@npm:^3.1.2":
+"minimatch@npm:^3.0.2, minimatch@npm:^3.0.3, minimatch@npm:^3.0.4, minimatch@npm:^3.1.1, minimatch@npm:^3.1.2":
   version: 3.1.2
   resolution: "minimatch@npm:3.1.2"
   dependencies:
@@ -18713,21 +18761,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-contentlayer@npm:^0.2.6":
-  version: 0.2.6
-  resolution: "next-contentlayer@npm:0.2.6"
-  dependencies:
-    "@contentlayer/core": 0.2.6
-    "@contentlayer/utils": 0.2.6
-    rxjs: ^7.1.0
-  peerDependencies:
-    next: ^12
-    react: "*"
-    react-dom: "*"
-  checksum: 415c4df59be75a0cbdf90f979e9edfb4ed2a17a4d0cb757df8e3ba12d4f192e6eaf5026fc3cfabb120001f8298d25762ae91386829dbb0f1d77c2a3148ca65a8
-  languageName: node
-  linkType: hard
-
 "no-case@npm:^3.0.4":
   version: 3.0.4
   resolution: "no-case@npm:3.0.4"
@@ -18899,6 +18932,16 @@ __metadata:
   bin:
     nodemon: bin/nodemon.js
   checksum: c2acc8d388d4fae149e56ef66a645e3e152ea49e8664a7f318f4abd339444f9a74af374839530c8eca0655d4b890ddb8bc8757d3eb071d001eb26b0ab777d954
+  languageName: node
+  linkType: hard
+
+"noms@npm:0.0.0":
+  version: 0.0.0
+  resolution: "noms@npm:0.0.0"
+  dependencies:
+    inherits: ^2.0.1
+    readable-stream: ~1.0.31
+  checksum: 7790dbbef45c593b5444b361cb9cde3260244ab66aaa199c0728d334525eb69df96231115cff260b71b92fc7a6915a642aa22f2f8448696d8dd6e7d7cebfccce
   languageName: node
   linkType: hard
 
@@ -20705,6 +20748,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prismjs@npm:^1.28.0":
+  version: 1.28.0
+  resolution: "prismjs@npm:1.28.0"
+  checksum: bf879309e74188b424cf8bb3962f9df9e7004a71f44f82a3cfbd26f884c9a0bb91f529db79503c1bc0b570ed7b94a10c3303153642da533c1e10f51779c0617f
+  languageName: node
+  linkType: hard
+
 "process-nextick-args@npm:~2.0.0":
   version: 2.0.1
   resolution: "process-nextick-args@npm:2.0.1"
@@ -21444,6 +21494,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"readable-stream@npm:~1.0.31":
+  version: 1.0.34
+  resolution: "readable-stream@npm:1.0.34"
+  dependencies:
+    core-util-is: ~1.0.0
+    inherits: ~2.0.1
+    isarray: 0.0.1
+    string_decoder: ~0.10.x
+  checksum: 02272551396ed8930ddee1a088bdf0379f0f7cc47ac49ed8804e998076cb7daec9fbd2b1fd9c0490ec72e56e8bb3651abeb8080492b8e0a9c3f2158330908ed6
+  languageName: node
+  linkType: hard
+
 "readdir-glob@npm:^1.0.0":
   version: 1.1.1
   resolution: "readdir-glob@npm:1.1.1"
@@ -21724,7 +21786,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"remark-mdx@npm:^2.0.0, remark-mdx@npm:^2.1.2":
+"remark-mdx@npm:^2.0.0":
   version: 2.1.2
   resolution: "remark-mdx@npm:2.1.2"
   dependencies:
@@ -21787,29 +21849,6 @@ __metadata:
   dependencies:
     mdast-squeeze-paragraphs: ^4.0.0
   checksum: 61b39acfde3bebb1e9364a6991957f83ab0d878c0fd1de0e86e9bf9e060574cefb7a76057d64e7422e2a2bcf6e3c54635a4ae43f00b3dda38812ae4b6f4342f4
-  languageName: node
-  linkType: hard
-
-"remark-stringify@npm:^10.0.0":
-  version: 10.0.2
-  resolution: "remark-stringify@npm:10.0.2"
-  dependencies:
-    "@types/mdast": ^3.0.0
-    mdast-util-to-markdown: ^1.0.0
-    unified: ^10.0.0
-  checksum: 1dce9ef753d1a6cbbc303684e35887db25fc5b9c5a464862f5bb7dfe1b57a19f3c08561e241749c2de23848c94ac74c675e3bb09fecb73abb30a3bebc4e5fb0a
-  languageName: node
-  linkType: hard
-
-"remark@npm:^14.0.2":
-  version: 14.0.2
-  resolution: "remark@npm:14.0.2"
-  dependencies:
-    "@types/mdast": ^3.0.0
-    remark-parse: ^10.0.0
-    remark-stringify: ^10.0.0
-    unified: ^10.0.0
-  checksum: b31c6b0a45e079d6a632445346009b30ff7a0f2807a1dea1493c3a804197589184134ca3af0b1490e46802def302722ba5187054bbda23743eedf34e79bcf36a
   languageName: node
   linkType: hard
 
@@ -22173,15 +22212,6 @@ __metadata:
   dependencies:
     tslib: ^1.9.0
   checksum: e556a13a9aa89395e5c9d825eabcfa325568d9c9990af720f3f29f04a888a3b854f25845c2b55875d875381abcae2d8100af9cacdc57576e7ed6be030a01d2fe
-  languageName: node
-  linkType: hard
-
-"rxjs@npm:^7.1.0":
-  version: 7.5.6
-  resolution: "rxjs@npm:7.5.6"
-  dependencies:
-    tslib: ^2.1.0
-  checksum: d8077fb4a06c05f52fcc974ab9884d163924b8085c661c92030a522920510bf0c75583caee70409ab11992320c31f562f5402afe8b81255370c09773209fec5c
   languageName: node
   linkType: hard
 
@@ -23342,6 +23372,13 @@ __metadata:
   dependencies:
     safe-buffer: ~5.2.0
   checksum: 810614ddb030e271cd591935dcd5956b2410dd079d64ff92a1844d6b7588bf992b3e1b69b0f4d34a3e06e0bd73046ac646b5264c1987b20d0601f81ef35d731d
+  languageName: node
+  linkType: hard
+
+"string_decoder@npm:~0.10.x":
+  version: 0.10.31
+  resolution: "string_decoder@npm:0.10.31"
+  checksum: 1c628d78f974aa7539c496029f48e7019acc32487fc695464f9d6bdfec98edd7d933a06b3216bc2016918f6e75074c611d84430a53cb0e43071597d6c1ac5e25
   languageName: node
   linkType: hard
 
@@ -24858,6 +24895,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"untildify@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "untildify@npm:4.0.0"
+  checksum: d758e624c707d49f76f7511d75d09a8eda7f2020d231ec52b67ff4896bcf7013be3f9522d8375f57e586e9a2e827f5641c7e06ee46ab9c435fc2b2b2e9de517a
+  languageName: node
+  linkType: hard
+
 "upath@npm:^1.1.1":
   version: 1.2.0
   resolution: "upath@npm:1.2.0"
@@ -25378,17 +25422,16 @@ __metadata:
     "@redwoodjs/web": 0.50.0
     airtable: ^0.11.3
     autoprefixer: ^10.4.4
+    babel-plugin-prismjs: ^2.1.0
     date-fns: ^2.28.0
     framer-motion: ^6.2.8
-    next-contentlayer: ^0.2.6
     postcss: ^8.4.12
     postcss-loader: ^6.2.1
+    prismjs: ^1.28.0
     prop-types: 15.8.1
     react: 17.0.2
     react-dom: 17.0.2
     react-test-renderer: 17.0.2
-    remark: ^14.0.2
-    remark-mdx: ^2.1.2
     tailwindcss: ^3.0.23
   languageName: unknown
   linkType: soft
@@ -26163,7 +26206,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yargs@npm:16.2.0, yargs@npm:^16.2.0":
+"yargs@npm:16.2.0, yargs@npm:^16.1.0, yargs@npm:^16.2.0":
   version: 16.2.0
   resolution: "yargs@npm:16.2.0"
   dependencies:

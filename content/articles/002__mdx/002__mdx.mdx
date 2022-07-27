@@ -62,7 +62,7 @@ Within the root of my project directory, I created a content folder. Inside I cr
 
 First element
 
-```mdx
+```markup
 ---
 question: What’s the difference between Redwood and some of the other libraries and frameworks that are out there?
 order: 1
@@ -110,3 +110,23 @@ Within **Faq.tsx** component...
 
 Created a custom hook (ripped out of **next-contentlayer**)
 
+Created a custom hook `useGetData`
+
+## Working with Images
+Installed `copyfiles`
+
+Updated package.json to copy over all the image files from the content directory
+
+```json
+"scripts": {
+  "contentlayer": "contentlayer build && copyfiles ../content/articles/**/images/* ../web/public/images/content"
+},
+```
+
+Code highlighting on the client side with Prisma
+
+[Reference](https://hackernoon.com/using-prismjs-as-a-syntax-highlighter-in-react)
+
+To use a custom babel config file, you must use a babel.config.js ([Redwood documentation](https://redwoodjs.com/docs/project-configuration-dev-test-build))
+
+You can see the [langauges Prisma supports.](https://prismjs.com/#basic-usage)
