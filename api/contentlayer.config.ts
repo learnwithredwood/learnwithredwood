@@ -17,7 +17,7 @@ const Faqs = defineDocumentType(() => ({
 const Articles = defineDocumentType(() => ({
   name: 'Article',
   contentType: 'mdx',
-  filePathPattern: 'articles/*.mdx',
+  filePathPattern: 'articles/**/*.mdx',
   fields: {
     title: { type: 'string', description: 'Article Title', required: true },
     publishDate: {

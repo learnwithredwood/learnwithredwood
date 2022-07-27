@@ -1,0 +1,112 @@
+---
+title: Getting Redwood to work with MDX
+publishDate: 2022-07-25
+slug: 'mdx-redwood'
+---
+
+Content Layer
+* Props to [Delba](https://delba.dev/blog/next-blog-structured-mdx-content-with-contentlayer#blog-post-list-page)
+* "Prisma for Data"
+
+Install Content Layer
+```bash
+yard workspace api add contentlayer
+```
+
+Within the **api/tsconfig.json** file:
+
+```ts
+// api/tsconfig.json
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "contentlayer/generated": ["./.contentlayer/generated"]
+      // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.tsx", "**/*.ts", ".contentlayer/generated"]
+  //                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+}
+```
+
+## Define the Post Schema
+```ts
+// api/contentlayer.config.js
+
+import { defineDocumentType, makeSource } from 'contentlayer/source-files'
+
+const Faqs = defineDocumentType(() => ({
+  name: 'Faq',
+  contentType: 'mdx',
+  filePathPattern: 'faqs/*.mdx',
+  fields: {
+    question: { type: 'string', description: 'FAQ question', required: true },
+    order: {
+      type: 'number',
+      description: 'Order the FAQ should appear in',
+      required: false,
+    },
+  },
+}))
+
+export default makeSource({
+  documentTypes: [Faqs, Articles],
+  contentDirPath: '../content',
+})
+```
+
+Within the root of my project directory, I created a content folder. Inside I created a subdirectory for **faqs**
+
+![](/images/content/articles/002__mdx/faqs.png)
+
+First element
+
+```mdx
+---
+question: What’s the difference between Redwood and some of the other libraries and frameworks that are out there?
+order: 1
+---
+
+Redwood is awesome!
+
+```
+
+Added a script to **api/package.json** file:
+
+```json
+  "scripts": {
+    "contentlayer": "contentlayer build"
+  },
+```
+
+Within Terminal, you have to run
+
+```bash
+yarn workspace api contentlayer
+```
+
+This generates a **api/.contentlayer** folder
+
+Need to add **api/.contentlayer** to **.gitignore** file
+
+Generated a Redwood function:
+
+```bash
+yarn rw g function mdxFaqs
+```
+
+;tk
+
+On the frontend side...
+
+Added path to **web/tsconfig.json** for the content types
+
+Within component **Faqs.tsx** component...
+
+
+Within **Faq.tsx** component...
+
+
+Created a custom hook (ripped out of **next-contentlayer**)
+
