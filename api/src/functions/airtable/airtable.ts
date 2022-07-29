@@ -1,4 +1,4 @@
-import type { APIGatewayEvent, Context } from 'aws-lambda'
+import type { APIGatewayEvent } from 'aws-lambda'
 import { logger } from 'src/lib/logger'
 import Airtable from 'airtable'
 
@@ -18,7 +18,7 @@ import Airtable from 'airtable'
  * @param { Context } context - contains information about the invocation,
  * function, and execution environment.
  */
-export const handler = async (event: APIGatewayEvent, context: Context) => {
+export const handler = async (event: APIGatewayEvent) => {
   logger.info('Invoked airtable function')
 
   let statusCode = 200

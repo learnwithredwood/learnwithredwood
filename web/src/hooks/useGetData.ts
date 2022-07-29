@@ -1,16 +1,18 @@
 import { useEffect, useState } from 'react'
 
-export const useGetData = (url: string) => {
-  const [data, setData] = useState()
+export const useGetData = (url: string)=> {
+  const [data, setData] = useState(null)
 
   useEffect(() => {
-    const getData = async () => {
-      const response = await fetch(url)
-      const foundData = await response.json()
-      setData(foundData.data.default)
-    }
-
-    getData()
+    ;(async () => {
+      try {
+        const response = await fetch(url)
+        const foundData = await response.json()
+        setData(foundData.data.default)
+      } catch (err) {
+        console.error(err.message)
+      }
+    })()
   }, [url])
 
   return data

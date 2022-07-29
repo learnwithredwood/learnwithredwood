@@ -1,9 +1,15 @@
 import { render } from '@redwoodjs/testing/web'
-
 import LandingPage from './LandingPage'
 
-//   Improve this test with help from the Redwood Testing Doc:
-//   https://redwoodjs.com/docs/testing#testing-pages-layouts
+const MOCK_COMPONENT = <div>foo</div>
+
+jest.mock('src/components/Newsletter/Newsletter', () => ({
+  Newsletter: () => MOCK_COMPONENT
+}))
+jest.mock('src/components/Faqs/Faqs', () => ({
+  Faqs: () => MOCK_COMPONENT
+}))
+jest.mock('src/hooks/useGetData')
 
 describe('LandingPage', () => {
   it('renders successfully', () => {

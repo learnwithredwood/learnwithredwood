@@ -1,14 +1,20 @@
-import { render } from '@redwoodjs/testing/web'
-
+import { render, screen } from '@redwoodjs/testing/web'
 import IndividualArticlePage from './IndividualArticlePage'
 
-//   Improve this test with help from the Redwood Testing Doc:
-//   https://redwoodjs.com/docs/testing#testing-pages-layouts
+// see auto mock in src/hooks/__mocks__
+jest.mock('src/hooks/useGetData')
+
+const renderComponent = (props = {}) => render(<IndividualArticlePage slug='foo' {...props} />)
 
 describe('IndividualArticlePage', () => {
   it('renders successfully', () => {
     expect(() => {
-      render(<IndividualArticlePage />)
+      renderComponent()
     }).not.toThrow()
+  })
+  it('renders a found article', () => {
+    renderComponent()
+    const found = screen.getByTestId('article')
+    expect(found).toBeVisible()
   })
 })

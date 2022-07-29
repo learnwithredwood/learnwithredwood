@@ -1,10 +1,9 @@
-import { MetaTags } from '@redwoodjs/web'
 import { BestParts } from 'src/components/BestParts/BestParts'
-import { Newsletter } from 'src/components/Newsletter/Newsletter'
-import { Hero } from 'src/components/Hero/Hero'
 import { Faqs } from 'src/components/Faqs/Faqs'
-// import { WhatWeBuild } from 'src/components/WhatWeBuild/WhatWeBuild'
 import { HelloMyNameIs } from 'src/components/HelloMyNameIs/HelloMyNameIs'
+import { Hero } from 'src/components/Hero/Hero'
+import { MetaTags } from '@redwoodjs/web'
+import { Newsletter } from 'src/components/Newsletter/Newsletter'
 
 const LandingPage = () => {
   return (
@@ -18,7 +17,6 @@ const LandingPage = () => {
       <div id="newsletter">
         <Newsletter />
       </div>
-      {/* <WhatWeBuild /> */}
       <HelloMyNameIs />
       <Faqs />
       <Newsletter />

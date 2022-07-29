@@ -1,7 +1,8 @@
 # Quick Start
+
 This project is built on top fo Redwood.
 
-### Setup
+## Setup
 
 Clone the repo
 
@@ -13,9 +14,11 @@ yarn workspace api contentlayer
 ```
 
 ### .env File
+
 The following items need to be added to the .env file in the project's root
 
-```
+```shell
+
 DATABASE_URL
 TEST_DATABASE_URL
 
@@ -39,7 +42,7 @@ yarn redwood dev
 
 Your browser should open automatically to `http://localhost:8910` to see the web app. Server functions run on `http://localhost:8911` and are also proxied to `http://localhost:8910/.redwood/functions/*`.
 
-### Workspaces
+## Workspaces
 
 Redwood makes uses of [yarn workspaces](https://classic.yarnpkg.com/lang/en/docs/workspaces/). So, anytime you want to add a package, you need to make sure you're running adding it to the correct workspace.
 
@@ -50,10 +53,11 @@ yarn workspace web add date-fns
 yarn workspace api add date-fns
 ```
 
-# Content
+## Content
+
 All of the site's content is located inside the **content** folder, in the root of the  project directory.
 
-```
+```javascript
 _ articles
 _ faqs
 _ legal
@@ -73,7 +77,7 @@ Then, it will take all the **images** inside the **articles** folder and duplica
 
 The **.contentlayer** folder is ignored by git, so anytime the project is added to a new server, you'll need to run this command again.
 
-# Custom functions
+## Custom functions
 
 Several custom functions have been created. When working locally, these can be accessed at localhost:8911/FUNCTION_NAME or localhost:8910/.redwood/functions/FUNCTION_NAME
 
@@ -95,7 +99,7 @@ These get added to AirTable sheet referenced in the `.env` file.
 
 From there, a [Zap](http://zapier.com) adds the email to a form in [ConvertKit](http://convertkit). The user should receive a confirmation email for a double opt-in.
 
-# Tooling and Plop
+## Tooling and Plop
 
 To make it easier to generate MDX files for all the site's content pieces, I've written some plop scripts to automate the process.
 
@@ -104,4 +108,4 @@ These template are located inside **plop-templates**
 | `yarn plop article` | Generates an article and empty images folder inside **content/articles*
 | `yarn plop faq` | Generates an faq inside **content/faqs** |
 
-_I've stubbed out actions for creating a **livestream** and **podcast** template, but these haven't been implemented yet._
+*I've stubbed out actions for creating a **livestream** and **podcast** template, but these haven't been implemented yet.*
