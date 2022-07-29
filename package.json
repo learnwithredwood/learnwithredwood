@@ -27,7 +27,8 @@
     "plop": "^3.1.1"
   },
   "scripts": {
-    "plop": "plop"
+    "plop": "plop",
+    "db": "docker run --rm --name learn-redwood -p 5432:5432 -e POSTGRES_PASSWORD=learn postgres:14-alpine"
   },
   "type": "module"
 }
