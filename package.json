@@ -27,6 +27,7 @@
   },
   "scripts": {
     "plop": "npx plop",
+    "contentlayer": "yarn workspace api run contentlayer",
     "db:test": "docker run --rm --name learn-redwood-test -p 5433:5432 -e POSTGRES_PASSWORD=learn -e POSTGRES_DB=learn_test postgres:14-alpine",
     "db": "docker run --rm --name learn-redwood -p 5432:5432 -e POSTGRES_PASSWORD=learn -e POSTGRES_DB=learn_dev postgres:14-alpine"
   }

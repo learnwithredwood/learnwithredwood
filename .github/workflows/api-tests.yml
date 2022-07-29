@@ -31,11 +31,8 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      # - name: Run Migrations & seeds
-      #   run: yarn db:setup
-      #   env:
-      #     POSTGRES_HOST: postgres
-      #     DATABASE_URL: 'postgresql://test:test@postgres:5432/learn_test'
+      - name: Generate content layer types
+        run: yarn contentlayer
 
       - name: Run api tests
         run: yarn rw test api
