@@ -22490,7 +22490,6 @@ __metadata:
   dependencies:
     "@redwoodjs/core": 0.50.0
     node-gyp: ^9.0.0
-    plop: ^3.1.1
   languageName: unknown
   linkType: soft
 
@@ -25761,6 +25760,7 @@ __metadata:
     babel-plugin-prismjs: ^2.1.0
     date-fns: ^2.28.0
     framer-motion: ^6.2.8
+    plop: ^3.1.1
     postcss: ^8.4.12
     postcss-loader: ^6.2.1
     prismjs: ^1.28.0

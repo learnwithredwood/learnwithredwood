@@ -1,9 +1,10 @@
+import { Faqs } from './Faqs'
 import { render } from '@redwoodjs/testing/web'
 
-import { Faqs } from './Faqs'
-
-//   Improve this test with help from the Redwood Testing Doc:
-//    https://redwoodjs.com/docs/testing#testing-components
+jest.mock('../../hooks/useGetData')
+jest.mock('../Faq/Faq', () => ({
+  Faq: () => <div>foobar</div>
+}))
 
 describe('Faqs', () => {
   it('renders successfully', () => {

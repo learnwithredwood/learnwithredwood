@@ -1,25 +1,23 @@
-import { useEffect, useState } from 'react'
 import { MetaTags } from '@redwoodjs/web'
-import type { Article as TArticle } from '@contentlayer/types'
+import { useEffect, useState } from 'react'
 import { useGetData } from 'src/hooks/useGetData'
+import type { Article as TArticle } from '@contentlayer/types'
 
 const IndividualArticlePage = ({ slug }) => {
-  const [article, setArticle] = useState<TArticle>()
+  const [article, setArticle] = useState<TArticle>(null)
 
   const url = `/.redwood/functions/mdx/articles`
-  const data: TArticle[] = useGetData(url)
+  const data = useGetData(url)
 
   useEffect(() => {
     if (data) {
-      const findArticle = data.find((element) => {
-        return element.slug === slug
-      })
-      setArticle(findArticle)
+      const foundArticle = data.find((elem) => elem.slug === slug)
+      setArticle(foundArticle)
     }
   }, [data, article, slug])
 
-  return (
-    <>
+  return article ? (
+    <div data-testid='article'>
       <MetaTags
         title="IndividualArticle"
         description="IndividualArticle page"
@@ -27,8 +25,8 @@ const IndividualArticlePage = ({ slug }) => {
 
       <h1>{article.title}</h1>
       <p>{article.slug}</p>
-    </>
-  )
+    </div>
+  ) : null
 }
 
 export default IndividualArticlePage

@@ -3,7 +3,10 @@
 .env
 .netlify
 .redwood
-dev.db*
+.vscode
+tmp
+*.db*
+.contentlayer
 dist
 dist-babel
 node_modules
@@ -18,4 +21,3 @@ api/types/graphql.d.ts
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-api/.contentlayer

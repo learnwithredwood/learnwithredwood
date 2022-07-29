@@ -10,21 +10,18 @@ import type { StandardScenario } from './users.scenarios'
 describe('users', () => {
   scenario('returns all users', async (scenario: StandardScenario) => {
     const result = await users()
-
     expect(result.length).toEqual(Object.keys(scenario.user).length)
   })
 
   scenario('returns a single user', async (scenario: StandardScenario) => {
     const result = await user({ id: scenario.user.one.id })
-
     expect(result).toEqual(scenario.user.one)
   })
 
   scenario('creates a user', async () => {
     const result = await createUser({
-      input: { email: 'String2368023' },
+      input: { email: 'String2368023', salt: 'foo', hashedPassword: 'bar' },
     })
-
     expect(result.email).toEqual('String2368023')
   })
 

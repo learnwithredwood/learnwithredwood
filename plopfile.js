@@ -1,7 +1,6 @@
-/* eslint-disable no-undef */
-import fs from 'fs'
+const fs = require('fs')
 
-export default function (plop) {
+module.exports = (plop) => {
   plop.setHelper('upperCase', (txt) => txt.toUpperCase())
   plop.setHelper('lowerCase', (txt) => txt.toLowerCase())
 

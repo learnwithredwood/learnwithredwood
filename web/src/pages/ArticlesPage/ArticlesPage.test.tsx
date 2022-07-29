@@ -1,9 +1,8 @@
 import { render } from '@redwoodjs/testing/web'
-
 import ArticlesPage from './ArticlesPage'
 
-//   Improve this test with help from the Redwood Testing Doc:
-//   https://redwoodjs.com/docs/testing#testing-pages-layouts
+jest.mock('../../hooks/useGetData')
+jest.mock('src/components/ArticleCard/ArticleCard', () => () => <div>foo</div>)
 
 describe('ArticlesPage', () => {
   it('renders successfully', () => {

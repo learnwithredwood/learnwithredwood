@@ -1,11 +1,16 @@
 import { useState } from 'react'
-import { motion } from 'framer-motion'
+import { motion, MotionProps } from 'framer-motion'
 import { useMDXComponent } from '../../hooks/useMDXComponent'
 
-const Faq = ({ answer, question }) => {
+interface IFaqProps {
+  answer: string
+  question: string
+}
+
+const Faq = ({ answer, question }: IFaqProps): JSX.Element => {
   const [isExpanded, setIsExpanded] = useState(false)
 
-  const ToggleFaq = () => {
+  const handleToggle = () => {
     setIsExpanded((prevValue) => !prevValue)
   }
 
@@ -16,9 +21,10 @@ const Faq = ({ answer, question }) => {
   }
 
   // Framer Motion -- Answer Variants
-  const AnswerVariants = {
-    open: { opacity: 1, height: 'auto', pointerEvents: 'auto' },
-    closed: { opacity: 0, height: 0, pointerEvents: 'none' },
+  // motion does not support 'pointerEvents'
+  const answerVariants = {
+    open: { opacity: 1, height: 'auto' },
+    closed: { opacity: 0, height: 0 },
   }
 
   const Component = useMDXComponent(answer)
@@ -32,8 +38,9 @@ const Faq = ({ answer, question }) => {
       {/* question */}
       <div className="col-span-10 md:col-span-8 items-end flex">
         <p
+          data-testid="faq_q-toggle"
           className="large-body mt-auto cursor-pointer hover:text-sinopia"
-          onClick={ToggleFaq}
+          onClick={handleToggle}
         >
           {question}
         </p>
@@ -41,7 +48,8 @@ const Faq = ({ answer, question }) => {
 
       <div className="col-span-9 col-start-3 md:col-span-2 md-start-10 text-right flex items-center">
         <button
-          onClick={ToggleFaq}
+          data-testid="faq_q-collapse-toggle"
+          onClick={handleToggle}
           className="font-wide uppercase text-base text-rustyNail bg-bone h-7 px-3 hover:bg-marigold hover:text-white rounded-sm"
         >
           {isExpanded ? 'Collapse' : 'Expand'}
@@ -54,7 +62,7 @@ const Faq = ({ answer, question }) => {
         animate={isExpanded ? 'open' : 'closed'}
         initial="closed"
         transition={transition}
-        variants={AnswerVariants}
+        variants={answerVariants}
       >
         <div className="pb-4 text-xl font-medium">
           <Component />

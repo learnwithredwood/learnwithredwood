@@ -1,29 +1,17 @@
-import { mockHttpEvent } from '@redwoodjs/testing/api'
-
 import { handler } from './airtable'
+import { mockHttpEvent } from '@redwoodjs/testing/api'
+import Airtable from 'airtable'
 
-//   Improve this test with help from the Redwood Testing Doc:
-//    https://redwoodjs.com/docs/testing#testing-functions
+jest.mock('airtable')
 
 describe('airtable function', () => {
   it('Should respond with 200', async () => {
     const httpEvent = mockHttpEvent({
-      queryStringParameters: {
-        id: '42', // Add parameters here
-      },
+      httpMethod: 'POST',
+      payload: { email: 'foo', fullName: 'bar' }
     })
-
-    const response = await handler(httpEvent, null)
-    const { data } = JSON.parse(response.body)
-
+    const response = await handler(httpEvent)
     expect(response.statusCode).toBe(200)
-    expect(data).toBe('airtable function')
+    expect(Airtable).toHaveBeenCalledTimes(1)
   })
-
-  // You can also use scenarios to test your api functions
-  // See guide here: https://redwoodjs.com/docs/testing#scenarios
-  //
-  // scenario('Scenario test', async () => {
-  //
-  // })
 })
