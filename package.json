@@ -23,12 +23,10 @@
   },
   "packageManager": "yarn@3.2.0",
   "dependencies": {
-    "node-gyp": "^9.0.0",
-    "plop": "^3.1.1"
+    "node-gyp": "^9.0.0"
   },
   "scripts": {
-    "plop": "plop",
+    "plop": "npx plop",
     "db": "docker run --rm --name learn-redwood -p 5432:5432 -e POSTGRES_PASSWORD=learn postgres:14-alpine"
-  },
-  "type": "module"
+  }
 }
