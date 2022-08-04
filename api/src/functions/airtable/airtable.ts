@@ -23,8 +23,10 @@ export const handler = async (event: APIGatewayEvent) => {
 
   let statusCode = 200
   let message = ''
+  let formContent
 
-  const formContent = JSON.parse(event.body)
+  if (event.body) formContent = JSON.parse(event.body)
+  else formContent = event.queryStringParameters
 
   try {
     const { email, fullName } = formContent
@@ -35,7 +37,6 @@ export const handler = async (event: APIGatewayEvent) => {
       message = `Please specify an email address`
       throw Error(message)
     }
-
     if (fullName === undefined) {
       statusCode = 400
       message = `Please specify a name`
