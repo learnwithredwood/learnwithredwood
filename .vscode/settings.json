@@ -8,11 +8,6 @@
   "[prisma]": {
     "editor.formatOnSave": true
   },
-  "workbench.colorCustomizations": {
-    "activityBar.background": "#4E1C2C",
-    "titleBar.activeBackground": "#ce3a06",
-    "titleBar.activeForeground": "#FEFCFC"
-  },
   "cSpell.words": [
     "airtable",
     "browserslist",
@@ -35,5 +30,10 @@
     "treestump",
     "truetype",
     "webfont"
-  ]
+  ],
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#4E1C2C",
+    "titleBar.activeBackground": "#ce3a06",
+    "titleBar.activeForeground": "#FEFCFC"
+  },
 }

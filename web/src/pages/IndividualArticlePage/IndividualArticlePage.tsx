@@ -17,7 +17,7 @@ const IndividualArticlePage = ({ slug }) => {
   }, [data, article, slug])
 
   return article ? (
-    <div data-testid='article'>
+    <div data-testid="article">
       <MetaTags
         title="IndividualArticle"
         description="IndividualArticle page"
@@ -25,6 +25,9 @@ const IndividualArticlePage = ({ slug }) => {
 
       <h1>{article.title}</h1>
       <p>{article.slug}</p>
+
+      <h3>Comments</h3>
+      <p>Comments go here</p>
     </div>
   ) : null
 }

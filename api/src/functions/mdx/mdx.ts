@@ -1,8 +1,5 @@
-import { logger } from 'src/lib/logger'
-import * as allArticles from '../../../.contentlayer/generated/Article/_index.json'
-import * as allFaqs from '../../../.contentlayer/generated/Faq/_index.json'
 import type { APIGatewayEvent, Context } from 'aws-lambda'
-import type { Article, Faq } from '../../../.contentlayer/generated/types'
+import { logger } from 'src/lib/logger'
 
 /**
  * The handler function is your code that processes http request events.
@@ -20,47 +17,37 @@ import type { Article, Faq } from '../../../.contentlayer/generated/types'
  * @param { Context } context - contains information about the invocation,
  * function, and execution environment.
  */
+export const handler = async (event: APIGatewayEvent, context: Context) => {
+  logger.info('Invoked mdx function')
 
-interface IMDXResponse {
-  statusCode: number
-  headers: Record<string, unknown>
-  data: string | Faq[] | Article[]
-}
+  const statusCode = 200
+  let formContent
 
-function _handleResponse(payload = {}): IMDXResponse {
+  if (event.body) formContent = JSON.parse(event.body)
+  else formContent = event.queryStringParameters
+
+  try {
+    console.log({ formContent })
+
+    if (formContent === 'articles') {
+      console.log('articles')
+    }
+  } catch (error) {
+    return {
+      statusCode,
+      body: {
+        message: error.message,
+      },
+    }
+  }
+
   return {
     statusCode: 200,
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
     },
-    data: '',
-    ...payload
-  }
-}
-
-export const handler = async (event: APIGatewayEvent, context?: Context) => {
-  try {
-    logger.info('Invoked mdx function')
-
-    const dataType = event.path.replace('/mdx', '')
-
-    if (!dataType || dataType === undefined) {
-      return _handleResponse({ statusCode: 400, data: 'Please specify a content type' })
-    } else if (dataType === '/faqs') {
-      return _handleResponse({ data: JSON.stringify(allFaqs) })
-    } else if (dataType === '/articles') {
-      return _handleResponse({ data: JSON.stringify(allArticles) })
-    } else {
-      return _handleResponse()
-    }
-  } catch (err) {
-    console.error(err.message)
-    return {
-      statusCode: 500,
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      data: 'Internal Error'
-    }
+    body: JSON.stringify({
+      data: 'mdx function',
+    }),
   }
 }

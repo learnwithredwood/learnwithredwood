@@ -1,0 +1,1 @@
+export { LogoParade } from './LogoParade'

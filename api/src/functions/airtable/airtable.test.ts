@@ -8,7 +8,7 @@ describe('airtable function', () => {
   it('Should respond with 200', async () => {
     const httpEvent = mockHttpEvent({
       httpMethod: 'POST',
-      payload: { email: 'foo', fullName: 'bar' },
+      payload: { email: 'foo@test.com', fullName: 'bar' },
     })
     const response = await handler(httpEvent)
     expect(response.statusCode).toBe(200)

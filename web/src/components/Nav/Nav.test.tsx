@@ -1,6 +1,6 @@
 import { render } from '@redwoodjs/testing/web'
 
-import Nav from './Nav'
+import { Nav } from './Nav'
 
 //   Improve this test with help from the Redwood Testing Doc:
 //    https://redwoodjs.com/docs/testing#testing-components

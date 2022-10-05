@@ -1,3 +1,4 @@
+import { Close } from './Close'
 import { GitHub } from './GitHub'
 import { Medium } from './Medium'
 import { Twitter } from './Twitter'
@@ -12,6 +13,8 @@ interface Props {
 
 const Icon = ({ name, className, width, height }: Props): JSX.Element => {
   switch (name.toLowerCase()) {
+    case 'close':
+      return <Close className={className} width={width} height={height} />
     case 'github':
       return <GitHub className={className} width={width} height={height} />
     case 'medium':

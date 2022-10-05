@@ -1,4 +1,4 @@
-import Nav from './Nav'
+import { Nav } from './Nav'
 
 export const generated = () => {
   return <Nav />

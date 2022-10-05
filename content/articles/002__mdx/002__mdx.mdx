@@ -2,13 +2,16 @@
 title: Getting Redwood to work with MDX
 publishDate: 2022-07-25
 slug: 'mdx-redwood'
+githubIssue: 14
 ---
 
 Content Layer
-* Props to [Delba](https://delba.dev/blog/next-blog-structured-mdx-content-with-contentlayer#blog-post-list-page)
-* "Prisma for Data"
+
+- Props to [Delba](https://delba.dev/blog/next-blog-structured-mdx-content-with-contentlayer#blog-post-list-page)
+- "Prisma for Data"
 
 Install Content Layer
+
 ```bash
 yard workspace api add contentlayer
 ```
@@ -31,6 +34,7 @@ Within the **api/tsconfig.json** file:
 ```
 
 ## Define the Post Schema
+
 ```ts
 // api/contentlayer.config.js
 
@@ -104,15 +108,14 @@ Added path to **web/tsconfig.json** for the content types
 
 Within component **Faqs.tsx** component...
 
-
 Within **Faq.tsx** component...
-
 
 Created a custom hook (ripped out of **next-contentlayer**)
 
 Created a custom hook `useGetData`
 
 ## Working with Images
+
 Installed `copyfiles`
 
 Updated package.json to copy over all the image files from the content directory

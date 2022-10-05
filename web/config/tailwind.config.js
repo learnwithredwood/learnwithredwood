@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         paperTexture: 'url("./images/bg__paper-texture.jpg")',
+        bgNav: 'url("./images/bg__nav.png")',
         bgNewsletter: 'url("./images/bg__newsletter.jpg")',
         treeStump: 'url("./images/treestump.svg")',
       },
@@ -23,17 +24,22 @@ module.exports = {
         rustyNail: '#87672f',
         bone: '#e0c9af',
         twine: '#c09a5c',
+        turquoise: '#61D6C0',
         sulu: '#c3eb77', // light green
         sheenGreen: '#98cd00', // green yellow
         blueDiane: '#1b5253', // dark green
         melon: '#ffb5b0', // light pink
         cabSav: '#4d0c20', // maroon
+        alpine: '#b28743', // tan
       },
       fontSize: {
         '5-375rem': '5.375rem',
       },
       minHeight: {
         '44rem': '44rem',
+      },
+      zIndex: {
+        nav: 9999,
       },
     },
     fontFamily: {
