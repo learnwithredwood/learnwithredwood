@@ -1,5 +1,11 @@
 import type { APIGatewayEvent, Context } from 'aws-lambda'
 import { logger } from 'src/lib/logger'
+import * as allFaqs from '../../../.contentlayer/generated/Faq/_index.json'
+import * as allArticles from '../../../.contentlayer/generated/Article/_index.json'
+import * as allCourseYouWill from '../../../.contentlayer/generated/CourseYouWill/_index.json'
+import * as allLegal from '../../../.contentlayer/generated/Legal/_index.json'
+import * as allLessonsModules from '../../../.contentlayer/generated/LessonsModules/_index.json'
+import * as allPricing from '../../../.contentlayer/generated/Pricing/_index.json'
 
 /**
  * The handler function is your code that processes http request events.
@@ -20,23 +26,69 @@ import { logger } from 'src/lib/logger'
 export const handler = async (event: APIGatewayEvent, context: Context) => {
   logger.info('Invoked mdx function')
 
-  const statusCode = 200
-  let formContent
-
-  if (event.body) formContent = JSON.parse(event.body)
-  else formContent = event.queryStringParameters
-
-  try {
-    console.log({ formContent })
-
-    if (formContent === 'articles') {
-      console.log('articles')
-    }
-  } catch (error) {
+  if (event.path.includes('faqs')) {
     return {
-      statusCode,
+      statusCode: 200,
+      headers: {
+        'Content-Type': 'application/json',
+      },
       body: {
-        message: error.message,
+        data: allFaqs,
+      },
+    }
+  }
+  if (event.path.includes('articles')) {
+    return {
+      statusCode: 200,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: {
+        data: allArticles,
+      },
+    }
+  }
+  if (event.path.includes('course-you-will')) {
+    return {
+      statusCode: 200,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: {
+        data: allCourseYouWill,
+      },
+    }
+  }
+  if (event.path.includes('legal')) {
+    return {
+      statusCode: 200,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: {
+        data: allLegal,
+      },
+    }
+  }
+  if (event.path.includes('lessons-modules')) {
+    return {
+      statusCode: 200,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: {
+        data: allLessonsModules,
+      },
+    }
+  }
+  if (event.path.includes('pricing')) {
+    return {
+      statusCode: 200,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: {
+        data: allPricing,
       },
     }
   }
