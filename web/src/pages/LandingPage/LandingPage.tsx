@@ -4,6 +4,8 @@ import { HelloMyNameIs } from 'src/components/HelloMyNameIs/HelloMyNameIs'
 import { Hero } from 'src/components/Hero/Hero'
 import { MetaTags } from '@redwoodjs/web'
 import { Newsletter } from 'src/components/Newsletter/Newsletter'
+import { Testimonial } from 'src/components/Testimonial'
+import { LogoParade } from 'src/components/LogoParade'
 
 const LandingPage = () => {
   return (
@@ -13,6 +15,9 @@ const LandingPage = () => {
         description="Redwood.js is a full-stack framework designed to help you scale from side hustle to start-up and makes it easy to get up and running with the latest and greatest technologies."
       />
       <Hero />
+      <Testimonial />
+      <LogoParade />
+
       <BestParts />
       <div id="newsletter">
         <Newsletter />
