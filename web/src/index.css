@@ -78,7 +78,7 @@
   }
 
   p {
-    @apply font-body mb-6 leading-7;
+    @apply font-body mb-8 leading-8 font-medium text-xl;
   }
 
   li a,
@@ -122,7 +122,7 @@
   }
 
   .section-heading {
-    @apply font-wide text-cafeRoyale uppercase text-3xl lg:text-5xl;
+    @apply font-narrow text-cafeRoyale uppercase text-[7rem];
   }
 
   p.large-body {

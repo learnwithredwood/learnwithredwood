@@ -26,6 +26,7 @@ module.exports = {
         bone: '#e0c9af',
         twine: '#c09a5c',
         turquoise: '#61D6C0',
+        tealGreen: '#00877a',
         sulu: '#c3eb77', // light green
         sheenGreen: '#98cd00', // green yellow
         blueDiane: '#1b5253', // dark green

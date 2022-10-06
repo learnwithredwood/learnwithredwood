@@ -1,8 +1,18 @@
 interface Props {
+  avatar: string
+  children: JSX.Element
   isAvatarOnLeft?: boolean
+  person: string
+  title: string
 }
 
-const Testimonial = ({ isAvatarOnLeft = true }: Props): JSX.Element => {
+const Testimonial = ({
+  avatar,
+  children,
+  isAvatarOnLeft = true,
+  person,
+  title,
+}: Props): JSX.Element => {
   return (
     <div className="grid page grid-cols-12 gap-5 mb-16">
       <div
@@ -11,26 +21,14 @@ const Testimonial = ({ isAvatarOnLeft = true }: Props): JSX.Element => {
         }`}
       >
         <div className="avatar">
-          <img src="" alt="" />
+          <img src={avatar} alt={person} />
         </div>
 
         <div>
-          <div className="mb-7 font-body font-medium">
-            When I started with{' '}
-            <span className="highlight">
-              List Builders Society I had no clue how to build a list, none.
-              List Builders Society has given me practical steps, ideas and
-              action steps to create valuable tools for my clients.
-            </span>{' '}
-            Having my own list means not stressing about algorithms or funneling
-            money into ads during the start up phase.
-          </div>
-
+          <div className="mb-7 font-body font-medium">{children}</div>
           <div>
-            <h3 className="uppercase font-wide text-lg mb-1">
-              Jennifer Tacheff
-            </h3>
-            <p className="text-base font-semibold">CEO, Manifest</p>
+            <h3 className="uppercase font-wide text-lg mb-1">{person}</h3>
+            <p className="text-base font-semibold">{title}</p>
           </div>
         </div>
       </div>

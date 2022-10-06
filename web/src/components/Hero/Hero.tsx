@@ -25,7 +25,7 @@ const Hero = () => {
           <span className="text-harleyDavidsonOrange">without the Pain</span> of
           Full Stack
         </p>
-        <a className="button-alt" href="#newsletter">
+        <a className="button-alt" href="#get-started">
           Get Started
         </a>
         <img
