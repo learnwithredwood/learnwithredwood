@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { motion, MotionProps } from 'framer-motion'
+import { AnimatePresence, motion, MotionProps } from 'framer-motion'
 import { useMDXComponent } from '../../hooks/useMDXComponent'
 
 interface IFaqProps {
@@ -30,23 +30,25 @@ const Faq = ({ answer, question }: IFaqProps): JSX.Element => {
   const Component = useMDXComponent(answer)
 
   return (
-    <div className="grid grid-cols-12 pt-12 col-span-12 gap-5">
-      <div className="col-span-2 md:col-span-1 text-right font-condensedAlt uppercase text-8xl text-marigold leading-none -mt-3 pr-4">
-        Q
+    <div className="grid grid-cols-12 pt-12 col-span-12 gap-x-5">
+      {/* Q - Star Trek Style (joke) */}
+      <div className="col-span-2 md:col-span-1 font-condensedAlt uppercase text-8xl text-marigold leading-none relative pointer-events-none">
+        <span className="absolute w-full text-center -top-8">Q</span>
       </div>
 
       {/* question */}
-      <div className="col-span-10 md:col-span-8 items-end flex">
+      <div className="col-span-10 col-start-2 md:col-span-8 items-center flex">
         <p
           data-testid="faq_q-toggle"
-          className="large-body mt-auto cursor-pointer hover:text-sinopia"
+          className="large-body cursor-pointer hover:text-sinopia !pt-0 !my-0"
           onClick={handleToggle}
         >
           {question}
         </p>
       </div>
 
-      <div className="col-span-9 col-start-3 md:col-span-2 md-start-10 text-right flex items-center">
+      {/* expand / collapse button */}
+      <div className="col-span-9 col-start-3 md:col-span-2 md-start-10 flex items-center justify-end">
         <button
           data-testid="faq_q-collapse-toggle"
           onClick={handleToggle}
@@ -57,19 +59,24 @@ const Faq = ({ answer, question }: IFaqProps): JSX.Element => {
       </div>
 
       {/* answer */}
-      <motion.div
-        className="col-span-10 col-start-2"
-        animate={isExpanded ? 'open' : 'closed'}
-        initial="closed"
-        transition={transition}
-        variants={answerVariants}
-      >
-        <div className="pb-4 text-xl font-medium">
-          <Component />
-        </div>
-      </motion.div>
+      <AnimatePresence>
+        {isExpanded && (
+          <motion.div
+            className="col-span-10 col-start-2"
+            animate={isExpanded ? 'open' : 'closed'}
+            initial="closed"
+            exit="closed"
+            transition={transition}
+            variants={answerVariants}
+          >
+            <div className="text-xl font-medium pt-6 -mb-6">
+              <Component />
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
-      <hr className="col-span-10 col-start-2" />
+      <hr className="col-span-10 col-start-2 mt-12" />
     </div>
   )
 }
