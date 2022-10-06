@@ -1,6 +1,6 @@
 const Topics = () => {
   return (
-    <div>
+    <div className="page mb-14">
       <h2 className="section-heading text-center pb-3">Topics We'll Cover</h2>
       <p className="text-center font-medium">
         Since we’re working with full-stack, this course covers A.LOT. Here are
@@ -31,4 +31,4 @@ const Topics = () => {
   )
 }
 
-export default Topics
+export { Topics }

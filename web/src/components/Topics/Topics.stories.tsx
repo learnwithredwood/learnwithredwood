@@ -1,4 +1,4 @@
-import Topics from './Topics'
+import { Topics } from './Topics'
 
 export const generated = () => {
   return <Topics />
