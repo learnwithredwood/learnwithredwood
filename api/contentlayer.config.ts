@@ -66,6 +66,7 @@ const Legal = defineDocumentType(() => ({
 const LessonsModules = defineDocumentType(() => ({
   name: 'LessonsModules',
   contentType: 'mdx',
+  filePathPattern: 'lessonsModules/*.mdx',
   fields: {
     title: { type: 'string', description: 'Module Title', required: true },
     order: { type: 'number', description: 'Order of Module', required: true },
@@ -75,6 +76,7 @@ const LessonsModules = defineDocumentType(() => ({
 const Pricing = defineDocumentType(() => ({
   name: 'Pricing',
   contentType: 'mdx',
+  filePathPattern: 'pricing/*.mdx',
   fields: {
     title: { type: 'string', description: 'Page Title', required: true },
     slug: { type: 'string', description: 'slug', required: true },
