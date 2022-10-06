@@ -4,7 +4,7 @@ const Hero = () => {
       <div className="relative inline-block">
         <a
           href="/"
-          className="absolute -left-[5rem] -top-[8.5rem] -rotate-[16] z-0"
+          className="absolute -left-[5rem] -top-[8.5rem] -rotate-[23] z-0"
         >
           <img
             src="/images/badge.svg"
