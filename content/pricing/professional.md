@@ -1,0 +1,11 @@
+---
+title: Professional
+---
+
+- Dynamic, interactive self-paced lessons
+- Full Course Transcripts and Captions
+- Source code for each lesson
+- Circle Community Access
+- e2e Testing with Cypress
+- Setting up a CICD Pipeline
+- Bonus designs for taking the application to the next level and making this project portfolio-worthy
