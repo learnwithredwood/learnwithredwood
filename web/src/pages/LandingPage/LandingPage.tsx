@@ -19,12 +19,8 @@ const LandingPage = () => {
       <LogoParade />
 
       <BestParts />
-      <div id="newsletter">
-        <Newsletter />
-      </div>
       <HelloMyNameIs />
       <Faqs />
-      <Newsletter />
     </>
   )
 }
