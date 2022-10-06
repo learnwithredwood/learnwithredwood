@@ -14,6 +14,7 @@ module.exports = {
       colors: {
         sinopia: '#cf3b08',
         halfSpanishWhite: '#ebdac9',
+        harleyDavidsonOrange: '#cb3516',
         gossamer: '#009788',
         cafeRoyale: '#664c22',
         romance: '#88672f',
@@ -32,9 +33,6 @@ module.exports = {
         cabSav: '#4d0c20', // maroon
         alpine: '#b28743', // tan
       },
-      fontSize: {
-        '5-375rem': '5.375rem',
-      },
       minHeight: {
         '44rem': '44rem',
       },
@@ -45,6 +43,7 @@ module.exports = {
     fontFamily: {
       body: ['Avenir Next', 'Avenir', 'Nunito Sans'],
       script: 'Damion',
+      narrow: 'Sherman',
       condensed: 'Redwood Regular',
       condensedAlt: 'Redwood Alternative',
       wide: 'Eagle Sight',
