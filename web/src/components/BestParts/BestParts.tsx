@@ -1,4 +1,4 @@
-import { BestPartTech } from '../BestPartTech/BestPartTech'
+import { BestPartTech } from './components/BestPartTech'
 import reactIcon from './images/logo__react.png'
 import reactIcon2x from './images/logo__react@2x.png'
 import graphqlIcon from './images/logo__graphql.png'
@@ -15,12 +15,16 @@ import typescriptIcon2x from './images/logo__typescript@2x.png'
 const BestParts = () => {
   return (
     <div className="grid mx-6 lg:mx-24 grid-cols-12 mb-0 lg:mb-20 gap-5">
-      <div className="col-start-2 col-span-10">
+      <div className="col-span-12 text-center">
         <h2 className="section-heading text-center mb-6">
           Built with the Best Parts
+          <br />
+          <span className="text-tealGreen">
+            Our Course Technologies Include
+          </span>
         </h2>
       </div>
-      <div className="col-start-3 col-span-8 text-center m-6 lg:mb-16">
+      <div className="col-start-3 col-span-8 text-center">
         <p className="leading-relaxed text-xl">
           <strong>RedwoodJS</strong> is built on top of the best libraries and
           frameworks that make the developer experience exceptional and your
@@ -88,6 +92,20 @@ const BestParts = () => {
           language. Anything goes. TypeScript solves this in the best way. It
           improves your tooling and catches errors.
         </BestPartTech>
+      </div>
+
+      {/* overwhelmed? */}
+      <div className="col-span-12 text-center pt-5">
+        <h3 className="font-wide uppercase text-xl mb-4">
+          <span className="text-tealGreen">Overwhelmed?</span> Seem like a lot?
+        </h3>
+        <p>
+          We’ll hold your hand, every step of the way. Remember, this course is
+          meant to teach
+          <br /> full-stack development{' '}
+          <strong className="text-sinopia">without the pain</strong> of
+          full-stack development.
+        </p>
       </div>
     </div>
   )

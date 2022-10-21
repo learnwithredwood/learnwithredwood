@@ -69,7 +69,7 @@
   .button,
   button,
   input[type=submit] {
-    @apply border-b-0 uppercase font-wide hover:bg-gossamer text-xl text-white bg-sinopia md:px-24 w-full md:w-auto h-16 rounded-md mx-auto inline-flex items-center justify-center cursor-pointer
+    @apply border-b-0 uppercase font-wide hover:bg-gossamer text-base md:text-xl text-white bg-sinopia md:px-24 w-full md:w-auto h-16 rounded-md mx-auto inline-flex items-center justify-center cursor-pointer
   }
 
   .button-alt,
@@ -77,8 +77,9 @@
     @apply border-b-0 uppercase font-wide bg-gossamer text-xl text-white hover:bg-sinopia md:px-24 w-full md:w-auto h-16 rounded-md mx-auto inline-flex items-center justify-center cursor-pointer
   }
 
+  .body,
   p {
-    @apply font-body mb-8 leading-8 font-medium text-xl;
+    @apply font-body mb-8 leading-6 md:leading-8 font-medium text-base md:text-xl;
   }
 
   li a,
@@ -122,7 +123,7 @@
   }
 
   .section-heading {
-    @apply font-narrow text-cafeRoyale uppercase text-[7rem];
+    @apply font-narrow text-cafeRoyale uppercase text-[5rem] md:text-[7rem] leading-[.9];
   }
 
   p.large-body {
@@ -130,7 +131,7 @@
   }
 
   .page-border {
-    @apply mx-8 border-0 outline-none min-h-screen;
+    @apply mx-1 md:mx-8 border-0 outline-none min-h-screen;
     background: url('./images/dash--horizontal.svg') center top repeat-x,
       url('./images/dash--vertical.svg') left top repeat-y,
       url('./images/dash--vertical.svg') right top repeat-y;
@@ -138,8 +139,8 @@
 
   .trees {
     @apply pt-6;
-    background: url('./images/trees--foreground--left.png') 13% top no-repeat,
-      url('./images/trees--foreground--right.png') 87% top no-repeat,
+    background: url('./images/trees--foreground--left.png') -22% top no-repeat,
+      url('./images/trees--foreground--right.png') 117% top no-repeat,
       url('./images/trees--background.png') center top repeat-x;
   }
 
@@ -161,6 +162,51 @@
   ul.social > :not([hidden]) ~ :not([hidden]),
   .social > li ~ li  {
     @apply m-0 p-0
+  }
+
+  .module-lessons {
+    @apply list-none;
+    counter-reset: lesson var(--start-value, 0);
+  }
+
+  .module-lessons li:before {
+    @apply absolute left-0 text-tealGreen font-bold text-xl;
+    content: counter(lesson);
+    counter-increment: lesson;
+  }
+
+  .module-lessons li {
+    @apply pl-[2.5rem] relative min-h-[50px];
+  }
+
+  .tier {
+    @apply flex flex-col;
+  }
+
+  .tier h3 {
+    @apply font-script text-bone text-[42px] pl-12 pr-14 inline-block mx-auto relative mb-7;
+    background: url('./images/arrow--right.png') right center no-repeat,
+      url('./images/arrow--left.png') left center no-repeat;
+  }
+
+  .price {
+    @apply text-zeus font-narrow text-[182px] text-center leading-[180px];
+  }
+
+  .price sup {
+    @apply text-[72px] relative -top-[100px] mr-2
+  }
+
+  .pricing-box {
+    @apply bg-zeus px-8 py-5 flex-1 flex flex-col;
+  }
+
+  .pricing-box ol {
+    @apply list-disc pl-4 text-white font-body leading-7 mb-10;
+  }
+
+  .pricing-box ol li {
+    @apply mb-2;
   }
 }
 

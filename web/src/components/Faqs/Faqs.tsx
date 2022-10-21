@@ -1,8 +1,8 @@
-import { Faq } from '../Faq/Faq'
+import { Faq } from './components/Faq'
 import { useGetData } from '../../hooks/useGetData'
 
 const Faqs = () => {
-  const url = `/.redwood/functions/mdxFaqs`
+  const url = `/.redwood/functions/mdx/faqs`
   const data = useGetData(url)
 
   return (
@@ -11,7 +11,7 @@ const Faqs = () => {
         Frequently Asked Questions
       </h2>
       <hr className="col-span-10 col-start-2" />
-      {data?.map((item, index) => {
+      {data?.map((item, index: number) => {
         return (
           <Faq key={index} question={item.question} answer={item.body.code} />
         )

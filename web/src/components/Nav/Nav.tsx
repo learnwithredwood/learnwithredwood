@@ -1,6 +1,6 @@
 import Icon from '../Icon/Icon'
 import { Link, routes } from '@redwoodjs/router'
-import { MouseEvent } from 'react'
+import { MouseEvent, useEffect } from 'react'
 
 interface Props {
   className?: string
@@ -13,13 +13,27 @@ const Nav = ({ className = '', handleClick }: Props) => {
     handleClick()
   }
 
+  useEffect(() => {
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        handleClick()
+      }
+    }
+
+    document.addEventListener('keydown', handleEsc)
+
+    return () => {
+      document.removeEventListener('keydown', handleEsc)
+    }
+  })
+
   return (
     <div
       className={`bg-bgNav bg-cover fixed top-0 left-0 w-full z-nav transition-transform ${className}`}
     >
       <div className="bg-nav" />
       <button
-        className="top-6 right-8 bg-transparent absolute px-0 py-0 text-turquoise h-8 hover:text-sinopia hover:bg-transparent"
+        className="z-closeNav top-6 right-8 bg-transparent absolute px-0 py-0 text-turquoise h-8 hover:text-sinopia hover:bg-transparent"
         onClick={(e) => closeNav(e)}
       >
         <Icon name="close" className="w-8 h-8" />

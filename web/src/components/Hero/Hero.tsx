@@ -30,8 +30,8 @@ const Hero = () => {
         </a>
         <img
           className="m-[50px_auto_10px]"
-          src="/images/sponsored-by.svg"
-          alt="Sponsored By ZEAL"
+          src="/images/powered-by-zeal.svg"
+          alt="Powered By ZEAL"
         />
         <a href="http://codingzeal.com/" target="_blank" rel="noreferrer">
           <img className="m-[0_auto]" src="/images/zeal-logo.svg" alt="ZEAL" />

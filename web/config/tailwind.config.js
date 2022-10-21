@@ -4,16 +4,23 @@ module.exports = {
     extend: {
       backgroundImage: {
         paperTexture: 'url("./images/bg__paper-texture.jpg")',
+        bgCourseYouWill: 'url("./images/bg__courseYouWill.png")',
+        bgPricing: 'url("./images/bg__pricing.png")',
         bgNav: 'url("./images/bg__nav.png")',
         bgNewsletter: 'url("./images/bg__newsletter.jpg")',
         treeStump: 'url("./images/treestump.svg")',
       },
+      backgroundPosition: {
+        pricingPosition: '0 250px',
+      },
       backgroundSize: {
         '100%': '100%',
+        pricingSize: '100% 383px',
       },
       colors: {
         sinopia: '#cf3b08',
         halfSpanishWhite: '#ebdac9',
+        donkeyBrown: '#664c22',
         harleyDavidsonOrange: '#cb3516',
         gossamer: '#009788',
         cafeRoyale: '#664c22',
@@ -27,6 +34,7 @@ module.exports = {
         twine: '#c09a5c',
         turquoise: '#61D6C0',
         tealGreen: '#00877a',
+        zeus: '#292318', // dark brown
         sulu: '#c3eb77', // light green
         sheenGreen: '#98cd00', // green yellow
         blueDiane: '#1b5253', // dark green
@@ -38,7 +46,8 @@ module.exports = {
         '44rem': '44rem',
       },
       zIndex: {
-        nav: 9999,
+        nav: 9998,
+        closeNav: 9999,
       },
     },
     fontFamily: {

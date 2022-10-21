@@ -14,17 +14,31 @@ const Testimonial = ({
   title,
 }: Props): JSX.Element => {
   return (
-    <div className="grid page grid-cols-12 gap-5 mb-16">
+    <div className="grid page grid-cols-12 gap-x-10 mb-16 grid-flow-dense">
       <div
-        className={`col-start-2 col-span-10 flex gap-x-2 ${
-          !isAvatarOnLeft && 'flex-col-reverse'
+        className={`col-span-2 row-start-1 ${
+          isAvatarOnLeft ? 'col-start-2' : 'col-start-10'
         }`}
       >
         <div className="avatar">
-          <img src={avatar} alt={person} />
+          <img
+            src={avatar}
+            alt={person}
+            className="rounded-full bg-treeStump bg-no-repeat p-2 bg-center bg-cover"
+          />
         </div>
-
-        <div>
+      </div>
+      <div
+        className={`col-span-8 row-start-1 pt-5 ${
+          !isAvatarOnLeft && 'col-start-2'
+        }`}
+      >
+        <div className="relative">
+          <img
+            src="/images/open-quotes.svg"
+            alt="Open Quotes"
+            className="absolute -left-9 top-0"
+          />
           <div className="mb-7 font-body font-medium">{children}</div>
           <div>
             <h3 className="uppercase font-wide text-lg mb-1">{person}</h3>

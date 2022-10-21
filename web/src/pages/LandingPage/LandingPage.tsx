@@ -47,8 +47,8 @@ const LandingPage = () => {
       <SalesLetter />
       {/* TODO: Swap out people and pics on Testimonials */}
       <Testimonial
-        person="Jennifer Tacheff"
-        title="CEO, Manifest"
+        person="David Price"
+        title="Co-Founder of RedwoodJS"
         avatar={JenniferTacheff}
       >
         <p>
@@ -63,9 +63,10 @@ const LandingPage = () => {
         </p>
       </Testimonial>
       <Testimonial
-        person="Jennifer Tacheff"
-        title="CEO, Manifest"
+        person="Amanda Giannelli"
+        title="Engineer II at Okta and RedwoodJS Core Team Member"
         avatar={JenniferTacheff}
+        isAvatarOnLeft={false}
       >
         <p>
           When I started with List Builders Society I had no clue how to build a
@@ -78,13 +79,13 @@ const LandingPage = () => {
           money into ads during the start up phase.
         </p>
       </Testimonial>
-      {/* TODO: Add content for Video Embed */}
-      <VideoEmbed />
+      <VideoEmbed embed="https://www.youtube.com/embed/uos97djkzUU" />
       {/* TODO: Update pics and titles on Testimonials */}
       <Testimonial
         person="Jennifer Tacheff"
         title="CEO, Manifest"
         avatar={JenniferTacheff}
+        isAvatarOnLeft={false}
       >
         <p>
           When I started with List Builders Society I had no clue how to build a
@@ -127,10 +128,13 @@ const LandingPage = () => {
       <Who />
 
       {/* TODO: Update Styling */}
-      <div>
-        This course is intentionally designed to equip you with everything you
-        need to know to become a successful full stack developer with the best
-        libraries and frameworks available.
+      <div className="font-wide uppercase text-center text-xl leading-8 mb-20">
+        This course is intentionally designed to{' '}
+        <div className="text-sinopia">
+          equip you with everything you need to know
+          <br /> to become a successful full stack developer
+        </div>{' '}
+        with the best libraries and frameworks available.
       </div>
 
       {/* TODO: Update Pics and Names for Testimonials */}
@@ -138,6 +142,7 @@ const LandingPage = () => {
         person="Jennifer Tacheff"
         title="CEO, Manifest"
         avatar={JenniferTacheff}
+        isAvatarOnLeft={false}
       >
         <p>
           When I started with List Builders Society I had no clue how to build a

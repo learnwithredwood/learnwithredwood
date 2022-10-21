@@ -39,7 +39,7 @@ const Newsletter = () => {
   return (
     <div className="bg-bgNewsletter mx-10 px-11 py-12 mb-24">
       <h3 className="text-center lowercase font-script text-gossamer text-4xl mb-7">
-        launching fall of 2022
+        launching January 1, 2023
       </h3>
       <h2 className="section-heading tracking-wider text-center mb-5 font-sans">
         Are you interested?

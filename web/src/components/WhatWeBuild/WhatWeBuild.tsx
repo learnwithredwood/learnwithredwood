@@ -1,21 +1,22 @@
+import Laptop from './images/laptop.png'
+
 const WhatWeBuild = () => {
   return (
-    <div>
-      <div>
-        <h2>What we Build</h2>
+    <div className="page grid grid-cols-12 gap-x-5 mb-20">
+      <div className="col-span-4">
+        <h2 className="section-heading leading-[6.1rem] mb-6">
+          What will we Build?
+        </h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-        <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt.
+          In this course, we’ll build “Rotten Ratings,” a Rotten Tomatoes
+          knock-off. We’ll pull data from the Movie Database API. We’ll build a
+          user authentication system, where users can login, search, bookmark
+          and flag movies to watch later, and create playlists.
         </p>
       </div>
-      <div>Image</div>
+      <div className="col-span-8">
+        <img src={Laptop} alt="Laptop with Rotten Ratings Screenshot" />
+      </div>
     </div>
   )
 }

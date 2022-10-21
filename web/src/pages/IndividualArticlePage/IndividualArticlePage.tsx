@@ -2,6 +2,7 @@ import { MetaTags } from '@redwoodjs/web'
 import { useEffect, useState } from 'react'
 import { useGetData } from 'src/hooks/useGetData'
 import type { Article as TArticle } from '@contentlayer/types'
+import { Newsletter } from 'src/components/Newsletter'
 
 const IndividualArticlePage = ({ slug }) => {
   const [article, setArticle] = useState<TArticle>(null)
@@ -28,6 +29,8 @@ const IndividualArticlePage = ({ slug }) => {
 
       <h3>Comments</h3>
       <p>Comments go here</p>
+
+      <Newsletter />
     </div>
   ) : null
 }

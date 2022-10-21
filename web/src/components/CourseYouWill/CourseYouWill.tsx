@@ -1,23 +1,42 @@
+import { useGetData } from '../../hooks/useGetData'
+import { useMDXComponent } from 'src/hooks/useMDXComponent'
+
 interface CardProps {
-  children: JSX.Element
+  content: string
   title: string
+  key: number
 }
 
-const Card = ({ title, children }: CardProps): JSX.Element => (
-  <div>
-    <h3>{title}</h3>
-    <p>{children}</p>
-  </div>
-)
+const Card = ({ title, content, key }: CardProps): JSX.Element => {
+  const Component = useMDXComponent(content)
+
+  return (
+    <div key={key} className="bg-alpine px-6 pt-6 pb-0 md:pb-6">
+      <h3 className="font-narrow text-4xl md:text-5xl uppercase mb-5">
+        {title}
+      </h3>
+      <div className="text-white">
+        <Component />
+      </div>
+    </div>
+  )
+}
 
 const CourseYouWill = () => {
+  const url = `/.redwood/functions/mdx/course-you-will`
+  const data = useGetData(url)
+
   return (
-    <div>
-      <div>
-        <h2 className="section-heading">In this Self Paced Course You Will</h2>
+    <div className="px-8 py-10 lg:py-16 mx-8 grid grid-cols-12 gap-5 bg-bgCourseYouWill bg-cover mb-[100px]">
+      <div className="col-span-12 lg:col-span-5">
+        <h2 className="section-heading text-narrow">
+          In this Self Paced Course You Will
+        </h2>
       </div>
-      <div>
-        <Card />
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-9 lg:col-span-7 col-span-12">
+        {data?.map((item, index: number) => (
+          <Card key={index} title={item.title} content={item.body.code} />
+        ))}
       </div>
     </div>
   )

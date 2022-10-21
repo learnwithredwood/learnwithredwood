@@ -12,9 +12,10 @@ const ArticlesPage = () => {
     <>
       <MetaTags title="Articles" description="Articles page" />
       <h1>ArticlesPage</h1>
-      {data?.map((item, index) => (
-        <ArticleCard article={item} key={index} />
-      ))}
+      {data?.map((item, index: number) => {
+        console.log(item)
+        return <ArticleCard article={item} key={index} />
+      })}
     </>
   )
 }

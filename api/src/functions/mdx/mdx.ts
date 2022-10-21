@@ -38,13 +38,15 @@ export const handler = async (event: APIGatewayEvent, context: Context) => {
     }
   }
   if (event.path.includes('articles')) {
+    console.log(allArticles)
+    const publishedArticles = allArticles.filter((article) => article.published)
     return {
       statusCode: 200,
       headers: {
         'Content-Type': 'application/json',
       },
       body: {
-        data: allArticles,
+        data: publishedArticles,
       },
     }
   }
