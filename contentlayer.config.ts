@@ -83,6 +83,44 @@ const Pricing = defineDocumentType(() => ({
   },
 }))
 
+const Testimonials = defineDocumentType(() => ({
+  name: 'Testimonial',
+  contentType: 'mdx',
+  filePathPattern: 'testimonials/*.mdx',
+  fields: {
+    name: {
+      type: 'string',
+      description: 'Name of person giving testimonial',
+      required: true,
+    },
+    title: {
+      type: 'string',
+      description: 'Job Title for person giving the testimonial',
+      required: true,
+    },
+    source: {
+      type: 'string',
+      description: 'Source of the testimonial',
+      required: true,
+    },
+    date: {
+      type: 'string',
+      description: 'Date of the testimonial',
+      required: true,
+    },
+    orientation: {
+      type: 'string',
+      description: 'Orientation of the video',
+      required: false,
+    },
+    avatar: {
+      type: 'string',
+      description: 'Avatar for the person giving the testimonial',
+      required: true,
+    },
+  },
+}))
+
 export default makeSource({
   documentTypes: [
     Articles,
@@ -91,6 +129,7 @@ export default makeSource({
     Legal,
     LessonsModules,
     Pricing,
+    Testimonials,
   ],
-  contentDirPath: '../content',
+  contentDirPath: './content',
 })

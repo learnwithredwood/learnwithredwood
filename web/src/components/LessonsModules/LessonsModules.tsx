@@ -1,5 +1,5 @@
 import { LessonModule } from './components/LessonModule'
-import { useGetData } from '../../hooks/useGetData'
+import data from '../../../.contentlayer/generated/LessonsModules/_index.json'
 import CC from './images/closed-captioning.png'
 
 /**
@@ -31,9 +31,6 @@ const lessonsToArray = (
 ---------------------------------------------------- */
 const LessonsModules = () => {
   let lessonNumber = 0
-
-  const url = `/.redwood/functions/mdx/lessons-modules`
-  const data = useGetData(url)
 
   return (
     <div className="mx-6 lg:mx-24 mb-24">
