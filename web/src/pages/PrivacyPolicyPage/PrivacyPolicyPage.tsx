@@ -1,25 +1,6 @@
-import { useEffect, useState } from 'react'
 import { MetaTags } from '@redwoodjs/web'
-import { useGetData } from 'src/hooks/useGetData'
-import type { Legal as TLegal } from '@contentlayer/types'
 
-const PrivacyPolicyPage = aync () => {
-  const [privacyPolicy, setPrivacyPolicy] = useState<TLegal>(null)
-
-  const url = `/.redwood/functions/mdx/legal`
-  const getContent = async (url) => {
-    try {
-      const response = await fetch(url)
-      const foundData = await response.json()
-      return foundData.data.default
-    } catch (err) {
-      console.error(err.message)
-    }
-  }
-
-  const data = await getContent(url)
-  console.log(data)
-
+const PrivacyPolicyPage = () => {
   return (
     <>
       <MetaTags title="Privacy Policy" description="PrivacyPolicy page" />
