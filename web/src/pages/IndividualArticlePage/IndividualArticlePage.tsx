@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import { useGetData } from 'src/hooks/useGetData'
 import type { Article as TArticle } from '@contentlayer/types'
 import { Newsletter } from 'src/components/Newsletter'
+import { Comments } from 'src/components/Comments/Comments'
 
 const IndividualArticlePage = ({ slug }) => {
   const [article, setArticle] = useState<TArticle>(null)
@@ -14,6 +15,8 @@ const IndividualArticlePage = ({ slug }) => {
     if (data) {
       const foundArticle = data.find((elem) => elem.slug === slug)
       setArticle(foundArticle)
+    } else {
+      console.log("couldn't find article")
     }
   }, [data, article, slug])
 
@@ -28,11 +31,12 @@ const IndividualArticlePage = ({ slug }) => {
       <p>{article.slug}</p>
 
       <h3>Comments</h3>
-      <p>Comments go here</p>
 
       <Newsletter />
     </div>
-  ) : null
+  ) : (
+    <Comments />
+  )
 }
 
 export default IndividualArticlePage

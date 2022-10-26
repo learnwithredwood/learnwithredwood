@@ -1,3 +1,5 @@
+import { Link, routes } from '@redwoodjs/router'
+
 const Pricing = () => {
   return (
     <div className="mx-8">
@@ -73,7 +75,13 @@ const Pricing = () => {
         <h3 className="font-wide text-tealGreen text-2xl mb-2">
           Not sure if this is for you?
         </h3>
-        <p className="!mb-0">We have a 100% Money Back Guarantee.</p>
+        <p className="!mb-0">
+          We have a 60-Day "Try-It, Test-It, Implement-It" 100% Money Back
+          Guarantee.{' '}
+          <Link to={routes.moneyBack()} className="text-black">
+            Want details?
+          </Link>
+        </p>
       </div>
     </div>
   )

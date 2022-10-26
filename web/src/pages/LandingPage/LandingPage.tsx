@@ -23,111 +23,21 @@ const LandingPage = () => {
         title="Learn with Redwood: Learn Full-Stack without the Pain of Full-Stack"
         description="Redwood.js is a full-stack framework designed to help you scale from side hustle to start-up and makes it easy to get up and running with the latest and greatest technologies."
       />
-      {/* TODO: Update tree background */}
-      {/* TODO: Fix badge rotation */}
       <Hero />
-      {/* TODO: Tighten Testimonial Styling */}
-      <Testimonial
-        person="Jennifer Tacheff"
-        title="CEO, Manifest"
-        avatar={JenniferTacheff}
-      >
-        <p>
-          When I started with List Builders Society I had no clue how to build a
-          list, none.{' '}
-          <span className="highlight">
-            List Builders Society has given me practical steps, ideas and action
-            steps to create valuable tools for my clients.
-          </span>{' '}
-          Having my own list means not stressing about algorithms or funneling
-          money into ads during the start up phase.
-        </p>
-      </Testimonial>
-      <LogoParade />
+      {/* TESTIMONIAL */}
+      {/* LOGO PARADE */}
       <SalesLetter />
-      {/* TODO: Swap out people and pics on Testimonials */}
-      <Testimonial
-        person="David Price"
-        title="Co-Founder of RedwoodJS"
-        avatar={JenniferTacheff}
-      >
-        <p>
-          When I started with List Builders Society I had no clue how to build a
-          list, none.{' '}
-          <span className="highlight">
-            List Builders Society has given me practical steps, ideas and action
-            steps to create valuable tools for my clients.
-          </span>{' '}
-          Having my own list means not stressing about algorithms or funneling
-          money into ads during the start up phase.
-        </p>
-      </Testimonial>
-      <Testimonial
-        person="Amanda Giannelli"
-        title="Engineer II at Okta and RedwoodJS Core Team Member"
-        avatar={JenniferTacheff}
-        isAvatarOnLeft={false}
-      >
-        <p>
-          When I started with List Builders Society I had no clue how to build a
-          list, none.{' '}
-          <span className="highlight">
-            List Builders Society has given me practical steps, ideas and action
-            steps to create valuable tools for my clients.
-          </span>{' '}
-          Having my own list means not stressing about algorithms or funneling
-          money into ads during the start up phase.
-        </p>
-      </Testimonial>
-      <VideoEmbed embed="https://www.youtube.com/embed/uos97djkzUU" />
-      {/* TODO: Update pics and titles on Testimonials */}
-      <Testimonial
-        person="Jennifer Tacheff"
-        title="CEO, Manifest"
-        avatar={JenniferTacheff}
-        isAvatarOnLeft={false}
-      >
-        <p>
-          When I started with List Builders Society I had no clue how to build a
-          list, none.{' '}
-          <span className="highlight">
-            List Builders Society has given me practical steps, ideas and action
-            steps to create valuable tools for my clients.
-          </span>{' '}
-          Having my own list means not stressing about algorithms or funneling
-          money into ads during the start up phase.
-        </p>
-      </Testimonial>
-      <Testimonial
-        person="Jennifer Tacheff"
-        title="CEO, Manifest"
-        avatar={JenniferTacheff}
-      >
-        <p>
-          When I started with List Builders Society I had no clue how to build a
-          list, none.{' '}
-          <span className="highlight">
-            List Builders Society has given me practical steps, ideas and action
-            steps to create valuable tools for my clients.
-          </span>{' '}
-          Having my own list means not stressing about algorithms or funneling
-          money into ads during the start up phase.
-        </p>
-      </Testimonial>
-      {/* TODO: Style Pricing section */}
+      {/* Testimonial */}
+      {/* Video Embed */}
+      {/* Testimonial */}
       <div id="get-started">
         <Pricing />
       </div>
       <Topics />
-      {/* TODO: Style in this course you will */}
-      {/* TODO: Pull content in from markdown files */}
       <CourseYouWill />
-      {/* TODO: Update Styling for What we Build */}
       <WhatWeBuild />
-      {/* TODO: Style who is this for section */}
       <Who />
 
-      {/* TODO: Update Styling */}
       <div className="font-wide uppercase text-center text-xl leading-8 mb-20">
         This course is intentionally designed to{' '}
         <div className="text-sinopia">
@@ -137,52 +47,11 @@ const LandingPage = () => {
         with the best libraries and frameworks available.
       </div>
 
-      {/* TODO: Update Pics and Names for Testimonials */}
-      <Testimonial
-        person="Jennifer Tacheff"
-        title="CEO, Manifest"
-        avatar={JenniferTacheff}
-        isAvatarOnLeft={false}
-      >
-        <p>
-          When I started with List Builders Society I had no clue how to build a
-          list, none.{' '}
-          <span className="highlight">
-            List Builders Society has given me practical steps, ideas and action
-            steps to create valuable tools for my clients.
-          </span>{' '}
-          Having my own list means not stressing about algorithms or funneling
-          money into ads during the start up phase.
-        </p>
-      </Testimonial>
-      <Testimonial
-        person="Jennifer Tacheff"
-        title="CEO, Manifest"
-        avatar={JenniferTacheff}
-      >
-        <p>
-          When I started with List Builders Society I had no clue how to build a
-          list, none.{' '}
-          <span className="highlight">
-            List Builders Society has given me practical steps, ideas and action
-            steps to create valuable tools for my clients.
-          </span>{' '}
-          Having my own list means not stressing about algorithms or funneling
-          money into ads during the start up phase.
-        </p>
-      </Testimonial>
+      {/* 2 TESTIMONIALS */}
 
-      {/* TODO: Update Styling */}
       <HelloMyNameIs />
-
-      {/* TODO: Tighten Styling */}
       <BestParts />
-
-      {/* TODO: Style Section */}
-      {/* TODO: Pull content from Markdown files */}
       <LessonsModules />
-
-      {/* TODO: Style Why Redwood Section */}
       <WhyRedwood />
       <Pricing />
       <Faqs />

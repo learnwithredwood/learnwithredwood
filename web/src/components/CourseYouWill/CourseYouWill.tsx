@@ -7,11 +7,11 @@ interface CardProps {
   key: number
 }
 
-const Card = ({ title, content, key }: CardProps): JSX.Element => {
+const Card = ({ title, content }: CardProps): JSX.Element => {
   const Component = useMDXComponent(content)
 
   return (
-    <div key={key} className="bg-alpine px-6 pt-6 pb-0 md:pb-6">
+    <div className="bg-alpine px-6 pt-6 pb-0 md:pb-6">
       <h3 className="font-narrow text-4xl md:text-5xl uppercase mb-5">
         {title}
       </h3>

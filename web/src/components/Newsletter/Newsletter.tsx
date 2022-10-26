@@ -39,24 +39,18 @@ const Newsletter = () => {
   return (
     <div className="bg-bgNewsletter mx-10 px-11 py-12 mb-24">
       <h3 className="text-center lowercase font-script text-gossamer text-4xl mb-7">
-        launching January 1, 2023
+        full course available January 1, 2023
       </h3>
-      <h2 className="section-heading tracking-wider text-center mb-5 font-sans">
+      <h2 className="section-heading tracking-wider text-center mb-5 font-body">
         Are you interested?
       </h2>
       <p className="font-body text-center mb-20 font-semibold">
         We’ll keep you updated and send you *bonus content* along the way.
       </p>
 
-      {error && (
-        <div className="bg-melon p-5 border-2 border-cabSav text-center font-sans">
-          {error}
-        </div>
-      )}
+      {error && <div className="error-box">{error}</div>}
       {success ? (
-        <div className="bg-sulu border-2 border-sheenGreen p-5 text-center">
-          {success}
-        </div>
+        <div className="success-box">{success}</div>
       ) : (
         <Form
           formMethods={formMethods}

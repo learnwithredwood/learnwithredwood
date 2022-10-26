@@ -4,7 +4,9 @@ import { Video } from './components/Video'
 const WhyRedwood = () => {
   return (
     <div className="grid grid-cols-12 mb-24 mx-8 gap-x-5">
-      <h2 className="col-span-12 section-heading text-center">Why Redwood?</h2>
+      <h2 className="col-span-12 section-heading text-center mb-8">
+        Why Redwood?
+      </h2>
       <div className="col-span-8 col-start-3">
         <p>
           The RedwoodJS Team has crafted an integrated framework that

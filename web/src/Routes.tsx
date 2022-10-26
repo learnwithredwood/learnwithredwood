@@ -11,7 +11,6 @@ import { Router, Route, Set } from '@redwoodjs/router'
 import { LandingPageLayout } from './layouts/LandingPageLayout'
 import { InteriorLayout } from './layouts/InteriorLayout'
 import { LegalLayout } from './layouts/LegalLayout/LegalLayout'
-import { AuthLayout } from './layouts/AuthLayout/AuthLayout'
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage/PrivacyPolicyPage'
 import TermsAndConditionsPage from './pages/TermsAndConditionsPage/TermsAndConditionsPage'
 

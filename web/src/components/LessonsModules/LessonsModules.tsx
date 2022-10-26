@@ -1,17 +1,39 @@
 import { LessonModule } from './components/LessonModule'
 import { useGetData } from '../../hooks/useGetData'
 import CC from './images/closed-captioning.png'
-import { useState } from 'react'
 
+/**
+ * Takes a string of lessons and returns an array of lessons (title and timestamp)
+ * @param {string} lessons
+ * @returns {Array}
+ */
+const lessonsToArray = (
+  lessonContent: string
+): Array<{
+  title: string
+  timestamp: string
+}> => {
+  // split each list item into an array
+  const splitContent = lessonContent.split('\n- ')
+  // remove white space
+  const list = splitContent.filter((el: string) => el !== '')
+
+  const lessons = list.map((item: string) => {
+    const [title, timestamp] = item.split('|')
+    return { title, timestamp }
+  })
+
+  return lessons
+}
+
+/** -------------------------------------------------
+* COMPONENT
+---------------------------------------------------- */
 const LessonsModules = () => {
-  const [lessonNumber, setLessonNumber] = useState(0)
+  let lessonNumber = 0
 
   const url = `/.redwood/functions/mdx/lessons-modules`
   const data = useGetData(url)
-
-  const UpdateStartingIndex = (moduleLength: number): void => {
-    setLessonNumber((prev) => prev + moduleLength)
-  }
 
   return (
     <div className="mx-6 lg:mx-24 mb-24">
@@ -38,15 +60,19 @@ const LessonsModules = () => {
       </div>
 
       {/* lessons and modules */}
-      {data?.map((item, index) => {
+      {data?.map((item, index: number) => {
+        const lessons = lessonsToArray(item.body.raw)
+
+        const startingIndex = lessonNumber
+        lessonNumber += lessons.length
+
         return (
           <LessonModule
             key={index}
             title={item.title}
             order={item.order}
-            content={item.body.raw}
-            startingIndex={lessonNumber}
-            updateStartingIndex={UpdateStartingIndex}
+            lessons={lessons}
+            startingIndex={startingIndex}
           />
         )
       })}

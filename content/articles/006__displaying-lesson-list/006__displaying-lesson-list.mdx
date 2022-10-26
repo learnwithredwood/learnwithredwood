@@ -1,0 +1,110 @@
+---
+title: Displaying Lesson List
+publishDate: 2022-10-21
+slug: 'lesson-list'
+published: false
+githubIssue:
+---
+
+Suprisingly enough, displaying a list of modules and lessons on the landing page was difficult.
+
+![]()
+
+## The Problem
+
+- I wanted the numbers to continue from one section the next.
+- I wanted to use CSS, as much as possible, making use of the `ol` element and it's built in counter
+
+## Styling the Numbers
+
+```css
+.module-lessons {
+  @apply list-none;
+  counter-reset: lesson var(--start-value, 0);
+}
+
+.module-lessons li:before {
+  @apply absolute left-0 text-tealGreen font-bold text-xl;
+  content: counter(lesson);
+  counter-increment: lesson;
+}
+
+.module-lessons li {
+  @apply pl-[2.5rem] relative min-h-[50px];
+}
+```
+
+```js
+<ol
+  className="module-lessons border-t-2 border-twine border-dashed"
+  style={{ '--start-value': startingIndex }}
+>
+  ...
+</ol>
+```
+
+I can pass `startingIndex` in as a prop.
+
+...now, to determine what the `startingIndex` should actually be...
+
+## Determining how many lessons are in a module
+
+As I mentioned in a previous post, I'm using [ContentLayer]() to handle the mdx files for the site. So, the content the JSON that I'm getting from the server, looks like this:
+
+![]()
+
+First, I needed to format the data.
+
+Not only did this make the content easier to loop over in the child component, but by converting the lesson string into an array, I was able to determine the length.
+
+```js
+const lessonsToArray = (
+  lessonContent: string
+): Array<{
+  title: string
+  timestamp: string
+}> => {
+  // split each list item into an array
+  const splitContent = lessonContent.split('\n- ')
+
+  // remove white space
+  const list = splitContent.filter((el: string) => el !== '')
+
+  // build an array of lesson objects
+  const lessons = list.map((item: string) => {
+    const [title, timestamp] = item.split('|')
+    return { title, timestamp }
+  })
+
+  return lessons
+}
+```
+
+My first thought was to store the lesson count, or what I'm calling the `startingIndex` in state.
+
+But, I quickly hit an error saying I had too many re-renders.
+
+![]()
+
+The reason is that everytime the state would update, that would update each module block. That's not what I wanted! Instead, I needed a running tally.
+
+```js
+{
+  data?.map((item, index: number) => {
+    const lessons = lessonsToArray(item.body.raw)
+
+    const startingIndex = lessonNumber
+    lessonNumber += lessons.length
+
+    return (
+      <LessonModule
+        key={index}
+        title={item.title}
+        order={item.order}
+        lessons={lessons}
+        startingIndex={startingIndex}
+      />
+    )
+  })
+}
+```
