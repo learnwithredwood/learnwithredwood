@@ -20,7 +20,7 @@ const Pricing = () => {
           </div>
           <div className="pricing-box">
             <div className="text-center w-full">
-              <h3>basic</h3>
+              <h3>starter</h3>
             </div>
             <ol>
               <li>Dynamic, interactive self-paced lessons</li>
@@ -45,7 +45,7 @@ const Pricing = () => {
           </div>
           <div className="pricing-box">
             <div className="text-center w-full">
-              <h3>professional</h3>
+              <h3>complete</h3>
             </div>
             <ol>
               <li>Dynamic, interactive self-paced lessons</li>
