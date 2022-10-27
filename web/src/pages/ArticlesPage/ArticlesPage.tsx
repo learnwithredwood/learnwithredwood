@@ -1,13 +1,8 @@
 import { MetaTags } from '@redwoodjs/web'
-import { useGetData } from 'src/hooks/useGetData'
 import ArticleCard from 'src/components/ArticleCard/ArticleCard'
+import data from '../../../.contentlayer/generated/Article/_index.json'
 
 const ArticlesPage = () => {
-  const url = `/.redwood/functions/mdx/articles`
-  const data = useGetData(url)
-
-  console.log(data)
-
   return (
     <>
       <MetaTags title="Articles" description="Articles page" />

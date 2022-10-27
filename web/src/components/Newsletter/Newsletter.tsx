@@ -41,7 +41,7 @@ const Newsletter = () => {
       <h3 className="text-center lowercase font-script text-gossamer text-4xl mb-7">
         full course available January 1, 2023
       </h3>
-      <h2 className="section-heading tracking-wider text-center mb-5 font-body">
+      <h2 className="section-heading tracking-wider text-center mb-5 font-narrow">
         Are you interested?
       </h2>
       <p className="font-body text-center mb-20 font-semibold">
