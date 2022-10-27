@@ -52,7 +52,7 @@ const LandingPage = () => {
       <HelloMyNameIs />
       <BestParts />
       <LessonsModules />
-      <WhyRedwood />
+      {/* <WhyRedwood /> */}
       <Pricing />
       <Faqs />
     </>
