@@ -1,5 +1,5 @@
 import { useMDXComponent } from 'src/hooks/useMDXComponent'
-import data from '../../../.contentlayer/generated/CourseYouWill/_index.json'
+import data from '../../../../.contentlayer/generated/CourseYouWill/_index.json'
 
 interface CardProps {
   content: string

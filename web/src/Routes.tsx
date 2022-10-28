@@ -11,8 +11,6 @@ import { Router, Route, Set } from '@redwoodjs/router'
 import { LandingPageLayout } from './layouts/LandingPageLayout'
 import { InteriorLayout } from './layouts/InteriorLayout'
 import { LegalLayout } from './layouts/LegalLayout/LegalLayout'
-import PrivacyPolicyPage from './pages/PrivacyPolicyPage/PrivacyPolicyPage'
-import TermsAndConditionsPage from './pages/TermsAndConditionsPage/TermsAndConditionsPage'
 
 const Routes = () => {
   return (
@@ -22,8 +20,8 @@ const Routes = () => {
         <Route path="/support" page={SupportPage} name="support" />
         <Route path="/contact" page={ContactPage} name="contact" />
         <Route path="/student-discount" page={StudentDiscountPage} name="studentDiscount" />
-        <Route path="/article/{slug}" page={IndividualArticlePage} name="article" />
         <Route path="/articles" page={ArticlesPage} name="articles" />
+        <Route path="/article/{slug}" page={IndividualArticlePage} name="individualArticle" />
         <Route path="/livestreams" page={LivestreamsPage} name="livestreams" />
         <Route path="/podcasts" page={PodcastsPage} name="podcasts" />
       </Set>
