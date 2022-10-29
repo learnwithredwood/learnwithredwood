@@ -1,1 +1,1 @@
-export { LessonModules } from './LessonModules'
+export { LessonsModules } from './LessonsModules'

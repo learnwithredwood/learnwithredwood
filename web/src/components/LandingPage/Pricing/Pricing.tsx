@@ -28,13 +28,15 @@ const Pricing = () => {
               <li>Source code for each lesson</li>
               <li>Community Access (provided by Circle)</li>
             </ol>
-            <a
-              href="https://store.selfteach.me/rotten-ratings"
-              data-podia-embed="link"
-              className="button w-full px-3 self-end mt-auto"
+            <button
+              data-item-id="lwr-starter-tier"
+              data-item-price="199.00"
+              data-item-description="Starter Tier"
+              data-item-name="Learn with Redwood, Starter Tier"
+              className="snipcart-add-item button w-full px-3 self-end mt-auto"
             >
               Make it Happen
-            </a>
+            </button>
           </div>
         </div>
 
@@ -59,13 +61,15 @@ const Pricing = () => {
                 making this project portfolio-worthy
               </li>
             </ol>
-            <a
-              href="https://store.selfteach.me/rotten-ratings-professional"
-              data-podia-embed="link"
-              className="button w-full px-3"
+            <button
+              data-item-id="lwr-complete-tier"
+              data-item-price="264.00"
+              data-item-description="Complete Tier"
+              data-item-name="Learn with Redwood, Complete Tier"
+              className="snipcart-add-item button w-full px-3"
             >
               Start Now
-            </a>
+            </button>
           </div>
         </div>
       </div>

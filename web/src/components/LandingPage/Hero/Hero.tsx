@@ -1,3 +1,5 @@
+import { InputField } from '@redwoodjs/forms'
+
 const Hero = () => {
   return (
     <div className="pt-[200px] text-center min-h-44rem mb-20">
@@ -25,8 +27,9 @@ const Hero = () => {
           <span className="text-harleyDavidsonOrange">without the Pain</span> of
           Full Stack
         </p>
+        <input type="email" />
         <a className="button-alt" href="#get-started">
-          Get Started
+          Join the Waitlist
         </a>
         <img
           className="m-[50px_auto_10px]"

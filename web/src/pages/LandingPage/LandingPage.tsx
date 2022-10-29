@@ -3,13 +3,14 @@ import { Faqs } from 'src/components/LandingPage/Faqs'
 import { HelloMyNameIs } from 'src/components/LandingPage/HelloMyNameIs'
 import { Hero } from 'src/components/LandingPage/Hero'
 import { MetaTags } from '@redwoodjs/web'
-import { SalesLetter } from 'src/components/SalesLetter'
-import { Pricing } from 'src/components/Pricing'
-import { Topics } from 'src/components/Topics'
+import { SalesLetter } from 'src/components/LandingPage/SalesLetter'
+import { Pricing } from 'src/components/LandingPage/Pricing'
+import { Topics } from 'src/components/LandingPage/Topics'
 import { LessonsModules } from 'src/components/LandingPage/LessonsModules'
 import { CourseYouWill } from 'src/components/LandingPage/CourseYouWill'
 import { WhatWeBuild } from 'src/components/LandingPage/WhatWeBuild/WhatWeBuild'
 import { Who } from 'src/components/LandingPage/Who'
+import { Newsletter } from 'src/components/Newsletter'
 
 const LandingPage = () => {
   return (
@@ -22,6 +23,7 @@ const LandingPage = () => {
       {/* TESTIMONIAL */}
       {/* LOGO PARADE */}
       <SalesLetter />
+      <Newsletter />
       {/* Testimonial */}
       {/* Video Embed */}
       {/* Testimonial */}

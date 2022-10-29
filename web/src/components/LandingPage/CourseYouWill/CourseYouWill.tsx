@@ -1,5 +1,4 @@
 import { useMDXComponent } from 'src/hooks/useMDXComponent'
-import data from '../../../../.contentlayer/generated/CourseYouWill/_index.json'
 
 interface CardProps {
   content: string
@@ -23,6 +22,8 @@ const Card = ({ title, content }: CardProps): JSX.Element => {
 }
 
 const CourseYouWill = () => {
+  const data = require('../../../../.contentlayer/generated/CourseYouWill/_index.json')
+
   return (
     <div className="px-8 py-10 lg:py-16 mx-8 grid grid-cols-12 gap-5 bg-bgCourseYouWill bg-cover mb-[100px]">
       <div className="col-span-12 lg:col-span-5">

@@ -1,5 +1,4 @@
 import { LessonModule } from './components/LessonModule'
-import data from '../../../.contentlayer/generated/LessonsModules/_index.json'
 import CC from './images/closed-captioning.png'
 
 /**
@@ -30,6 +29,7 @@ const lessonsToArray = (
 * COMPONENT
 ---------------------------------------------------- */
 const LessonsModules = () => {
+  const data = require('../../../../.contentlayer/generated/LessonsModules/_index.json')
   let lessonNumber = 0
 
   return (

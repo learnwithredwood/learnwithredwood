@@ -22,7 +22,6 @@
       ],
       "types/*": ["./types/*", "../types/*"],
       "@redwoodjs/testing": ["../node_modules/@redwoodjs/testing/web"],
-      "@contentlayer/types": ["../api/.contentlayer/generated/types"]
     },
     "typeRoots": ["../node_modules/@types", "./node_modules/@types"],
     "types": ["jest", "@testing-library/jest-dom"],

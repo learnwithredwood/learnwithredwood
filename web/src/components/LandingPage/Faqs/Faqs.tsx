@@ -1,7 +1,7 @@
 import { Faq } from './components/Faq'
-import data from '../../../.contentlayer/generated/Faq/_index.json'
 
 const Faqs = () => {
+  const data = require('../../../../.contentlayer/generated/Faq/_index.json')
   return (
     <div className="mx-6 lg:mx-24 grid grid-cols-12 mb-16">
       <h2 className="section-heading text-center col-span-12 mb-4">
