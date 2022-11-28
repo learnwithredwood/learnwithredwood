@@ -17,7 +17,7 @@ const SalesLetter = () => {
         </p>
       </div>
 
-      <div className="section-heading col-start-3 col-span-8 text-left leading-[6.1rem] mt-10 mb-16">
+      <div className="section-heading col-start-3 col-span-8 text-center leading-[6.1rem] mt-10 mb-16">
         The Backend is what will{' '}
         <span className="text-tealGreen">
           take your career to the next level.
