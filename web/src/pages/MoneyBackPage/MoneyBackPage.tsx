@@ -1,19 +1,20 @@
-import { Link, routes } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
+import { useMDXComponent } from 'src/hooks/useMDXComponent'
 
 const MoneyBackPage = () => {
+  const moneyBack = require(`../../../.contentlayer/generated/Legal/legal__money-back.mdx.json`)
+  const Component = useMDXComponent(moneyBack.body.code)
+
   return (
     <>
-      <MetaTags title="MoneyBack" description="MoneyBack page" />
+      <MetaTags title="MoneyBack" description="Refund Policy" />
 
-      <h1>MoneyBackPage</h1>
-      <p>
-        Find me in <code>./web/src/pages/MoneyBackPage/MoneyBackPage.tsx</code>
-      </p>
-      <p>
-        My default route is named <code>moneyBack</code>, link to me with `
-        <Link to={routes.moneyBack()}>MoneyBack</Link>`
-      </p>
+      <h1 className="section-heading text-zeus text-center mb-14">
+        Refund Policy
+      </h1>
+      <div className="content">
+        <Component />
+      </div>
     </>
   )
 }
