@@ -58,7 +58,7 @@
   }
 
   label {
-    @apply block text-xl font-body font-bold text-zeus mb-1;
+    @apply block text-base md:text-xl font-body font-bold text-zeus mb-1;
   }
 
   input[type=text],
