@@ -17,7 +17,6 @@ const Who = () => {
           Who is this course for?
         </h2>
         <p>
-          Learn with Redwood is for{' '}
           <strong className="text-sinopia">
             Learn with Redwood is for frontend developers wanting to become
             fullstack.
