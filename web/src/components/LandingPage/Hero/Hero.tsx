@@ -40,7 +40,7 @@ const Hero = () => {
         </p>
         <form
           className="kwes-form"
-          action="https://kwesforms.com/api/foreign/forms/AWzEU6s7d8eXsIKToe4h"
+          action="https://kwesforms.com/api/foreign/forms/sMgyb9beZ3XIomClKHDo"
         >
           <div className="flex gap-x-4">
             <input
