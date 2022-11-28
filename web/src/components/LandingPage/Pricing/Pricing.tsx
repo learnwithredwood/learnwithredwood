@@ -80,7 +80,7 @@ const Pricing = () => {
           Not sure if this is for you?
         </h3>
         <p className="!mb-0">
-          We have a 60-Day "Try-It, Test-It, Implement-It" 100% Money Back
+          We have a 30-Day "Try-It, Test-It, Implement-It" 100% Money Back
           Guarantee.{' '}
           <Link to={routes.moneyBack()} className="text-black">
             Want details?
