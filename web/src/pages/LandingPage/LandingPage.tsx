@@ -44,7 +44,7 @@ const LandingPage = () => {
       <WhatWeBuild />
       <Who />
 
-      <div className="font-wide uppercase text-center text-xl leading-8 mb-20">
+      <div className="font-wide uppercase text-center text-xl leading-8 mb-20 px-5 md:px-0">
         This course is intentionally designed to{' '}
         <div className="text-sinopia">
           equip you with everything you need to know

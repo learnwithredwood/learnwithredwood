@@ -36,15 +36,15 @@ const LessonsModules = () => {
     <div className="mx-6 lg:mx-24 mb-24">
       {/* section heading */}
       <div className="text-center mb-8">
-        <h2 className="font-script text-tealGreen text-[3.5rem]">
+        <h2 className="font-script text-tealGreen text-[2rem] md:text-[3.5rem] md:leading-[3rem]">
           lessons &amp; modules
         </h2>
-        <div className="flex items-center gap-x-2 justify-center">
+        <div className="flex items-start md:items-center gap-x-2 justify-center">
           <div>
             <img
               src={CC}
               alt="Closed Captioning"
-              className="mix-blend-multiply"
+              className="mix-blend-multiply relative top-1 md:top-0"
             />
           </div>
           <p className="!mb-0">

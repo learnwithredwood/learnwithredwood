@@ -7,7 +7,7 @@ const HelloMyNameIs = () => {
         <img
           src={Amy}
           alt="Amy Dutton"
-          className="rotate-[-1.65deg] shadow-[16px_16px_13px_rgba(62,44,15,0.25)]"
+          className="rotate-[-1.65deg] shadow-[16px_16px_13px_rgba(62,44,15,0.25)] mx-auto"
         />
       </div>
 
@@ -18,9 +18,7 @@ const HelloMyNameIs = () => {
             <div className="font-script text-gossamer text-3xl lg:text-6xl lowercase font-normal mb-2">
               hello my name is
             </div>
-            <div className="section-heading font-normal leading-[6.1rem]">
-              Amy Dutton
-            </div>
+            <div className="section-heading font-normal">Amy Dutton</div>
           </h2>
         </div>
         {/* bio */}

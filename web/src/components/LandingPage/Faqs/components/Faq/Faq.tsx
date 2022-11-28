@@ -37,7 +37,7 @@ const Faq = ({ answer, question }: IFaqProps): JSX.Element => {
       </div>
 
       {/* question */}
-      <div className="col-span-10 col-start-2 md:col-span-8 items-center flex">
+      <div className="col-span-9 col-start-3 md:col-span-8 items-center flex pb-2">
         <p
           data-testid="faq_q-toggle"
           className="large-body cursor-pointer hover:text-sinopia !pt-0 !my-0"
@@ -52,7 +52,7 @@ const Faq = ({ answer, question }: IFaqProps): JSX.Element => {
         <button
           data-testid="faq_q-collapse-toggle"
           onClick={handleToggle}
-          className="font-wide uppercase text-base text-rustyNail bg-bone h-7 px-3 hover:bg-marigold hover:text-white rounded-sm"
+          className="font-wide uppercase text-xs md:text-base text-rustyNail bg-bone h-7 px-3 hover:bg-marigold hover:text-white rounded-sm"
         >
           {isExpanded ? 'Collapse' : 'Expand'}
         </button>

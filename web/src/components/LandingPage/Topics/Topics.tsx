@@ -2,12 +2,12 @@ const Topics = () => {
   return (
     <div className="page mb-[100px]">
       <h2 className="section-heading text-center pb-3">Topics We'll Cover</h2>
-      <p className="text-center font-medium">
+      <p className="text-center font-medium px-5 lg:px-0">
         Since we’re working with full stack, this course covers A.LOT. Here are
         some of the things you can expect to learn:
       </p>
 
-      <ul className="grid grid-cols-1 lg:grid-cols-3 gap-x-5 list-none uppercase font-wide text-lg leading-7 p-0 m-0">
+      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 list-none uppercase font-wide text-lg leading-7 p-0 md:px-5 xl:px-0 m-0">
         <li className="pb-6">Storybook</li>
         <li className="pb-6">GraphQL Schemas</li>
         <li className="pb-6">e2e Cypress Testing</li>

@@ -1,7 +1,7 @@
 const SalesLetter = () => {
   return (
     <div className="grid grid-cols-12 gap-x-5">
-      <div className="col-start-4 col-span-6">
+      <div className="col-span-10 col-start-2 md:col-start-4 md:col-span-6">
         <p className="text-sinopia font-bold">
           The skills that enable you to be a front-end developer are very
           different than the skills you need to be a back-end developer.
@@ -17,14 +17,14 @@ const SalesLetter = () => {
         </p>
       </div>
 
-      <div className="section-heading col-start-3 col-span-8 text-center leading-[6.1rem] mt-10 mb-16">
+      <div className="section-heading col-span-10 col-start-2 md:col-start-3 md:col-span-8 text-center mt-10 mb-16">
         The Backend is what will{' '}
         <span className="text-tealGreen">
           take your career to the next level.
         </span>
       </div>
 
-      <div className="col-start-4 col-span-6">
+      <div className="col-span-10 col-start-2 md:col-start-4 md:col-span-6">
         <p>With that said, let’s be honest, full-stack is hard.</p>
         <p>
           <strong className="text-sinopia">
@@ -82,16 +82,14 @@ const SalesLetter = () => {
         </p>
       </div>
 
-      <div className="col-start-4 col-span-6 mb-12">
-        <h3 className="font-script text-center text-tealGreen text-5xl mb-2">
+      <div className="col-span-10 col-start-2 md:col-start-4 md:col-span-6 mb-12">
+        <h3 className="font-script text-center text-tealGreen text-3xl md:text-5xl md:mb-2">
           introducing
         </h3>
-        <h2 className="section-heading leading-[6.1rem] text-center">
-          Learn with Redwood
-        </h2>
+        <h2 className="section-heading text-center">Learn with Redwood</h2>
       </div>
 
-      <div className="col-span-6 col-start-4">
+      <div className="col-span-10 col-start-2 md:col-span-6 md:col-start-4">
         <p>
           Learn with Redwood is a self-paced course that will give you the tools
           you need and the confidence you deserve to become a full-stack
@@ -103,7 +101,7 @@ const SalesLetter = () => {
         </p>
       </div>
 
-      <div className="font-wide uppercase text-xl col-start-3 col-span-8 text-center leading-8 mb-11">
+      <div className="font-wide uppercase text-xl col-span-10 col-start-2 md:col-start-3 md:col-span-8 text-center leading-8 mb-11">
         This course is not about learning redwood
         <br />
         <span className="text-sinopia">it’s about learning</span>{' '}
@@ -111,7 +109,7 @@ const SalesLetter = () => {
         <span className="text-sinopia">redwood</span>
       </div>
 
-      <div className="col-span-6 col-start-4 mb-12">
+      <div className="col-span-10 col-start-2 md:col-span-6 md:col-start-4 mb-12">
         <p>
           Redwood takes the most popular, best-in class libraries and
           frameworks, and bundles them together in a way that’s approachable.

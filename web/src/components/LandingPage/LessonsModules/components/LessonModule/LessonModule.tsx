@@ -16,11 +16,15 @@ const LessonModule = ({
 }: LessonModuleProps): JSX.Element => {
   return (
     <div className="w-full grid grid-cols-12 border-2 border-rustyNail mb-8">
-      <div className="py-10 pl-14 w-48 col-span-3">
-        <img src={`/images/NO-${order}.png`} alt={`Number ${order}`} />
+      <div className="py-5 pl-5 md:py-10 md:pl-14 w-48 col-span-12 md:col-span-3">
+        <img
+          src={`/images/NO-${order}.png`}
+          alt={`Number ${order}`}
+          className="h-16 md:h-auto"
+        />
       </div>
-      <div className="py-10 pr-[4.5rem] col-span-9">
-        <h3 className="mb-6 font-wide uppercase text-4xl text-donkeyBrown">
+      <div className="p-5 md:py-10 md:pr-[4.5rem] col-span-12 md:col-span-9">
+        <h3 className="mb-6 font-wide uppercase text-2xl md:text-4xl text-donkeyBrown">
           {title}
         </h3>
         <ol
@@ -31,7 +35,7 @@ const LessonModule = ({
             return (
               <li
                 key={index}
-                className="flex justify-between items-center border-b-2 border-twine border-dashed py-2"
+                className="flex justify-between items-start md:items-center border-b-2 border-twine border-dashed py-2"
               >
                 <div className="text-lg font-body font-medium">
                   {item.title}

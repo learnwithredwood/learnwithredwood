@@ -24,8 +24,8 @@ const BestParts = () => {
           </span>
         </h2>
       </div>
-      <div className="col-start-3 col-span-8 text-center">
-        <p className="leading-relaxed text-xl">
+      <div className="col-span-12 md:col-start-3 md:col-span-8 text-center">
+        <p className="leading-relaxed text-base sm:text-xl">
           <strong>RedwoodJS</strong> is built on top of the best libraries and
           frameworks that make the developer experience exceptional and your
           application stable.
