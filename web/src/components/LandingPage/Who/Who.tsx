@@ -18,8 +18,8 @@ const Who = () => {
         </h2>
         <p>
           <strong className="text-sinopia">
-            Learn with Redwood is for frontend developers wanting to become
-            fullstack.
+            Learn with Redwood is for frontend developers wanting to become full
+            stack.
           </strong>{' '}
           You want to become more comfortable and confident in Full Stack
           development. You should have a basic understanding of HTML and CSS.

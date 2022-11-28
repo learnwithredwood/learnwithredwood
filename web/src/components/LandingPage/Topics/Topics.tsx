@@ -3,7 +3,7 @@ const Topics = () => {
     <div className="page mb-[100px]">
       <h2 className="section-heading text-center pb-3">Topics We'll Cover</h2>
       <p className="text-center font-medium">
-        Since we’re working with full-stack, this course covers A.LOT. Here are
+        Since we’re working with full stack, this course covers A.LOT. Here are
         some of the things you can expect to learn:
       </p>
 

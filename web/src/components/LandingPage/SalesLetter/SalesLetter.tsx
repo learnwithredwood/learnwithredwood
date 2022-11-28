@@ -129,7 +129,7 @@ const SalesLetter = () => {
         <p>
           In this course, you will receive hands-on training, coding an
           application within a real-world development environment. You’ll leave
-          equipped with everything you need to build a full-stack application.
+          equipped with everything you need to build a full stack application.
         </p>
       </div>
 

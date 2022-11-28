@@ -11,12 +11,14 @@ import { CourseYouWill } from 'src/components/LandingPage/CourseYouWill'
 import { WhatWeBuild } from 'src/components/LandingPage/WhatWeBuild/WhatWeBuild'
 import { Who } from 'src/components/LandingPage/Who'
 import { Newsletter } from 'src/components/Newsletter'
+import { Testimonial } from 'src/components/LandingPage/Testimonial'
+import MichaelLiendo from 'src/images/michael-liendo.jpeg'
 
 const LandingPage = () => {
   return (
     <>
       <MetaTags
-        title="Learn with Redwood: Learn Full-Stack without the Pain of Full-Stack"
+        title="Learn with Redwood: Learn Full Stack without the Pain of Full Stack"
         description="Redwood.js is a full-stack framework designed to help you scale from side hustle to start-up and makes it easy to get up and running with the latest and greatest technologies."
       />
       <Hero />
@@ -25,6 +27,13 @@ const LandingPage = () => {
       <SalesLetter />
       <Newsletter />
       {/* Testimonial */}
+      <Testimonial
+        person="Michael Liendo"
+        title="Sr. Developer Advocate, AWS"
+        avatar={MichaelLiendo}
+      >
+        <p>Amy Dutton is one of the most genuine people out there.</p>
+      </Testimonial>
       {/* Video Embed */}
       {/* Testimonial */}
       <div id="get-started">

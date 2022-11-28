@@ -56,7 +56,7 @@ const HelloMyNameIs = () => {
           <a href="http://compressed.fm" target="_blank" rel="noreferrer">
             Compressed.fm
           </a>{' '}
-          supports thousands of frontend developers wanting to become fullstack
+          supports thousands of frontend developers wanting to become full stack
           (like you!) with design and engineering tips. I have built hundreds of
           websites and products for enterprise companies, startups, and even
           major recording artists. As an instructor, I help designers and

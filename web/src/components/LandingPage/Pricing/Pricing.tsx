@@ -4,9 +4,9 @@ const Pricing = () => {
   return (
     <div className="mx-8">
       <h2 className="section-heading text-center pb-4">
-        Learn Full-Stack
+        Learn Full Stack
         <br />
-        <span className="text-tealGreen">Without the Pain</span> of Full-Stack
+        <span className="text-tealGreen">Without the Pain</span> of Full Stack
       </h2>
       <h3 className="font-wide uppercase text-base md:text-xl text-center mb-16">
         Join the ZEAL and Redwood community to level up!
