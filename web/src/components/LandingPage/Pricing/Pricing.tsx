@@ -26,7 +26,7 @@ const Pricing = () => {
               <li>Dynamic, interactive self-paced lessons</li>
               <li>Full Course Transcripts and Captions</li>
               <li>Source code for each lesson</li>
-              <li>Community Access (provided by Circle)</li>
+              <li>Community Access</li>
             </ol>
             <button
               data-item-id="lwr-starter-tier"
@@ -54,7 +54,7 @@ const Pricing = () => {
               <li>Dynamic, interactive self-paced lessons</li>
               <li>Full Course Transcripts and Captions</li>
               <li>Source code for each lesson</li>
-              <li>Circle Community Access</li>
+              <li>Community Access</li>
               <li>e2e Testing with Cypress</li>
               <li>Setting up a CICD Pipeline</li>
               <li>
