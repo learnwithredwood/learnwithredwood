@@ -36,7 +36,7 @@ const Pricing = () => {
               data-item-url="https://learnwithredwood.com"
               className="snipcart-add-item button w-full px-3 self-end mt-auto"
             >
-              Make it Happen
+              Pre-Order Now
             </button>
           </div>
         </div>
@@ -70,7 +70,7 @@ const Pricing = () => {
               data-item-url="https://learnwithredwood.com"
               className="snipcart-add-item button w-full px-3"
             >
-              Start Now
+              Pre-Order Now
             </button>
           </div>
         </div>
