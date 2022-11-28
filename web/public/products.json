@@ -1,0 +1,18 @@
+[
+  {
+    "id": "lwr-starter-tier",
+    "name": "Learn with Redwood, Starter Tier",
+    "price": {
+      "usd": "199.00"
+    },
+    "url": "https://www.learnwithredwood.com"
+  },
+  {
+    "id": "lwr-complete-tier",
+    "name": "Learn with Redwood, Complete Tier",
+    "price": {
+      "usd": "264.00"
+    },
+    "url": "https://www.learnwithredwood.com"
+  }
+]
