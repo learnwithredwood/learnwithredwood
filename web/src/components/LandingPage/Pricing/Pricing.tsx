@@ -33,6 +33,7 @@ const Pricing = () => {
               data-item-price="199.00"
               data-item-description="Starter Tier"
               data-item-name="Learn with Redwood, Starter Tier"
+              data-item-url="https://learnwithredwood.com"
               className="snipcart-add-item button w-full px-3 self-end mt-auto"
             >
               Make it Happen
@@ -66,6 +67,7 @@ const Pricing = () => {
               data-item-price="264.00"
               data-item-description="Complete Tier"
               data-item-name="Learn with Redwood, Complete Tier"
+              data-item-url="https://learnwithredwood.com"
               className="snipcart-add-item button w-full px-3"
             >
               Start Now
