@@ -1,19 +1,21 @@
 import { Link, routes } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
+import { useMDXComponent } from 'src/hooks/useMDXComponent'
 
 const DisclaimersPage = () => {
+  const article = require(`../../../.contentlayer/generated/Legal/legal__disclaimers.mdx.json`)
+  const Component = useMDXComponent(article.body.code)
+
   return (
     <>
-      <MetaTags title="Disclaimers" description="Disclaimers page" />
+      <MetaTags title="Privacy Policy" description="PrivacyPolicy page" />
 
-      <h1>DisclaimersPage</h1>
-      <p>
-        Find me in <code>./web/src/pages/DisclaimersPage/DisclaimersPage.tsx</code>
-      </p>
-      <p>
-        My default route is named <code>disclaimers</code>, link to me with `
-        <Link to={routes.disclaimers()}>Disclaimers</Link>`
-      </p>
+      <h1 className="section-heading text-zeus text-center mb-14">
+        Disclaimers
+      </h1>
+      <div className="content">
+        <Component />
+      </div>
     </>
   )
 }

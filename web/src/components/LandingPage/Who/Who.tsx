@@ -5,6 +5,7 @@ const Who = () => {
   return (
     <div className="page grid grid-cols-12 gap-x-5 mb-20">
       <div className="col-span-7">
+        {/* FIXME: ADD VIDEO ANIMATION */}
         <img
           src={Terminal}
           alt="Terminal"

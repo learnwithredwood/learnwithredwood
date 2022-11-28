@@ -58,12 +58,16 @@
   }
 
   label {
-    @apply block text-xl font-wide uppercase text-cafeRoyale mb-2;
+    @apply block text-xl font-body font-bold text-zeus mb-1;
   }
 
   input[type=text],
   input[type=email] {
     @apply w-full font-body outline-none px-4 h-16 rounded-md;
+  }
+
+  textarea {
+    @apply w-full font-body outline-none px-4 min-h-[128px] py-4 rounded-md;
   }
 
   .button,
@@ -220,11 +224,34 @@
   .success-box {
     @apply bg-sulu border-2 border-sheenGreen p-5 text-center
   }
+
+  /* contentlayer component */
+  .content h2 {
+    @apply font-narrow uppercase text-6xl pt-8 pb-4
+  }
+
+  .content h3 {
+    @apply font-wide uppercase text-2xl pt-4 mb-2 text-tealGreen
+  }
+
+  .content h4 {
+    @apply font-body leading-6 md:leading-8 font-bold text-base md:text-xl;
+  }
+
+  .content li {
+    @apply font-body mb-8 leading-6 md:leading-8 font-medium text-base md:text-xl;
+  }
+
+
 }
 
 
 @layer utilities {
   .center {
     @apply flex items-center justify-center;
+  }
+
+  .gridAreaAutoGrow {
+    grid-area: 1 / 1 / 2 / 2;
   }
 }

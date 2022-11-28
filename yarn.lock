@@ -17403,6 +17403,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"kwesforms@npm:^2.1.27":
+  version: 2.1.27
+  resolution: "kwesforms@npm:2.1.27"
+  checksum: 1a98b68bf151b2941437e3b07ae55ccb32d11f246f1f0013da3145048c558ee1207f638b499a1540945c1dcd257e1ce45be3761a6e5644bf889e9fd1b33ab4e0
+  languageName: node
+  linkType: hard
+
 "language-subtag-registry@npm:~0.3.2":
   version: 0.3.21
   resolution: "language-subtag-registry@npm:0.3.21"
@@ -26192,6 +26199,7 @@ __metadata:
     babel-plugin-prismjs: ^2.1.0
     date-fns: ^2.28.0
     framer-motion: ^6.2.8
+    kwesforms: ^2.1.27
     octokit: ^2.0.9
     plop: ^3.1.1
     postcss: ^8.4.12

@@ -1,17 +1,20 @@
-import { InputField } from '@redwoodjs/forms'
+import kwesforms from 'kwesforms'
+import { useEffect } from 'react'
 
 const Hero = () => {
+  useEffect(() => {
+    kwesforms.init()
+  })
+
   return (
     <div className="pt-[200px] text-center min-h-44rem mb-20">
       <div className="relative inline-block">
-        <a
-          href="/"
-          className="absolute -left-[5rem] -top-[8.5rem] -rotate-[23] z-0"
-        >
+        <a href="/" className="absolute -left-[5rem] -top-[8.5rem] z-0">
+          {/* FIXME: Tailwind rotation style isn't working */}
           <img
             src="/images/badge.svg"
             alt="Learn with Redwood"
-            className="mx-auto"
+            className="mx-auto rotate(-23deg)"
           />
         </a>
         <h1 className="text-center text-rangoonGreen mb-8 relative z-10">
@@ -27,10 +30,33 @@ const Hero = () => {
           <span className="text-harleyDavidsonOrange">without the Pain</span> of
           Full Stack
         </p>
-        <input type="email" />
-        <a className="button-alt" href="#get-started">
-          Join the Waitlist
-        </a>
+        <p className="max-w-[800px]">
+          <strong>Want to be in the know?</strong> We'll give you a behind the
+          scenes look at the course and{' '}
+          <strong>
+            <em>FREE</em>
+          </strong>{' '}
+          bonuses, sent directly to your inbox.
+        </p>
+        <form
+          className="kwes-form"
+          action="https://kwesforms.com/api/foreign/forms/AWzEU6s7d8eXsIKToe4h"
+        >
+          <div className="flex gap-x-4">
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email Address"
+              rules="required"
+            />
+            <button
+              className="button-alt !px-8 whitespace-nowrap"
+              type="submit"
+            >
+              Join the Wait List
+            </button>
+          </div>
+        </form>
         <img
           className="m-[50px_auto_10px]"
           src="/images/powered-by-zeal.svg"

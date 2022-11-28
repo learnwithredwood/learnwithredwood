@@ -24,7 +24,9 @@ const InteriorLayout = ({ children }: InteriorLayoutProps) => {
           <Hamburger />
         </button>
 
-        {children}
+        <div className="grid grid-cols-12 mb-36 pt-24">
+          <div className="col-start-4 col-span-6">{children}</div>
+        </div>
         <Footer />
       </div>
     </div>

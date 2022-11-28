@@ -3,12 +3,12 @@ import {
   Form,
   Label,
   SelectField,
-  TextAreaField,
   TextField,
   useForm,
 } from '@redwoodjs/forms'
 import { MetaTags } from '@redwoodjs/web'
 import { useState } from 'react'
+import { AutoGrowTextarea } from 'src/components/Form/AutoGrowTextarea/AutoGrowTextarea'
 
 const ContactPage = () => {
   const [error, setError] = useState('')
@@ -50,7 +50,9 @@ const ContactPage = () => {
     <>
       <MetaTags title="Contact" description="Contact page" />
 
-      <h1 className="section-heading text-zeus">Contact Us</h1>
+      <h1 className="section-heading text-zeus text-center mb-14">
+        Contact Us
+      </h1>
       {error && <div className="error-box">{error}</div>}
 
       {success ? (
@@ -61,7 +63,7 @@ const ContactPage = () => {
           onSubmit={onSubmit}
           method="POST"
           action="/.redwood/functions/contact"
-          className="flex gap-10 flex-col lg:flex-row"
+          className="flex gap-10 flex-col"
         >
           {/* full name */}
           <div className="field">
@@ -100,7 +102,7 @@ const ContactPage = () => {
             <Label name="email" className="input" errorClassName="input error">
               Message
             </Label>
-            <TextAreaField name="message" />
+            <AutoGrowTextarea />
           </div>
 
           {/* button */}
