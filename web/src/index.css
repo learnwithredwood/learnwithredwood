@@ -131,7 +131,7 @@
   }
 
   .section-heading {
-    @apply font-narrow text-cafeRoyale uppercase text-[5rem] md:text-[7rem] leading-[.9];
+    @apply font-narrow text-cafeRoyale uppercase text-[4rem] md:text-[7rem] leading-[.9];
   }
 
   p.large-body {
@@ -254,4 +254,19 @@
   .gridAreaAutoGrow {
     grid-area: 1 / 1 / 2 / 2;
   }
+}
+
+
+/* SNIPCART COLORS */
+button.snipcart-cart-header__option,
+button.snipcart-cart-header__close-button {
+  @apply hover:bg-transparent
+}
+
+button.snipcart-button-primary {
+  @apply bg-sinopia hover:bg-tealGreen text-white font-bold;
+}
+
+.snipcart-button-link {
+  @apply bg-halfSpanishWhite text-donkeyBrown px-5 border-0 h-10;
 }
