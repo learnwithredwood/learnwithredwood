@@ -55,7 +55,6 @@ const Pricing = () => {
               <li>Full Course Transcripts and Captions</li>
               <li>Source code for each lesson</li>
               <li>Community Access</li>
-              <li>e2e Testing with Cypress</li>
               <li>Setting up a CICD Pipeline</li>
               <li>
                 Bonus designs for taking the application to the next level and
