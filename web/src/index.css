@@ -256,7 +256,9 @@
     @apply font-body mb-8 leading-6 md:leading-8 font-medium text-base md:text-xl;
   }
 
-
+  .field {
+    @apply mb-6;
+  }
 }
 
 

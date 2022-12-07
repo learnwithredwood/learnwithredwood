@@ -1,7 +1,7 @@
-import {Price} from './Price'
+import { Price } from './Price'
 
 export const generated = () => {
   return <Price />
 }
 
-export default { title: 'Components/Price' }
+export default { title: 'Components/LandingPage/Pricing/Price' }

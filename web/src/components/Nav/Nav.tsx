@@ -1,4 +1,4 @@
-import Icon from '../Icon/Icon'
+import { Icon } from '../Icon/Icon'
 import { Link, routes } from '@redwoodjs/router'
 import { MouseEvent, useEffect } from 'react'
 

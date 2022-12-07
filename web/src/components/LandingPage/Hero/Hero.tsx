@@ -17,7 +17,7 @@ const Hero = () => {
           <img
             src="/images/badge.svg"
             alt="Learn with Redwood"
-            className="mx-auto rotate(-23deg) w-[125px] h-[125px] lg:w-[183px] lg:h-[182px]"
+            className="mx-auto transform -rotate-12 w-[125px] h-[125px] lg:w-[183px] lg:h-[182px]"
           />
         </a>
         <h1 className="text-center text-rangoonGreen mb-8 relative z-10">

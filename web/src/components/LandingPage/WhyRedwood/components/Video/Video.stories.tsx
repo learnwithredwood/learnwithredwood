@@ -1,7 +1,7 @@
-import {Video} from './Video'
+import { Video } from './Video'
 
 export const generated = () => {
   return <Video />
 }
 
-export default { title: 'Components/Video' }
+export default { title: 'Components/LandingPage/WhyRedwood/Video' }

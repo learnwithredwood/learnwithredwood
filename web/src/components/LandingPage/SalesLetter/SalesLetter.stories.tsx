@@ -1,7 +1,7 @@
-import {SalesLetter} from './SalesLetter'
+import { SalesLetter } from './SalesLetter'
 
 export const generated = () => {
   return <SalesLetter />
 }
 
-export default { title: 'Components/SalesLetter' }
+export default { title: 'Components/LandingPage/SalesLetter' }

@@ -1,29 +1,29 @@
-import egghead from './images/egghead.png'
-import freeCodeCamp from './images/free-code-camp.png'
-import logRocket from './images/log-rocket.png'
-import smashingMagazine from './images/smashing-magazine.png'
+import jamstack from './images/jamstack.png'
+import levelup from './images/levelup-tutorials.png'
+import prisma from './images/prisma.png'
+import ufl from './images/ufl.png'
 
 const LogoParade = () => {
   return (
     <div className="flex justify-between bg-starkWhite bg-opacity-40 mix-blend-multiply mx-12 px-20 py-6 mb-24">
-      {/* smashing magazine */}
+      {/* jamstack */}
       <div className="center mix-blend-multiply">
-        <img src={smashingMagazine} alt="Smashing Magazine" />
+        <img src={jamstack} alt="Jamstack Conference" />
       </div>
 
-      {/* log rocket */}
+      {/* university of florida */}
       <div className="center mix-blend-multiply">
-        <img src={logRocket} alt="Log Rocket" />
+        <img src={ufl} alt="University of Florida" />
       </div>
 
-      {/* free code camp */}
+      {/* prisma */}
       <div className="center mix-blend-multiply">
-        <img src={freeCodeCamp} alt="Free Code Camp" />
+        <img src={prisma} alt="Prisma Day 2022" />
       </div>
 
-      {/* egghead */}
+      {/* levelup */}
       <div className="center mix-blend-multiply">
-        <img src={egghead} alt="Egghead.io" />
+        <img src={levelup} alt="Level Up Tutorials" />
       </div>
     </div>
   )

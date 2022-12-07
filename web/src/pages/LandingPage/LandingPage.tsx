@@ -12,7 +12,16 @@ import { WhatWeBuild } from 'src/components/LandingPage/WhatWeBuild/WhatWeBuild'
 import { Who } from 'src/components/LandingPage/Who'
 import { Newsletter } from 'src/components/Newsletter'
 import { Testimonial } from 'src/components/LandingPage/Testimonial'
-import MichaelLiendo from 'src/images/michael-liendo.jpeg'
+import { LogoParade } from 'src/components/LandingPage/LogoParade'
+import { VideoEmbed } from 'src/components/VideoEmbed'
+import { BulkPricing } from 'src/components/LandingPage/BulkPricing/BulkPricing'
+
+// Avatars
+import MichaelLiendo from 'src/images/avatars/michael-liendo.jpeg'
+import Tom from 'src/images/avatars/tom.png'
+import David from 'src/images/avatars/david.jpeg'
+import Amanda from 'src/images/avatars/amanda.jpeg'
+import { NotSure } from 'src/components/NotSure'
 
 const LandingPage = () => {
   return (
@@ -22,22 +31,69 @@ const LandingPage = () => {
         description="Redwood.js is a full-stack framework designed to help you scale from side hustle to start-up and makes it easy to get up and running with the latest and greatest technologies."
       />
       <Hero />
-      {/* TESTIMONIAL */}
-      {/* LOGO PARADE */}
+      <Testimonial
+        person="Tom Preston-Werner"
+        title="Founder and Former CEO of GitHub, Co-Founder of Redwood"
+        avatar={Tom}
+        isAvatarOnLeft={true}
+      >
+        <p>
+          Amy Dutton is an accomplished course creator and tech leader who has
+          helped thousands of engineers and designers to get to the next level!
+          Her new course, Learn with Redwood will give you the foundation you
+          need for building something extraordinary. I highly recommend this
+          course for the next generation of full stack engineers and startup
+          leaders who want to build quickly, beautifully and easily.{' '}
+        </p>
+      </Testimonial>
+      <LogoParade />
       <SalesLetter />
       <Newsletter />
+      {/* Testimonial */}
+      <Testimonial
+        person="David Price"
+        title="Co-Founder of Redwood"
+        avatar={David}
+        isAvatarOnLeft={true}
+      >
+        <p>
+          Amy Dutton is a rare expert developer who is a master of design and
+          teaching! Her approach makes things easy to understand even for
+          full-stack, which is inherently complex. Amy is an expert at teaching
+          both the components and workflow you'll need to take your career to
+          the next level. Her focus on Redwood makes the course and learnings
+          that much more integrated and accessible. I highly recommend her!
+        </p>
+      </Testimonial>
+      <Testimonial
+        person="Amanda Giannelli"
+        title="Software Engineer - DX-Support Experience @ Okta and Redwood.js Core Team"
+        avatar={Amanda}
+        isAvatarOnLeft={false}
+      >
+        <p>
+          From Amy’s very first YouTube video, she has been providing content
+          that is to the point and easy to follow all while being extremely fun
+          and engaging. Amy knows how to build up to the finale in just the
+          right way to leave you feeling confident in what you’ve learned.
+          LearnWithRedwood is no different!
+        </p>
+      </Testimonial>
+      {/* Video Embed */}
+      {/* <VideoEmbed embed={'https://www.youtube.com/watch?v=9R5A7e1DmJQ'} /> */}
       {/* Testimonial */}
       <Testimonial
         person="Michael Liendo"
         title="Sr. Developer Advocate, AWS"
         avatar={MichaelLiendo}
+        isAvatarOnLeft={true}
       >
         <p>Amy Dutton is one of the most genuine people out there.</p>
       </Testimonial>
-      {/* Video Embed */}
-      {/* Testimonial */}
       <div id="get-started">
         <Pricing />
+        <NotSure />
+        <BulkPricing />
       </div>
       <Topics />
       <CourseYouWill />
@@ -60,6 +116,8 @@ const LandingPage = () => {
       <LessonsModules />
       {/* <WhyRedwood /> */}
       <Pricing />
+      <NotSure />
+      <BulkPricing />
       <Faqs />
     </>
   )

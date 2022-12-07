@@ -1,9 +1,30 @@
-import Icon from './Icon'
+import { Icon, Props as IconProps } from './Icon'
 
-// TODO: Create Stories for Icon Component
+const Template = (args: IconProps) => <Icon {...args} />
 
-export const generated = () => {
-  return <Icon name="github" />
+export const Close = Template.bind({})
+Close.args = {
+  name: 'close',
+}
+
+export const GitHub = Template.bind({})
+GitHub.args = {
+  name: 'github',
+}
+
+export const Medium = Template.bind({})
+Medium.args = {
+  name: 'medium',
+}
+
+export const Twitter = Template.bind({})
+Twitter.args = {
+  name: 'twitter',
+}
+
+export const YouTube = Template.bind({})
+YouTube.args = {
+  name: 'youtube ',
 }
 
 export default { title: 'Components/Icon' }

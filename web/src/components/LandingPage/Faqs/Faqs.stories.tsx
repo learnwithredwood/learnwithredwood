@@ -4,4 +4,4 @@ export const generated = () => {
   return <Faqs />
 }
 
-export default { title: 'Components/Faqs' }
+export default { title: 'Components/LandingPage/Faqs' }

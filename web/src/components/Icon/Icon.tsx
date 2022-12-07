@@ -4,7 +4,7 @@ import { Medium } from './Medium'
 import { Twitter } from './Twitter'
 import { YouTube } from './YouTube'
 
-interface Props {
+export interface Props {
   name: string
   className?: string
   width?: number
@@ -28,4 +28,4 @@ const Icon = ({ name, className, width, height }: Props): JSX.Element => {
   }
 }
 
-export default Icon
+export { Icon }

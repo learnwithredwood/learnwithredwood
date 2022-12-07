@@ -1,7 +1,7 @@
-import {LessonsModules} from './LessonsModules'
+import { LessonsModules } from './LessonsModules'
 
 export const generated = () => {
   return <LessonsModules />
 }
 
-export default { title: 'Components/LessonsModules' }
+export default { title: 'Components/LandingPage/LessonsModules' }

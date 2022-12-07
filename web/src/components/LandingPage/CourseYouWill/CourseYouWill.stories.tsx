@@ -1,7 +1,7 @@
-import {CourseYouWill} from './CourseYouWill'
+import { CourseYouWill } from './CourseYouWill'
 
 export const generated = () => {
   return <CourseYouWill />
 }
 
-export default { title: 'Components/CourseYouWill' }
+export default { title: 'Components/LandingPage/CourseYouWill' }

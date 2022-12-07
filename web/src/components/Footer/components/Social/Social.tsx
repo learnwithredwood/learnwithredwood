@@ -1,5 +1,5 @@
 import { SOCIAL } from 'src/utils/Constants'
-import Icon from '../../../Icon/Icon'
+import { Icon } from '../../../Icon/Icon'
 
 const Social = () => {
   return (

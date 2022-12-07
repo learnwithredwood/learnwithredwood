@@ -17,7 +17,6 @@ const Routes = () => {
     <Router>
       {/* interior pages */}
       <Set wrap={InteriorLayout}>
-        <Route path="/lead-magnet" page={LeadMagnetPage} name="leadMagnet" />
         <Route path="/support" page={SupportPage} name="support" />
         <Route path="/contact" page={ContactPage} name="contact" />
         <Route path="/student-discount" page={StudentDiscountPage} name="studentDiscount" />
@@ -44,6 +43,7 @@ const Routes = () => {
       </Set>
       {/* landing page */}
       <Set wrap={LandingPageLayout}>
+        <Route path="/lead-magnet" page={LeadMagnetPage} name="leadMagnet" />
         <Route path="/" page={LandingPage} name="landing" />
       </Set>
       <Route notfound page={NotFoundPage} />

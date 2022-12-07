@@ -1,1 +1,1 @@
-jest.mock('src/hooks/useGetData')
+// jest.mock('src/hooks/useGetData')

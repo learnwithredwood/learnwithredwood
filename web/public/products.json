@@ -14,5 +14,29 @@
       "usd": "264.00"
     },
     "url": "https://www.learnwithredwood.com"
+  },
+  {
+    "id": "lwr-10-spots",
+    "name": "Learn with Redwood, 10 Spots",
+    "price": {
+      "usd": "2112.00"
+    },
+    "url": "https://www.learnwithredwood.com"
+  },
+  {
+    "id": "lwr-20-spots",
+    "name": "Learn with Redwood, 20 Spots",
+    "price": {
+      "usd": "4224.00"
+    },
+    "url": "https://www.learnwithredwood.com"
+  },
+  {
+    "id": "lwr-30-spots",
+    "name": "Learn with Redwood, 30 Spots",
+    "price": {
+      "usd": "6336.00"
+    },
+    "url": "https://www.learnwithredwood.com"
   }
 ]

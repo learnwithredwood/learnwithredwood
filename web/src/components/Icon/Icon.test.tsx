@@ -1,7 +1,7 @@
 import { render } from '@redwoodjs/testing/web'
 import renderer from 'react-test-renderer'
 
-import Icon from './Icon'
+import { Icon } from './Icon'
 
 describe('Icon', () => {
   it('renders successfully', () => {
@@ -23,6 +23,11 @@ describe('Icon', () => {
   it('renders Medium icon', () => {
     const MediumIcon = renderer.create(<Icon name="medium" />).toJSON()
     expect(MediumIcon).toMatchSnapshot()
+  })
+
+  it('renders Twitter icon', () => {
+    const TwitterIcon = renderer.create(<Icon name="twitter" />).toJSON()
+    expect(TwitterIcon).toMatchSnapshot()
   })
 
   it('renders YouTube icon', () => {

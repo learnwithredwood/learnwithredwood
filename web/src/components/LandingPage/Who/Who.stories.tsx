@@ -1,7 +1,7 @@
-import {Who} from './Who'
+import { Who } from './Who'
 
 export const generated = () => {
   return <Who />
 }
 
-export default { title: 'Components/Who' }
+export default { title: 'Components/LandingPage/Who' }
