@@ -48,11 +48,11 @@ const RegisterToday = () => {
               <input
                 type="checkbox"
                 name="time"
-                value="December 18"
-                id="time-december-18"
+                value="December 15"
+                id="time-december-15"
               />{' '}
-              <label htmlFor="time-december-18" className="text-white">
-                December 18, 2022 at 11am PST
+              <label htmlFor="time-december-15" className="text-white">
+                December 15, 2022 at 12pm PST
               </label>
             </div>
           </fieldset>
