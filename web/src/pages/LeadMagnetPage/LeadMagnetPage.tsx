@@ -7,14 +7,16 @@ import { VideoEmbed } from 'src/components/VideoEmbed'
 const LeadMagnetPage = () => {
   return (
     <>
-      <MetaTags title="Lead Magnet" description="" />
+      <MetaTags
+        title="FREE Masterclass Series: Future Proofing Your Career"
+        description=""
+      />
       <Hero />
-      <div className="grid grid-cols-12 w-full mb-48">
-        <div className="col-span-6 col-start-2">
-          <VideoEmbed embed="https://www.youtube.com/watch?v=9R5A7e1DmJQ" />
+      <div className="grid grid-cols-12 w-full mb-12 md:mb-48">
+        <div className="col-span-12 md:col-span-6 md:col-start-2">
           <SalesLetter />
         </div>
-        <div className="col-span-5">
+        <div className="col-span-12 md:col-span-5">
           <div className="sticky top-5">
             <RegisterToday />
           </div>

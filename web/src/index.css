@@ -57,6 +57,7 @@
     background-blend-mode: multiply;
   }
 
+  .label,
   label {
     @apply block text-base md:text-xl font-body font-bold text-zeus mb-1;
   }
@@ -97,6 +98,20 @@
 
   hr {
     @apply border-t-2 h-0 bg-none w-full border-dashed border-twine;
+  }
+
+  input[type=checkbox] {
+    @apply hidden;
+  }
+
+  input[type=checkbox] + label {
+    @apply bg-checkboxUnchecked min-h-[32px] pl-10 bg-no-repeat cursor-pointer;
+    background-size: 32px 32px;
+  }
+
+  input[type=checkbox]:checked + label {
+    @apply bg-checkboxChecked;
+    background-size: 32px 32px;
   }
 
   code {

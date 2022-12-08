@@ -3,12 +3,15 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
+        checkboxChecked: 'url("./images/checkbox--checked.svg")',
+        checkboxUnchecked: 'url("./images/checkbox--unchecked.svg")',
         paperTexture: 'url("./images/bg__paper-texture.jpg")',
         bgCourseYouWill: 'url("./images/bg__courseYouWill.png")',
         bgPricing: 'url("./images/bg__pricing.png")',
         bgNav: 'url("./images/bg__nav.png")',
         bgNewsletter: 'url("./images/bg__newsletter.jpg")',
         treeStump: 'url("./images/treestump.svg")',
+        registerToday: 'url("./images/bg__registerToday.png")',
       },
       backgroundPosition: {
         pricingPosition: '0 250px',

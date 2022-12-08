@@ -1,47 +1,75 @@
+import taylor from '/src/images/avatars/taylor.png'
+import johnPierre from '/src/images/avatars/john-pierre.png'
+import erik from '/src/images/avatars/erik.png'
+import amy from '/src/images/avatars/amy.png'
+
 const Hero = () => {
   return (
     <div className="pt-28 md:pt-[125px] text-center min-h-44rem mb-20">
-      <div className="relative inline-block">
+      <div className="relative inline-block px-6 md:px-10 lg:px-0">
         <img
           src="/images/badge.svg"
           alt="Learn with Redwood"
-          className="mx-auto rotate(-23deg) w-[125px] h-[125px] lg:w-[183px] lg:h-[182px] absolute -left-20 -top-16 transform -rotate-12"
+          className="mx-auto rotate(-23deg) w-[125px] h-[125px] md:w-[183px] md:h-[182px] absolute -top-20 left-2 lg:-left-20 lg:-top-16 transform -rotate-12"
         />
-        <h3 className="text-center font-wide text-[3.875rem] uppercase text-tealGreen leading-none">
+        <h3 className="text-center font-wide text-[1.5rem] md:text-[3.875rem] uppercase text-tealGreen leading-none">
           FREE
         </h3>
         <h1 className="text-center text-rangoonGreen mb-8 relative z-10">
-          <div className="font-wide uppercase leading-none text-[3.125rem]">
+          <div className="font-wide uppercase leading-none text-[1.75rem] md:text-[3.125rem]">
             MASTERCLASS SERIES
           </div>
-          <div className="font-narrow uppercase leading-none text-[6rem]">
+          <div className="font-narrow uppercase leading-none text-[4rem] md:text-[6rem]">
             FUTURE PROOFING YOUR CAREER
           </div>
         </h1>
-        <p className="text-2xl font-semibold max-w-[800px] text-left mb-10">
+        <p className="text-base md:text-2xl font-semibold max-w-[800px] text-left mb-10">
           The best thing to do in a volatile, fluid economy and hiring
           environment is to make sure you stand out as a technologist and a
           potential candidate.
         </p>
+      </div>
 
-        <div>
-          <img src="" alt="" />
-          <img src="" alt="" />
+      <div className="grid grid-cols-2 xl:flex xl:items-center xl:justify-center gap-x-10 xl:gap-x-20 gap-y-10 xl:flex-row w-full">
+        <div className="flex gap-x-8 row-start-2 col-span-2 md:col-span-1 justify-center md:justify-end">
+          <img
+            src={amy}
+            alt="Amy Dutton"
+            className="border-4 rounded-full border-white w-32 xl:w-auto"
+          />
+          <img
+            src={erik}
+            alt="Erik Guzman"
+            className="border-4 rounded-full border-white w-32 xl:w-auto"
+          />
         </div>
 
-        <div>
-          <p className="text-2xl font-semibold mb-4">How do you do this?</p>
-          <h3 className="text-4xl uppercase text-sinopia font-wide leading-none mb-10">
+        <div className="row-start-1 col-span-2">
+          <p className="text-lg md:text-2xl font-semibold mb-4">
+            How do you do this?
+          </p>
+          <h3 className="text-xl md:text-4xl uppercase text-sinopia font-wide leading-none mb-10">
             By Leveling Up
           </h3>
-          <a href="#register-today" className="button button-alt">
+          <a
+            href="#register-today"
+            className="button button-alt w-11/12 md:w-auto"
+          >
             Register Now
           </a>
         </div>
 
-        <div>
-          <img src="" alt="" />
-          <img src="" alt="" />
+        <div className="flex gap-x-8 row-start-3 col-span-2 md:col-span-1 md:row-start-2 justify-center md:justify-start">
+          <img
+            src={taylor}
+            alt="Taylor Desseyn"
+            className="border-4 rounded-full border-white w-32 xl:w-auto"
+          />
+          <img
+            src={johnPierre}
+            alt="John Pierre"
+            className="border-4 rounded-full border-white w-32 xl:w-auto"
+          />
         </div>
       </div>
     </div>
