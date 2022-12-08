@@ -43,7 +43,7 @@ const Routes = () => {
       </Set>
       {/* landing page */}
       <Set wrap={LandingPageLayout}>
-        <Route path="/lead-magnet" page={LeadMagnetPage} name="leadMagnet" />
+        <Route path="/masterclass" page={LeadMagnetPage} name="leadMagnet" />
         <Route path="/" page={LandingPage} name="landing" />
       </Set>
       <Route notfound page={NotFoundPage} />
