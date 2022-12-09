@@ -22,40 +22,11 @@ const RegisterToday = () => {
           </label>
           <input type="text" name="fullName" rules="required" required />
         </div>
-        <div className="field">
+        <div className="field mb-10">
           <label className="text-white" htmlFor="email">
             Email Address
           </label>
           <input type="email" name="email" rules="required" required />
-        </div>
-        <div className="field">
-          <div className="label text-white mb-3">
-            What time works best for you?
-          </div>
-          <fieldset data-kw-group>
-            <div className="label mb-3 text-white">
-              <input
-                type="checkbox"
-                name="time"
-                value="December 13"
-                id="time-december-13"
-              />{' '}
-              <label htmlFor="time-december-13" className="text-white mb-3">
-                December 13, 2022 at 11am PST
-              </label>
-            </div>
-            <div className="label text-white">
-              <input
-                type="checkbox"
-                name="time"
-                value="December 15"
-                id="time-december-15"
-              />{' '}
-              <label htmlFor="time-december-15" className="text-white">
-                December 15, 2022 at 12pm PST
-              </label>
-            </div>
-          </fieldset>
         </div>
         <button type="submit" className="button px-16 whitespace-nowrap">
           Register Now!

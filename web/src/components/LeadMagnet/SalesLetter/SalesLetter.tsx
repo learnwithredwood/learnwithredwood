@@ -26,8 +26,8 @@ const SalesLetter = () => {
       <p>
         Our FREE Masterclass Series will get you up close and personal with
         keynote speaker and tech leader, Amy Dutton, and experts such as Erik
-        Guzman, John Pierre, and more. There will also be exclusive
-        opportunities for LIVE workshopping and Q&A with panelists.{' '}
+        Guzman, Jennifer Tacheff, and Taylor Desseyn. There will also be
+        exclusive opportunities for LIVE workshopping and Q&A with panelists.{' '}
       </p>
 
       <p>

@@ -1,5 +1,5 @@
 import taylor from '/src/images/avatars/taylor.png'
-import johnPierre from '/src/images/avatars/john-pierre.png'
+import jennifer from '/src/images/avatars/jennifer.png'
 import erik from '/src/images/avatars/erik.png'
 import amy from '/src/images/avatars/amy.png'
 
@@ -15,7 +15,7 @@ const Hero = () => {
         <h3 className="text-center font-wide text-[1.5rem] md:text-[3.875rem] uppercase text-tealGreen leading-none">
           FREE
         </h3>
-        <h1 className="text-center text-rangoonGreen mb-8 relative z-10">
+        <h1 className="text-center text-rangoonGreen mb-4 relative z-10">
           <div className="font-wide uppercase leading-none text-[1.75rem] md:text-[3.125rem]">
             MASTERCLASS SERIES
           </div>
@@ -23,6 +23,9 @@ const Hero = () => {
             FUTURE PROOFING YOUR CAREER
           </div>
         </h1>
+        <h3 className="mb-8 font-wide text-sinopia text-lg uppercase">
+          Live&nbsp;&nbsp;||&nbsp;&nbsp;December 15 at 12:00pm PST
+        </h3>
         <p className="text-base md:text-2xl font-semibold max-w-[800px] text-left mb-10">
           The best thing to do in a volatile, fluid economy and hiring
           environment is to make sure you stand out as a technologist and a
@@ -66,8 +69,8 @@ const Hero = () => {
             className="border-4 rounded-full border-white w-32 xl:w-auto"
           />
           <img
-            src={johnPierre}
-            alt="John Pierre"
+            src={jennifer}
+            alt="Jennifer Tacheff"
             className="border-4 rounded-full border-white w-32 xl:w-auto"
           />
         </div>
