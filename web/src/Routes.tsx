@@ -15,6 +15,8 @@ import { LegalLayout } from './layouts/LegalLayout/LegalLayout'
 const Routes = () => {
   return (
     <Router>
+      <Route path="/masterclass-thanks" page={MasterclassThanksPage} name="masterclassThanks" />
+      <Route path="/masterclass-confirm" page={MasterclassConfirmPage} name="masterclassConfirm" />
       {/* interior pages */}
       <Set wrap={InteriorLayout}>
         <Route path="/support" page={SupportPage} name="support" />
@@ -43,7 +45,7 @@ const Routes = () => {
       </Set>
       {/* landing page */}
       <Set wrap={LandingPageLayout}>
-        <Route path="/masterclass" page={LeadMagnetPage} name="leadMagnet" />
+        <Route path="/masterclass" page={MasterclassPage} name="leadMagnet" />
         <Route path="/" page={LandingPage} name="landing" />
       </Set>
       <Route notfound page={NotFoundPage} />
