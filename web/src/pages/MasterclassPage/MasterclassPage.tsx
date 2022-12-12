@@ -9,7 +9,8 @@ const LeadMagnetPage = () => {
     <>
       <MetaTags
         title="FREE Masterclass Series: Future Proofing Your Career"
-        description=""
+        description="Learning backend web development increases your career opportunities, earning potential, and makes you a more well-rounded engineer. Getting started with full-stack development can be easy. Here’s how."
+        ogUrl="https://www.learnwithredwood.com/masterclass"
       />
       <Hero />
       <div className="grid grid-cols-12 w-full mb-12 md:mb-48">

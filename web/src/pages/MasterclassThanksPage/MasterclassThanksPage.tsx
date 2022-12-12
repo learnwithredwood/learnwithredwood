@@ -19,7 +19,11 @@ const MasterclassThanksPage = () => {
 
   return (
     <>
-      <MetaTags title="Masterclass Thanks" />
+      <MetaTags
+        title="Masterclass Thanks"
+        description="Learning backend web development increases your career opportunities, earning potential, and makes you a more well-rounded engineer. Getting started with full-stack development can be easy. Here’s how."
+        ogUrl="https://www.learnwithredwood.com/masterclass"
+      />
       <div>
         <PageHeader
           pageTitle="Thank you for Registering"
