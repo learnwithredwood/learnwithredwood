@@ -1,0 +1,5 @@
+export { Email } from './Email'
+export { Facebook } from './Facebook'
+export { Twitter } from './Twitter'
+export { WhatsApp } from './WhatsApp'
+export { LinkedIn } from './LinkedIn'

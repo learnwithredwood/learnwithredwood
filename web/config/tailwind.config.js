@@ -44,6 +44,11 @@ module.exports = {
         melon: '#ffb5b0', // light pink
         cabSav: '#4d0c20', // maroon
         alpine: '#b28743', // tan
+        twitter: '#1ba1f1',
+        facebook: '#4167b1',
+        email: '#7c7c7c',
+        whatsApp: '#23d365',
+        linkedIn: '#0d75a7',
       },
       minHeight: {
         '44rem': '44rem',
