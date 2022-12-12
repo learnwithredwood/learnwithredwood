@@ -41,7 +41,7 @@ const Hero = () => {
               alt="Amy Dutton"
               className="border-4 rounded-full border-white w-32 xl:w-auto"
             />
-            <h4 className="font-body font-bold text-tealGreen py-1">
+            <h4 className="font-body font-bold text-donkeyBrown py-1">
               Amy Dutton
             </h4>
           </div>
@@ -51,7 +51,7 @@ const Hero = () => {
               alt="Erik Guzman"
               className="border-4 rounded-full border-white w-32 xl:w-auto"
             />
-            <h4 className="font-body font-bold text-tealGreen py-1">
+            <h4 className="font-body font-bold text-donkeyBrown py-1">
               Erik Guzman
             </h4>
           </div>
@@ -79,7 +79,7 @@ const Hero = () => {
               alt="Taylor Desseyn"
               className="border-4 rounded-full border-white w-32 xl:w-auto"
             />
-            <h4 className="font-body font-bold text-tealGreen py-1">
+            <h4 className="font-body font-bold text-donkeyBrown py-1">
               Taylor Desseyn
             </h4>
           </div>
@@ -89,7 +89,7 @@ const Hero = () => {
               alt="Jennifer Tacheff"
               className="border-4 rounded-full border-white w-32 xl:w-auto"
             />
-            <h4 className="font-body font-bold text-tealGreen py-1">
+            <h4 className="font-body font-bold text-donkeyBrown py-1">
               Jennifer Tacheff
             </h4>
           </div>
