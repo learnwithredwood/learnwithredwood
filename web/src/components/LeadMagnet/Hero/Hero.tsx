@@ -35,16 +35,26 @@ const Hero = () => {
 
       <div className="grid grid-cols-2 xl:flex xl:items-center xl:justify-center gap-x-10 xl:gap-x-20 gap-y-10 xl:flex-row w-full">
         <div className="flex gap-x-8 row-start-2 col-span-2 md:col-span-1 justify-center md:justify-end">
-          <img
-            src={amy}
-            alt="Amy Dutton"
-            className="border-4 rounded-full border-white w-32 xl:w-auto"
-          />
-          <img
-            src={erik}
-            alt="Erik Guzman"
-            className="border-4 rounded-full border-white w-32 xl:w-auto"
-          />
+          <div>
+            <img
+              src={amy}
+              alt="Amy Dutton"
+              className="border-4 rounded-full border-white w-32 xl:w-auto"
+            />
+            <h4 className="font-body font-bold text-tealGreen py-1">
+              Amy Dutton
+            </h4>
+          </div>
+          <div>
+            <img
+              src={erik}
+              alt="Erik Guzman"
+              className="border-4 rounded-full border-white w-32 xl:w-auto"
+            />
+            <h4 className="font-body font-bold text-tealGreen py-1">
+              Erik Guzman
+            </h4>
+          </div>
         </div>
 
         <div className="row-start-1 col-span-2">
@@ -63,16 +73,26 @@ const Hero = () => {
         </div>
 
         <div className="flex gap-x-8 row-start-3 col-span-2 md:col-span-1 md:row-start-2 justify-center md:justify-start">
-          <img
-            src={taylor}
-            alt="Taylor Desseyn"
-            className="border-4 rounded-full border-white w-32 xl:w-auto"
-          />
-          <img
-            src={jennifer}
-            alt="Jennifer Tacheff"
-            className="border-4 rounded-full border-white w-32 xl:w-auto"
-          />
+          <div>
+            <img
+              src={taylor}
+              alt="Taylor Desseyn"
+              className="border-4 rounded-full border-white w-32 xl:w-auto"
+            />
+            <h4 className="font-body font-bold text-tealGreen py-1">
+              Taylor Desseyn
+            </h4>
+          </div>
+          <div>
+            <img
+              src={jennifer}
+              alt="Jennifer Tacheff"
+              className="border-4 rounded-full border-white w-32 xl:w-auto"
+            />
+            <h4 className="font-body font-bold text-tealGreen py-1">
+              Jennifer Tacheff
+            </h4>
+          </div>
         </div>
       </div>
     </div>
