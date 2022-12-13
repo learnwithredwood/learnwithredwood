@@ -15,6 +15,7 @@ const RegisterToday = () => {
       <form
         className="kwes-form"
         action="https://kwesforms.com/api/foreign/forms/RFJrstosCLJGhJhJwS0T"
+        redirect="/masterclass-confirm"
       >
         <div className="field">
           <label className="text-white" htmlFor="fullName">
