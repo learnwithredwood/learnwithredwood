@@ -1,0 +1,1 @@
+export { SharingIsCaring } from './SharingIsCaring'

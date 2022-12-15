@@ -46,6 +46,7 @@ const Routes = () => {
         <Route path="/masterclass" page={MasterclassPage} name="leadMagnet" />
         <Route path="/masterclass-thanks" page={MasterclassThanksPage} name="masterclassThanks" />
         <Route path="/masterclass-confirm" page={MasterclassConfirmPage} name="masterclassConfirm" />
+        <Route path="/masterclass-replay" page={MasterclassReplayPage} name="masterclassReplay" />
         <Route path="/" page={LandingPage} name="landing" />
       </Set>
       <Route notfound page={NotFoundPage} />

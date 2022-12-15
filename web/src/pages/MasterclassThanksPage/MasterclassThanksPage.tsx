@@ -1,12 +1,6 @@
 import { MetaTags } from '@redwoodjs/web'
 import { PageHeader } from 'src/components/PageHeader'
-import {
-  Twitter,
-  Email,
-  Facebook,
-  WhatsApp,
-  LinkedIn,
-} from 'src/components/SocialShare'
+import { SharingIsCaring } from 'src/components/SharingIsCaring'
 
 const MasterclassThanksPage = () => {
   const SHARE_LINK = 'https://www.learntocodewith.me/masterclass'
@@ -94,39 +88,15 @@ const MasterclassThanksPage = () => {
         </div>
       </div>
 
-      {/* sharing is caring */}
-      <div className="mb-[200px] max-w-[750px] mx-auto">
-        <div className="text-center">
-          <h3 className="heading-with-flourish">sharing is caring</h3>
-          <p className="text-center font-body text-base md:text-lg font-medium mb-10">
-            Know someone else who might benefit? We’d love for you to share this
-            with them!
-          </p>
-        </div>
-        {/* social media icons */}
-        <div className="flex gap-20 justify-center">
-          {/* facebook */}
-          <Facebook url={SHARE_LINK} />
-
-          {/* twitter */}
-          <Twitter url={SHARE_LINK} />
-
-          {/* email */}
-          <Email body={BODY} subject={SUBJECT} />
-
-          {/* what's app */}
-          <WhatsApp
-            content={`Check out this FREE Masterclass on Future Proofing Your Career: ${SHARE_LINK}`}
-          />
-
-          {/* linkedin */}
-          <LinkedIn
-            url={SHARE_LINK}
-            title="FREE Masterclass Series: Future Proofing Your Career"
-            summary="The best thing to do in a volatile, fluid economy and hiring environment is to make sure you stand out as a technologist and a potential candidate."
-          />
-        </div>
-      </div>
+      <SharingIsCaring
+        introCopy="Know someone else who might benefit? We’d love for you to share this with them!"
+        linkedInTitle="FREE Masterclass Series: Future Proofing Your Career"
+        linkedInSummary="The best thing to do in a volatile, fluid economy and hiring environment is to make sure you stand out as a technologist and a potential candidate."
+        whatsAppContent={`Check out this FREE Masterclass on Future Proofing Your Career: ${SHARE_LINK}`}
+        shareLink={SHARE_LINK}
+        emailBody={BODY}
+        emailSubject={SUBJECT}
+      />
     </>
   )
 }
