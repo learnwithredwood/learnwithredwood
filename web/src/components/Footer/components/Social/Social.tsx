@@ -18,6 +18,20 @@ const Social = () => {
         </li>
       )}
 
+      {/* instagram */}
+      {SOCIAL.instagram && (
+        <li>
+          <a
+            href={SOCIAL.instagram}
+            target="_blank"
+            rel="noreferrer"
+            className="text-cafeRoyale hover:text-gossamer"
+          >
+            <Icon name="instagram" />
+          </a>
+        </li>
+      )}
+
       {/* twitter */}
       {SOCIAL.twitter && (
         <li>
@@ -56,6 +70,20 @@ const Social = () => {
             className="text-cafeRoyale hover:text-gossamer"
           >
             <Icon name="medium" />
+          </a>
+        </li>
+      )}
+
+      {/* ZEAL */}
+      {SOCIAL.zeal && (
+        <li>
+          <a
+            href={SOCIAL.zeal}
+            target="_blank"
+            rel="noreferrer"
+            className="text-cafeRoyale hover:text-gossamer"
+          >
+            <Icon name="zeal" />
           </a>
         </li>
       )}
