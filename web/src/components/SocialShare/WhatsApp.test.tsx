@@ -1,14 +1,14 @@
 import { render } from '@redwoodjs/testing/web'
 
-import { Tweet } from './Tweet'
+import { WhatsApp } from './WhatsApp'
 
 //   Improve this test with help from the Redwood Testing Doc:
 //    https://redwoodjs.com/docs/testing#testing-components
 
-describe('Tweet', () => {
+describe('WhatsApp', () => {
   it('renders successfully', () => {
     expect(() => {
-      render(<Tweet />)
+      render(<WhatsApp content={''} />)
     }).not.toThrow()
   })
 })

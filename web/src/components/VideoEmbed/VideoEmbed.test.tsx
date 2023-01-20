@@ -1,6 +1,6 @@
 import { render } from '@redwoodjs/testing/web'
 
-import VideoEmbed from './VideoEmbed'
+import { VideoEmbed } from './VideoEmbed'
 
 //   Improve this test with help from the Redwood Testing Doc:
 //    https://redwoodjs.com/docs/testing#testing-components
@@ -8,7 +8,7 @@ import VideoEmbed from './VideoEmbed'
 describe('VideoEmbed', () => {
   it('renders successfully', () => {
     expect(() => {
-      render(<VideoEmbed />)
+      render(<VideoEmbed embed={''} />)
     }).not.toThrow()
   })
 })

@@ -1,6 +1,6 @@
 import { render } from '@redwoodjs/testing/web'
 
-import LessonModule from './LessonModule'
+import { LessonModule } from './LessonModule'
 
 //   Improve this test with help from the Redwood Testing Doc:
 //    https://redwoodjs.com/docs/testing#testing-components
@@ -8,7 +8,7 @@ import LessonModule from './LessonModule'
 describe('LessonModule', () => {
   it('renders successfully', () => {
     expect(() => {
-      render(<LessonModule />)
+      render(<LessonModule lessons={[]} order={0} title={''} />)
     }).not.toThrow()
   })
 })

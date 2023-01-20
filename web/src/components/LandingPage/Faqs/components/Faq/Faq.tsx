@@ -27,6 +27,8 @@ const Faq = ({ answer, question }: IFaqProps): JSX.Element => {
     closed: { opacity: 0, height: 0 },
   }
 
+  console.log(answer)
+
   const Component = useMDXComponent(answer)
 
   return (
@@ -38,13 +40,13 @@ const Faq = ({ answer, question }: IFaqProps): JSX.Element => {
 
       {/* question */}
       <div className="col-span-9 col-start-3 md:col-span-8 items-center flex pb-2">
-        <p
+        <button
           data-testid="faq_q-toggle"
           className="large-body cursor-pointer hover:text-sinopia !pt-0 !my-0"
           onClick={handleToggle}
         >
           {question}
-        </p>
+        </button>
       </div>
 
       {/* expand / collapse button */}

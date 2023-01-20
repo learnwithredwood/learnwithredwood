@@ -1,14 +1,14 @@
 import { render } from '@redwoodjs/testing/web'
 
-import { Tweet } from './Tweet'
+import { Email } from './Email'
 
 //   Improve this test with help from the Redwood Testing Doc:
 //    https://redwoodjs.com/docs/testing#testing-components
 
-describe('Tweet', () => {
+describe('Email', () => {
   it('renders successfully', () => {
     expect(() => {
-      render(<Tweet />)
+      render(<Email body={''} subject={''} />)
     }).not.toThrow()
   })
 })

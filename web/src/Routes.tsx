@@ -43,10 +43,19 @@ const Routes = () => {
       </Set>
       {/* landing page */}
       <Set wrap={LandingPageLayout}>
+        {/* february 2023 - full stack fast track */}
+        <Route path="/fast-track-confirm" page={FastTrackConfirmPage} name="fastTrackConfirm" />
+        <Route path="/fast-track-replay" page={FastTrackReplayPage} name="fastTrackReplay" />
+        <Route path="/fast-track-thanks" page={FastTrackThanksPage} name="fastTrackThanks" />
+        <Route path="/fast-track" page={FastTrackPage} name="fastTrack" />
+
+        {/* masterclass - recession proof your career */}
         <Route path="/masterclass" page={MasterclassPage} name="leadMagnet" />
         <Route path="/masterclass-thanks" page={MasterclassThanksPage} name="masterclassThanks" />
         <Route path="/masterclass-confirm" page={MasterclassConfirmPage} name="masterclassConfirm" />
         <Route path="/masterclass-replay" page={MasterclassReplayPage} name="masterclassReplay" />
+
+        {/* course landing page */}
         <Route path="/" page={LandingPage} name="landing" />
       </Set>
       <Route notfound page={NotFoundPage} />

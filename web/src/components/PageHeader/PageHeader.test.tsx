@@ -1,6 +1,6 @@
 import { render } from '@redwoodjs/testing/web'
 
-import PageHeader from './PageHeader'
+import { PageHeader } from './PageHeader'
 
 //   Improve this test with help from the Redwood Testing Doc:
 //    https://redwoodjs.com/docs/testing#testing-components
@@ -8,7 +8,7 @@ import PageHeader from './PageHeader'
 describe('PageHeader', () => {
   it('renders successfully', () => {
     expect(() => {
-      render(<PageHeader />)
+      render(<PageHeader pageTitle={'Page Title'} subheading={'Subheading'} />)
     }).not.toThrow()
   })
 })

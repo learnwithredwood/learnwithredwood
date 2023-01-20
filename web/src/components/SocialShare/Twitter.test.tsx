@@ -1,14 +1,14 @@
 import { render } from '@redwoodjs/testing/web'
 
-import { Tweet } from './Tweet'
+import { Twitter } from './Twitter'
 
 //   Improve this test with help from the Redwood Testing Doc:
 //    https://redwoodjs.com/docs/testing#testing-components
 
-describe('Tweet', () => {
+describe('Twitter', () => {
   it('renders successfully', () => {
     expect(() => {
-      render(<Tweet />)
+      render(<Twitter url={'http://learnwithredwood.com'} />)
     }).not.toThrow()
   })
 })
