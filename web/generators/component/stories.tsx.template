@@ -1,4 +1,4 @@
-import {${pascalName}} from './${pascalName}'
+import { ${pascalName} } from './${pascalName}'
 
 export const generated = () => {
   return <${pascalName} />

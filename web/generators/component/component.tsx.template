@@ -7,4 +7,4 @@ const ${pascalName} = () => {
   )
 }
 
-export {${pascalName}}
+export { ${pascalName} }
