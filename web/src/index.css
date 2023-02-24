@@ -12,8 +12,8 @@
 /* sherman */
 @font-face {
   font-family: "Sherman";
-  src: url("./fonts/sherman/sherman-display-webfont.woff") format("woff"),
-    url("./fonts/sherman/sherman-display-webfont.woff2") format("woff2");
+  src: url("./fonts/sherman/Sherman-Display.woff") format("woff"),
+    url("./fonts/sherman/Sherman-Display.woff2") format("woff2");
 }
 
 /* redwood alternative */
