@@ -40,18 +40,8 @@ const LessonsModules = () => {
           lessons &amp; modules
         </h2>
         <div className="flex items-start md:items-center gap-x-2 justify-center">
-          <div>
-            <img
-              src={CC}
-              alt="Closed Captioning"
-              className="mix-blend-multiply relative top-1 md:top-0"
-            />
-          </div>
           <p className="!mb-0">
-            <em>
-              Closed Captioning and video transcripts are provided for every
-              video.
-            </em>
+            <em>Video transcripts are provided for every video.</em>
           </p>
         </div>
       </div>
