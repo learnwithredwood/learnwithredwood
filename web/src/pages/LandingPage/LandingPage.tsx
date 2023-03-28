@@ -13,15 +13,14 @@ import { Who } from 'src/components/LandingPage/Who'
 import { Newsletter } from 'src/components/Newsletter'
 import { Testimonial } from 'src/components/LandingPage/Testimonial'
 import { LogoParade } from 'src/components/LandingPage/LogoParade'
-import { VideoEmbed } from 'src/components/VideoEmbed'
 import { BulkPricing } from 'src/components/LandingPage/BulkPricing/BulkPricing'
+import { NotSure } from 'src/components/NotSure'
 
 // Avatars
 import MichaelLiendo from 'src/images/avatars/michael-liendo.jpeg'
 import Tom from 'src/images/avatars/tom.png'
 import David from 'src/images/avatars/david.jpeg'
 import Amanda from 'src/images/avatars/amanda.jpeg'
-import { NotSure } from 'src/components/NotSure'
 
 const LandingPage = () => {
   return (
@@ -48,7 +47,7 @@ const LandingPage = () => {
       </Testimonial>
       <LogoParade />
       <SalesLetter />
-      <Newsletter />
+      {/* <Newsletter /> */}
       {/* Testimonial */}
       <Testimonial
         person="David Price"

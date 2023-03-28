@@ -33,7 +33,7 @@ const LessonsModules = () => {
   let lessonNumber = 0
 
   return (
-    <div className="mx-6 lg:mx-24 mb-24">
+    <div className="mx-6 lg:mx-24 mb-24" id="lessons-modules">
       {/* section heading */}
       <div className="text-center mb-8">
         <h2 className="font-script text-tealGreen text-[2rem] md:text-[3.5rem] md:leading-[3rem]">

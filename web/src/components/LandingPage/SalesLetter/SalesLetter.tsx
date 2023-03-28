@@ -131,7 +131,7 @@ const SalesLetter = () => {
         </p>
       </div>
 
-      <div className="font-wide uppercase text-xl text-center leading-8 mb-11 col-start-2 col-span-10">
+      <div className="font-wide uppercase text-xl text-center leading-8 mt-11 pb-24 col-start-2 col-span-10">
         Our self-paced workshop will give you the
         <br /> foundation you need to focus on what you do best:{' '}
         <div className="text-sinopia">build something extraordinary.</div>

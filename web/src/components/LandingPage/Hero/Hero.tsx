@@ -28,39 +28,11 @@ const Hero = () => {
             Full-Stack Development
           </div>
         </h1>
-        <p className="font-wide font-bold text-xl text-center mb-14">
+        <p className="font-wide font-bold text-xl text-center mb-[250px]">
           Learn Full Stack{' '}
           <span className="text-harleyDavidsonOrange">without the Pain</span> of
           Full Stack
         </p>
-        <p className="max-w-[800px] px-5">
-          <strong>Want to be in the know?</strong> We'll give you a behind the
-          scenes look at the course and{' '}
-          <strong>
-            <em>FREE</em>
-          </strong>{' '}
-          bonuses, sent directly to your inbox.
-        </p>
-        <form
-          className="kwes-form"
-          action="https://kwesforms.com/api/foreign/forms/sMgyb9beZ3XIomClKHDo"
-        >
-          <div className="flex flex-col sm:flex-row gap-4 px-5">
-            <input
-              className="w-full"
-              type="email"
-              name="email"
-              placeholder="Your Email Address"
-              rules="required"
-            />
-            <button
-              className="button-alt !px-4 md:!px-8 whitespace-nowrap w-full"
-              type="submit"
-            >
-              Join the Wait List
-            </button>
-          </div>
-        </form>
         <img
           className="m-[50px_auto_10px]"
           src="/images/powered-by-zeal.svg"
