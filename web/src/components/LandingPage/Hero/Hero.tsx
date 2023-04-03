@@ -28,11 +28,16 @@ const Hero = () => {
             Full-Stack Development
           </div>
         </h1>
-        <p className="font-wide font-bold text-xl text-center mb-[250px]">
+        <p className="font-wide font-bold text-xl text-center mb-[100px]">
           Learn Full Stack{' '}
           <span className="text-harleyDavidsonOrange">without the Pain</span> of
           Full Stack
         </p>
+        <div className="mb-[125px]">
+          <a href="#get-started" className="button">
+            Enroll Now
+          </a>
+        </div>
         <img
           className="m-[50px_auto_10px]"
           src="/images/powered-by-zeal.svg"

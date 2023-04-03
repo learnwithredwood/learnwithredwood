@@ -99,7 +99,7 @@ const LandingPage = () => {
       <WhatWeBuild />
       <Who />
 
-      <div className="font-wide uppercase text-center text-xl leading-8 mb-20 px-5 md:px-0">
+      <div className="font-wide uppercase text-center text-xl leading-8 mb-[100px] px-5 md:px-0">
         This course is intentionally designed to{' '}
         <div className="text-sinopia">
           equip you with everything you need to know
@@ -108,6 +108,9 @@ const LandingPage = () => {
         with the best libraries and frameworks available.
       </div>
 
+      <div className="mb-[150px]">
+        <Pricing />
+      </div>
       {/* 2 TESTIMONIALS */}
 
       <HelloMyNameIs />
