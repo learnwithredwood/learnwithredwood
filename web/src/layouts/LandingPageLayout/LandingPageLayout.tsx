@@ -1,7 +1,7 @@
-import { useState } from 'react'
-import { Hamburger } from 'src/components/Hamburger'
+// import { useState } from 'react'
+// import { Hamburger } from 'src/components/Hamburger'
 import { Footer } from 'src/components/Footer/Footer'
-import { Nav } from 'src/components/Nav/Nav'
+// import { Nav } from 'src/components/Nav/Nav'
 
 type LandingPageLayoutProps = {
   children?: React.ReactNode

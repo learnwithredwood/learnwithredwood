@@ -7,5 +7,12 @@ const SOCIAL = {
   zeal: 'https://codingzeal.com/blog',
 }
 
+const FATHOM = {
+  STARTER_TIER: 'JE4A7CTU',
+  COMPLETE_TIER: 'C6LDGCXA',
+}
+
 Object.freeze(SOCIAL)
-export { SOCIAL }
+Object.freeze(FATHOM)
+
+export { FATHOM, SOCIAL }

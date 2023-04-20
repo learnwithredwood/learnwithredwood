@@ -47,7 +47,7 @@ const LandingPage = () => {
       </Testimonial>
       <LogoParade />
       <SalesLetter />
-      {/* <Newsletter /> */}
+      <Newsletter />
       {/* Testimonial */}
       <Testimonial
         person="David Price"

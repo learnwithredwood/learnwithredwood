@@ -13449,6 +13449,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fathom-client@npm:^3.5.0":
+  version: 3.5.0
+  resolution: "fathom-client@npm:3.5.0"
+  checksum: 989786b7b7f27c3b924ad51f4630d33ccf19e1e226ef58c21a571a477a73d7bb35dba2533d4e250c733acbbf40aba64be6a3e7f96da7fcd20ed3f82a3acf3441
+  languageName: node
+  linkType: hard
+
 "fault@npm:^1.0.0":
   version: 1.0.4
   resolution: "fault@npm:1.0.4"
@@ -26198,6 +26205,7 @@ __metadata:
     autoprefixer: ^10.4.4
     babel-plugin-prismjs: ^2.1.0
     date-fns: ^2.28.0
+    fathom-client: ^3.5.0
     framer-motion: ^6.2.8
     kwesforms: ^2.1.27
     octokit: ^2.0.9

@@ -1,4 +1,16 @@
+import * as Fathom from 'fathom-client'
+import { FATHOM } from 'src/utils/Constants'
+
 const Pricing = () => {
+  const ClickStarterTier = () => {
+    Fathom.trackGoal(FATHOM.STARTER_TIER, 0)
+    Fathom.trackGoal(FATHOM.COMPLETE_TIER, 0)
+  }
+
+  const ClickCompleteTier = () => {
+    Fathom.trackGoal('YOUR-EVENT-ID', 0)
+  }
+
   return (
     <div className="mx-8">
       <h2 className="section-heading text-center pb-4">
@@ -33,6 +45,7 @@ const Pricing = () => {
               data-item-name="Learn with Redwood, Starter Tier"
               data-item-url="https://www.learnwithredwood.com/products.json"
               className="snipcart-add-item button w-full px-3 self-end mt-auto"
+              onClick={ClickStarterTier}
             >
               Get Early Access
             </button>
@@ -66,6 +79,7 @@ const Pricing = () => {
               data-item-name="Learn with Redwood, Complete Tier"
               data-item-url="https://www.learnwithredwood.com/products.json"
               className="snipcart-add-item button w-full px-3"
+              onClick={ClickCompleteTier}
             >
               Get Early Access
             </button>
